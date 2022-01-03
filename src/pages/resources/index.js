@@ -6,7 +6,7 @@ import "../../styles/animations.css";
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
 
-const JoinPage = () => {
+const ResourcesPage = () => {
   return (
     <Layout title="Resources | Spark">
       <Navbar />
@@ -121,4 +121,4 @@ const JoinPage = () => {
   );
 };
 
-export default JoinPage;
+export default ResourcesPage;
