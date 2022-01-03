@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./style.css"
 import "../styles/global.css";
 import "../styles/animations.css";
 

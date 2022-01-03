@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./style.css"
+import "./style.css";
 
 export default function WhyJoin() {
   return (
@@ -33,6 +33,10 @@ export default function WhyJoin() {
           retreat 👀, intra-club mixers, food runs, study sessions, BYO/karaoke,
           and general member hangouts.
         </p>
+        <br />
+        <a href="https://community.pennspark.org/" rel="noopener noreferrer">
+          <button>our community &rarr;</button>
+        </a>
       </div>
 
       <div className="why-join-spacer" />
