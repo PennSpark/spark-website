@@ -48,27 +48,6 @@ export default function Branches() {
           </em>
         </p>
       </div>
-
-      {/* <br/><br/>
-
-      <p>
-        <span className="bold">Unsure of which track fits you?</span> Feel free
-        to look over our bootcamp:
-        <ul>
-          <li>
-            If you're comfortable with &lt; 60% of the material, we recommend
-            Blue.
-          </li>
-          <li>
-            If you're comfortable with between 60% and 90% of the material, we
-            recommend applying for both.
-          </li>
-          <li>
-            If you're comfortable with &gt;90% of the material, or if you have 
-            extensive technical/design background experience, we recommend Red.
-          </li>
-        </ul>
-      </p> */}
     </div>
   );
 }
