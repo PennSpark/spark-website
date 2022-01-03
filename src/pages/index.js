@@ -19,19 +19,19 @@ const IndexPage = () => {
         </p>
         <div className="about-stat-container">
           <p>
-            <span className="about-stat">20</span><br/>
+            <span className="about-stat" style={{color: "#CF6C5D"}}>25</span><br/>
             <span className="about-caption">Active Members</span>
           </p>
         </div>
         <div className="about-stat-container">
           <p>
-            <span className="about-stat">15</span><br/>
+            <span className="about-stat" style={{color: "#EEDC9B"}}>15</span><br/>
             <span className="about-caption">Completed Projects</span>
           </p>
         </div>
         <div className="about-stat-container">
           <p>
-            <span className="about-stat">2</span><br/>
+            <span className="about-stat" style={{color: "#4170BF"}}>2</span><br/>
             <span className="about-caption">Live Semesters</span>
           </p>
         </div>
@@ -51,6 +51,8 @@ const IndexPage = () => {
           </p>
         </div>
 
+        <div className="values-spacer"/>
+
         <div className="values-container">
           <h3>Hands-On Experience</h3>
           <p>
@@ -64,6 +66,8 @@ const IndexPage = () => {
             .
           </p>
         </div>
+
+        <div className="values-spacer"/>
 
         <div className="values-container">
           <h3>Community</h3>
@@ -89,6 +93,7 @@ const IndexPage = () => {
           with ADHD to developing a machine learning model that identifies
           pictures as emojis.
         </p>
+        <br/>
         <a href="https://work.pennspark.org/" rel="noopener noreferrer">
           <button>view past projects &rarr;</button>
         </a>
@@ -114,6 +119,8 @@ const IndexPage = () => {
           </p>
         </div>
 
+        <div className="why-join-spacer"/>
+
         <div className="why-join-container">
           <h3>Join Our Community</h3>
           <p>
@@ -123,6 +130,8 @@ const IndexPage = () => {
             BYO/karaoke, and general member hangouts.
           </p>
         </div>
+
+        <div className="why-join-spacer"/>
 
         <div className="why-join-container">
           <h3>Pursue Professional Growth</h3>
@@ -144,6 +153,7 @@ const IndexPage = () => {
           We will be opening up applications for the Spring 2022 semester soon –
           please fill out our interest form to be added to our mailing list!
         </p>
+        <br/>
         <a
           href="https://forms.gle/4jftLcEG3r2fvMSJ9"
           target="_blank"
@@ -154,35 +164,41 @@ const IndexPage = () => {
       </div>
 
       <div id="socials-section">
-        <h2>06. Our Socials</h2>
+        <h2>06. Contact Us</h2>
         <p>
+          <span className="bold">Social Media</span>:{" "}
           <a href="https://facebook.com/pennspark"
             target="_blank" rel="noopener noreferrer">
             Facebook
-          </a>&nbsp;|&nbsp;
+          </a>{" | "}
           <a href="https://instagram.com/pennspark"
             target="_blank" rel="noopener noreferrer">
             Instagram
-          </a>&nbsp;|&nbsp;
-          <a href="https://github.com/pennspark"
-            target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>&nbsp;|&nbsp;
-          <a href="https://www.linkedin.com/company/69605156/"
-            target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>&nbsp;|&nbsp;
-          <a href="https://pennclubs.com/club/penn-spark"
-            target="_blank" rel="noopener noreferrer">
-            PennClubs
-          </a>&nbsp;|&nbsp;
+          </a>{" | "}
           <a href="https://medium.com/@pennspark"
             target="_blank" rel="noopener noreferrer">
             Medium
-          </a>&nbsp;|&nbsp;
+          </a>
+        <br/>
+        <span className="bold">Work</span>:{" "}
+          <a href="https://github.com/pennspark"
+            target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>{" | "}
+          <a href="https://www.linkedin.com/company/69605156/"
+            target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>{" | "}
+          <a href="https://pennclubs.com/club/penn-spark"
+            target="_blank" rel="noopener noreferrer">
+            PennClubs
+          </a>
+          
+          <br/>
+          <span className="bold">Email</span>:{" "}
           <a href="mailto:upennspark@gmail.com"
             target="_blank" rel="noopener noreferrer">
-            Email
+            upennspark@gmail.com
           </a>
         </p>
       </div>
