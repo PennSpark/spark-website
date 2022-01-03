@@ -54,7 +54,12 @@ h2 {
             <p className="about-caption">Active Members</p> */
 
 .about-stat-container {
-  width: 33%;
+  width: 28%;
+  display: inline-block;
+}
+
+.about-stat-spacer {
+  width: 8%;
   display: inline-block;
 }
 

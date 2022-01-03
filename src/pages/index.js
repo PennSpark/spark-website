@@ -28,12 +28,18 @@ const IndexPage = () => {
               <span className="about-caption">Active Members</span>
             </p>
           </div>
+
+          <div className="about-stat-spacer" />
+          
           <div className="about-stat-container">
             <p>
               <span className="about-stat" style={{color: "#EEDC9B"}}>15</span><br/>
               <span className="about-caption">Completed Projects</span>
             </p>
           </div>
+
+          <div className="about-stat-spacer" />
+
           <div className="about-stat-container">
             <p>
               <span className="about-stat" style={{color: "#4170BF"}}>2</span><br/>
