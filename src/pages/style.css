@@ -1,0 +1,59 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+main {
+  font-family: "HK Grotesk", "Inter", "Karla", sans-serif;
+}
+
+#header-section {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2%;
+}
+
+#header-spark-text {
+  -webkit-text-stroke: 3px black;
+  color: rgb(0, 0, 0, 0);
+}
+
+#about-section,
+#values-section,
+#work-section,
+#why-join-section,
+#join-section,
+#socials-section {
+  margin: auto;
+  max-width: 760px;
+  margin-bottom: 60px;
+  padding: 6px;
+}
+
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+  color: #383838;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* about-stat-container">
+            <p className="about-stat">20</p>
+            <p className="about-caption">Active Members</p> */
+
+.about-stat-container {
+  width: 33%;
+  display: inline-block;
+}
+
+.about-stat {
+  font-size: 60px;
+  -webkit-text-stroke: 2px black;
+  font-weight: 700;
+}
+
+.about-caption {
+  font-style: italic;
+}
