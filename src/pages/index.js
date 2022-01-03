@@ -5,6 +5,7 @@ import "../styles/animations.css"
 
 import About from "../components/about"
 import Values from "../components/values"
+import Branches from "../components/branches"
 import Work from "../components/work"
 import WhyJoin from "../components/why-join"
 import Join from "../components/join"
@@ -26,6 +27,7 @@ const IndexPage = () => {
 
         <About />
         <Values />
+        <Branches />
         <Work />
         <WhyJoin />
         <Join />

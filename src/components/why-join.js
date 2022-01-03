@@ -3,7 +3,7 @@ import * as React from "react";
 export default function WhyJoin() {
   return (
     <div id="why-join-section">
-      <h2>04. Why Join?</h2>
+      <h2>05. Why Join?</h2>
 
       <div className="why-join-container">
         <h3>Gain Experience</h3>
