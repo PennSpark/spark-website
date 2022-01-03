@@ -4,7 +4,7 @@ import "./style.css"
 export default function Socials() {
   return (
     <div id="socials-section" className="content-section">
-      <h2>07. Contact Us</h2>
+      <h2>03. Contact Us</h2>
       <p>
         <span className="bold">Social Media</span>:{" "}
         <a

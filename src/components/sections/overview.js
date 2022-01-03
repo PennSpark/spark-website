@@ -1,10 +1,10 @@
 import * as React from "react";
 import "./style.css"
 
-export default function About() {
+export default function Overview() {
   return (
     <div id="about-section" className="content-section">
-      <h2>01. About Us</h2>
+      <h2>01. Overview</h2>
       <p className="larger-text">
         We’re a community of students at the University of Pennsylvania that
         bridge <span className="bold">tech</span> and{" "}

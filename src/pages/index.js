@@ -5,7 +5,7 @@ import "../styles/animations.css";
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
 
-import About from "../components/sections/about";
+import About from "../components/sections/overview";
 import Work from "../components/sections/work";
 import Socials from "../components/sections/socials";
 

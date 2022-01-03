@@ -4,7 +4,7 @@ import "./style.css"
 export default function Branches() {
   return (
     <div id="branches-section" className="content-section">
-      <h2>03. Our Branches</h2>
+      <h2>02. Our Branches</h2>
       <br />
       <div
         className="branches-container"
