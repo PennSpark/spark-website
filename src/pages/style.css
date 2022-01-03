@@ -41,6 +41,10 @@ h2 {
   font-weight: 400;
 }
 
+.larger-text {
+  font-size: 1.2rem;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -82,9 +86,9 @@ h3 {
 }
 
 button {
-  background-color: black;
-  color: white;
-  border: none;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
   padding: 8px 30px 8px 30px;
   font-family: "HK Grotesk", "Inter", "Karla", sans-serif;
   font-size: 0.9rem;
@@ -93,6 +97,10 @@ button {
 
 button:hover {
   cursor: pointer;
+  
+  background-color: black;
+  color: white;
+  transition: all .2s ease;
 }
 
 #socials-section {
@@ -108,9 +116,52 @@ button:hover {
   text-decoration: underline;
 }
 
+/* ANIMATIONS */
+#header-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+}
 
+#about-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.1s;
+}
+
+#values-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.2s;
+}
+
+#work-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.3s;
+}
+
+#why-join-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.4s;
+}
+
+#join-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.5s;
+}
+
+#socials-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.6s;
+}
+
+/* MOBILE VIEW */
 @media (max-width: 760px) {
   .values-container, .why-join-container {
     width: 100%;
   }
 }
+

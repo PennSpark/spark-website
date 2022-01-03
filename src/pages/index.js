@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./style.css";
+import "../styles/animations.css"
 
 import FavIcon from "../images/favicon.ico"
 
@@ -16,7 +17,7 @@ const IndexPage = () => {
 
         <div id="about-section">
           <h2>01. About Us</h2>
-          <p>
+          <p className="larger-text">
             We’re a community of students at the University of Pennsylvania that
             bridge <span className="bold">tech</span> and <span className="bold">design</span> to
             build both creative and client projects from ground-up.
@@ -90,7 +91,7 @@ const IndexPage = () => {
 
         <div id="work-section">
           <h2>03. Our Work</h2>
-          <p>
+          <p className="larger-text">
             Each semester, our members come together to work on a variety of
             engineering and/or design projects. In the past, projects have ranged
             from redesigning a startup’s pilot program targeted towards students
@@ -153,7 +154,7 @@ const IndexPage = () => {
 
         <div id="join-section">
           <h2>05. Join Us</h2>
-          <p>
+          <p className="larger-text">
             We will be opening up applications for the Spring 2022 semester soon –
             please fill out our interest form to be added to our mailing list!
           </p>
