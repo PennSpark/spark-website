@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.navbar-custom-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-custom {
+  list-style-type: none;
+  margin: auto;
+  padding: 50px 4% 0px 0px;
+  text-align: right;
+  max-width: 760px;
+   font-family: "IBM Plex Mono", monospace;
+}
+
+.navbar-custom a {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.navbar-custom li {
+  display: inline;
+  vertical-align: middle;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.navbar-custom-left-link {
+  font-size: 1.2rem;
+  float: left;
+}
+
+#navbar-custom-img {
+  height: 2.4rem;
+  transform: translate(0px, -2px);
+  opacity: 0.7;
+}
+
+.navbar-custom-left-link a:hover {
+  font-weight: 600;
+}
+
+.navbar-custom-left-link a:hover #navbar-custom-img {
+  opacity: 1;
+  /* transition: opacity 0.1s ease-out; */
+}
+
+.navbar-custom-right-link {
+  font-size: 0.9rem;
+  margin-left: 5%;
+  float: right;
+}
+
+.navbar-custom a {
+  border-bottom: 0px;
+  text-decoration: none;
+  color: #3d3d3d;
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.navbar-custom a:hover {
+  color: inherit;
+  text-decoration: underline;
+}

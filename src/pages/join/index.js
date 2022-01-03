@@ -3,14 +3,16 @@ import "./style.css";
 import "../../styles/global.css";
 import "../../styles/animations.css";
 
+import Layout from "../../components/layout";
+import Navbar from "../../components/navbar";
+
 import WhyJoin from "../../components/sections/why-join";
 import FAQ from "../../components/sections/faq";
-
-import Layout from "../../components/layout";
 
 const JoinPage = () => {
   return (
     <Layout title="Join | Spark">
+      <Navbar/>
       <div id="header-section">
         <h1>
           join <span id="header-spark-text">spark</span>
