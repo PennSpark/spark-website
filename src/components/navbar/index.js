@@ -19,6 +19,10 @@ export default function Navbar() {
         </li>
 
         <li className="navbar-custom-right-link">
+          <a href="/resources">Resources</a>
+        </li>
+
+        <li className="navbar-custom-right-link">
           <a href="/about">About</a>
         </li>
       </ul>
