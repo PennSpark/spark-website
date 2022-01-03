@@ -1,25 +1,11 @@
 import * as React from "react";
+import "./style.css"
 
-export default function Join() {
+export default function FAQ() {
   return (
-    <div id="join-section">
-      <h2>06. Join Us</h2>
-      <p className="larger-text">
-        We will be opening up applications for the Spring 2022 semester soon –
-        please fill out our interest form to be added to our mailing list!
-      </p>
-      <br />
-      <a
-        href="https://forms.gle/4jftLcEG3r2fvMSJ9"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button>interest form &rarr;</button>
-      </a>
-      <br />
-      <br />
+    <div id="faq-section" className="content-section">
+      <h2>02. FAQ</h2>
       <div>
-        <h3>FAQ</h3>
         <div className="faq-container">
           <p className="faq-question">
             01. Do I need to be interested in both tech &amp; design to join?

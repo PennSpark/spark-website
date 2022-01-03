@@ -1,9 +1,10 @@
 import * as React from "react";
+import "./style.css"
 
 export default function WhyJoin() {
   return (
-    <div id="why-join-section">
-      <h2>05. Why Join?</h2>
+    <div id="why-join-section" className="content-section">
+      <h2>01. Why Join?</h2>
 
       <div className="why-join-container">
         <h3>Gain Experience</h3>

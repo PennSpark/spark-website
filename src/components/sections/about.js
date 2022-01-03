@@ -1,8 +1,9 @@
 import * as React from "react";
+import "./style.css"
 
 export default function About() {
   return (
-    <div id="about-section">
+    <div id="about-section" className="content-section">
       <h2>01. About Us</h2>
       <p className="larger-text">
         We’re a community of students at the University of Pennsylvania that
@@ -10,6 +11,7 @@ export default function About() {
         <span className="bold">design</span> to build both creative and client
         projects from ground-up.
       </p>
+      <br/><br/>
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#CF6C5D" }}>

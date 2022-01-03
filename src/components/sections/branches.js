@@ -1,8 +1,9 @@
 import * as React from "react";
+import "./style.css"
 
 export default function Branches() {
   return (
-    <div id="branches-section">
+    <div id="branches-section" className="content-section">
       <h2>03. Our Branches</h2>
       <br />
       <div

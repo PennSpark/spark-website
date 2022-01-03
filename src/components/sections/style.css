@@ -1,0 +1,90 @@
+.about-stat-container {
+  width: 28%;
+  display: inline-block;
+}
+
+.about-stat-spacer {
+  width: 8%;
+  display: inline-block;
+}
+
+.about-stat {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 80px;
+  -webkit-text-stroke: 2px black;
+  font-weight: 800;
+}
+
+.about-caption {
+  font-style: italic;
+}
+
+.values-container,
+.why-join-container {
+  width: 30%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.values-spacer,
+.why-join-spacer {
+  width: 30px;
+  display: inline-block;
+}
+
+.branches-container {
+  width: 40%;
+  vertical-align: top;
+  display: inline-block;
+  padding: 16px 24px 16px 24px;
+  border-radius: 8px;
+}
+
+.branches-spacer {
+  width: 6%;
+  display: inline-block;
+}
+
+.faq-container {
+  width: 47%;
+  vertical-align: top;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.faq-spacer {
+  width: 6%;
+  display: inline-block;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 1.04rem;
+  margin-bottom: 10px;
+}
+
+#socials-section {
+  line-height: 150%;
+}
+
+#socials-section a {
+  color: black;
+  text-decoration: none;
+}
+
+#socials-section a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 760px) {
+  .values-container,
+  .why-join-container,
+  .faq-container {
+    width: 98%;
+  }
+
+  .branches-container {
+    width: 88%;
+  }
+}

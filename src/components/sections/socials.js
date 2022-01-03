@@ -1,8 +1,9 @@
 import * as React from "react";
+import "./style.css"
 
 export default function Socials() {
   return (
-    <div id="socials-section">
+    <div id="socials-section" className="content-section">
       <h2>07. Contact Us</h2>
       <p>
         <span className="bold">Social Media</span>:{" "}

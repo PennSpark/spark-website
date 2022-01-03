@@ -1,8 +1,9 @@
 import * as React from "react";
+import "./style.css"
 
 export default function Values() {
   return (
-    <div id="values-section">
+    <div id="values-section" className="content-section">
       <h2>02. Our Values</h2>
       <div className="values-container">
         <h3>Accessible Education</h3>
