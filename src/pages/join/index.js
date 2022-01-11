@@ -21,15 +21,15 @@ const JoinPage = () => {
       <div id="join-content-section" className="content-section">
         <p className="larger-text">
           We will be opening up applications for the Spring 2022 semester soon –
-          please fill out our interest form to be added to our mailing list!
+          please sign up for our mailing list below!
         </p>
         <br/><br/>
         <a
-          href="https://forms.gle/4jftLcEG3r2fvMSJ9"
+          href="https://pennspark.us5.list-manage.com/subscribe?u=93ce0114aa477284b7ee783d8&id=2121f4c4f0"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button>interest form &rarr;</button>
+          <button>sign up for our mailing list &rarr;</button>
         </a>
       </div>
 
