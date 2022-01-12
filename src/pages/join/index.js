@@ -37,7 +37,7 @@ const JoinPage = () => {
       </div>
       <div id="join-content-section" className="content-section">
         <p className="larger-text">
-          Our Spring 2022 applications are now live!
+          Our Spring 2022 applications are now live and due on <strong>Thursday, January 20th at 11:59pm EST</strong>!
         </p>
         <br />
         <br />

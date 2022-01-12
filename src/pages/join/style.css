@@ -1,20 +1,23 @@
 #red-button {
-  color: #cf6c5d;
+  color: white;
+  background-color: #cf6c5d;
   border: 2px solid #cf6c5d;
 }
 
 #red-button:hover {
-  background-color: #cf6c5d;
-  color: white;
+  background-color: black;
+  border: 2px solid black;
 }
 
 #blue-button {
-  color: #577ED2;
+  background-color: #577ED2;
+  color: white;
   border: 2px solid #577ED2;
   margin-right: 20px;
+  margin-bottom: 14px;
 }
 
 #blue-button:hover {
-  background-color: #577ED2;
-  color: white;
+  background-color: black;
+  border: 2px solid black;
 }
