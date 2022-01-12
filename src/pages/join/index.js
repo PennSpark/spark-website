@@ -21,7 +21,8 @@ const JoinPage = () => {
           style={{
             backgroundColor: "#DDE4F3",
             textAlign: "center",
-            height: "380px",
+            height: "30vh",
+            minHeight: "200px",
             marginBottom: "20px",
           }}
         >
