@@ -8,7 +8,7 @@ export default function Work() {
     <p className="larger-text">
       Each semester, our members come together to work on a variety of
       engineering and/or design projects. In the past, projects have ranged
-      from redesigning a startup’s pilot program targeted towards students
+      from redesigning a startup’s pilot program helping students
       with ADHD to developing a machine learning model that identifies
       pictures as emojis.
     </p>

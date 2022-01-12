@@ -4,7 +4,7 @@ import "./style.css"
 export default function FAQ() {
   return (
     <div id="faq-section" className="content-section">
-      <h2>03. FAQ</h2>
+      <h2>FAQ</h2>
       <div>
         <div className="faq-container">
           <p className="faq-question">
