@@ -1,15 +1,9 @@
-.redirect-container {
-    text-align: center;
-    margin: auto;
-    padding: 10%;
-    padding-top: 20vh;
+#join-blue-links a {
+  color: #577ed2;
+  font-weight: 600;
 }
 
-.redirect-container h1 {
-    font-weight: 500;
-}
-
-.redirect-container a {
-    color: #577ED2;
-    font-weight: 700;
+#header-blue-text {
+  -webkit-text-stroke: 2px #577ed2;
+  color: rgb(0, 0, 0, 0);
 }

@@ -3,20 +3,29 @@ import "./style.css"
 import "../../styles/global.css";
 import "../../styles/animations.css";
 
+import Layout from "../../components/layout";
+import Navbar from "../../components/navbar";
 
 const JoinBluePage = () => {
   return (
-    <html>
-    <head>
-      <title>Join Blue | Spark</title>
-      <meta http-equiv="refresh" content="0; url='https://forms.gle/3oBuVZx3Yb7peY6N9'" />
-    </head>
-    <body>
-      <div className="redirect-container">
-        <h1>If you are not automatically redirected, please apply through the <a href="https://forms.gle/3oBuVZx3Yb7peY6N9">following form</a>.</h1>
-      </div>
-    </body>
-  </html>
+    <Layout title="Join Blue | Spark">
+    <Navbar />
+    <div id="header-section">
+      <h1>
+        join <span id="header-blue-text">blue</span>
+      </h1>
+    </div>
+    <div className="content-section">
+      <p className="larger-text">
+        Please submit your written application by <strong>Thursday January 20th, 11:59pm EST</strong>:
+        <br/><br/>
+        <ul id="join-blue-links">
+          <li><a href="https://forms.gle/3oBuVZx3Yb7peY6N9" target="_blank" rel="noopener noreferrer">Written Application</a></li>
+        </ul>
+      </p>
+      
+    </div>
+  </Layout>
   );
 };
 
