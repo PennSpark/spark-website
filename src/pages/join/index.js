@@ -63,7 +63,7 @@ const JoinPage = () => {
             <button id="red-button">Written Application &rarr;</button>
           </a>
 
-          <a href="http://localhost:8000/static/RedDesign-495ae8e32a7dbc629b0686de3c89cf14.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="http://pennspark.org/static/RedDesign-495ae8e32a7dbc629b0686de3c89cf14.pdf" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Technical Assessment &rarr;</button>
           </a>
         </div>
@@ -80,7 +80,7 @@ const JoinPage = () => {
             <button id="red-button">Written Application &rarr;</button>
           </a>
 
-          <a href="http://localhost:8000/static/RedDev-d3913678d968377f9f8a24ea1f3f6896.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="http://pennspark.org/static/RedDev-d3913678d968377f9f8a24ea1f3f6896.pdf" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Technical Assessment &rarr;</button>
           </a>
 
