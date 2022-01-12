@@ -4,7 +4,7 @@ import "./style.css"
 export default function FAQ() {
   return (
     <div id="faq-section" className="content-section">
-      <h2>02. FAQ</h2>
+      <h2>03. FAQ</h2>
       <div>
         <div className="faq-container">
           <p className="faq-question">
@@ -23,8 +23,21 @@ export default function FAQ() {
           <p className="faq-question">
             02. Which track should I apply for: Blue or Red?
           </p>
-          
+
           <p className="faq-answer">
+            <span className="bold">For Developers</span>: If you have CIS120/equivalent experience, 
+              familiarity with web development frameworks (or can pick up new frameworks fairly easily), and/or
+              previous software engineering internship experience, we recommend applying for Red. If you're new to coding 
+              or web development in general, we recommend applying for Blue. Feel free to apply for both 
+              if you're unsure which one suits you better!
+              <br/><br/>
+              <span className="bold">For Designers</span>: If you have experience with Figma/Adobe Suite, a design portfolio,
+              and/or previous design internship experience, we recommend applying for Red. If you're new to design or looking 
+              to build up your fundamentals, we recommend applying for Blue. Feel free to apply for both 
+              if you're unsure which one suits you better!   
+          </p>
+          
+          {/* <p className="faq-answer">
             Feel free to look over our bootcamp and see how much content you're
             comfortable with.
             <ul>
@@ -38,10 +51,10 @@ export default function FAQ() {
                 background experience: we recommend Red.
               </li>
             </ul>
-          </p>
+          </p> */}
         </div>
 
-        <div className="faq-container">
+        {/* <div className="faq-container">
           <p className="faq-question">
             03. What does the application process look like?
           </p>
@@ -60,13 +73,13 @@ export default function FAQ() {
               </li>
             </ol>
           </p>
-        </div>
+        </div> */}
 
         <div className="faq-spacer" />
 
         <div className="faq-container">
           <p className="faq-question">
-            04. What makes a strong applicant?
+            03. What makes a strong applicant?
           </p>
           <p className="faq-answer">
             While there's no cookie-cutter answer, we generally look for

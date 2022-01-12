@@ -4,7 +4,7 @@ import "./style.css";
 export default function WhyJoin() {
   return (
     <div id="why-join-section" className="content-section">
-      <h2>01. Why Join?</h2>
+      <h2>02. Why Join?</h2>
 
       <div className="why-join-container">
         <h3>Gain Experience</h3>
@@ -33,10 +33,10 @@ export default function WhyJoin() {
           retreat 👀, intra-club mixers, food runs, study sessions, BYO/karaoke,
           and general member hangouts.
         </p>
-        <br />
+        {/* <br />
         <a href="https://community.pennspark.org/" rel="noopener noreferrer">
           <button>our community &rarr;</button>
-        </a>
+        </a> */}
       </div>
 
       <div className="why-join-spacer" />

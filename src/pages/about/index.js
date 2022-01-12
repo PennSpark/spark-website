@@ -27,7 +27,7 @@ const AboutPage = () => {
         </p>
       </div>
       <Values />
-      <Branches />
+      <Branches number="02"/>
       <Community />
     </Layout>
   );

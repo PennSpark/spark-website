@@ -6,6 +6,7 @@ import "../../styles/animations.css";
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
 
+import Branches from "../../components/sections/branches"
 import WhyJoin from "../../components/sections/why-join";
 import FAQ from "../../components/sections/faq";
 
@@ -18,21 +19,29 @@ const JoinPage = () => {
           join <span id="header-spark-text">spark</span>
         </h1>
       </div>
-      <div id="join-content-section" className="content-section">
+      {/* <div id="join-content-section" className="content-section">
         <p className="larger-text">
-          We will be opening up applications for the Spring 2022 semester soon –
-          please sign up for our mailing list below!
+          Our Spring 2022 applications are now live!
         </p>
         <br/><br/>
+
         <a
-          href="https://pennspark.us5.list-manage.com/subscribe?u=93ce0114aa477284b7ee783d8&id=2121f4c4f0"
+          href="https://forms.gle/3oBuVZx3Yb7peY6N9"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button>sign up for our mailing list &rarr;</button>
+          <button id="blue-button">apply for blue &rarr;</button>
         </a>
-      </div>
 
+        <a
+          href="https://forms.gle/PnR8AqiD4vm86zEM7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button id="red-button">apply for red &rarr;</button>
+        </a>
+      </div> */}
+      <Branches number="01"/>
       <WhyJoin />
       <FAQ />
     </Layout>
