@@ -1,0 +1,15 @@
+.redirect-container {
+    text-align: center;
+    margin: auto;
+    padding: 10%;
+    padding-top: 20vh;
+}
+
+.redirect-container h1 {
+    font-weight: 500;
+}
+
+.redirect-container a {
+    color: #577ED2;
+    font-weight: 700;
+}
