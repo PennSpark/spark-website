@@ -1,4 +1,6 @@
 import * as React from "react";
+import FadeIn from 'react-fade-in';
+
 import "./style.css";
 import "../../styles/global.css";
 import "../../styles/animations.css";
@@ -16,14 +18,13 @@ const JoinPage = () => {
   return (
     <Layout title="Join | Spark">
       <Navbar />
-      <div id="header-section">
-        <div
+      <div
           style={{
             backgroundColor: "#DDE4F3",
             textAlign: "center",
             height: "30vh",
             minHeight: "200px",
-            marginBottom: "20px",
+            marginTop: "80px"
           }}
         >
           <img
@@ -31,6 +32,8 @@ const JoinPage = () => {
             style={{ height: "100%", maxWidth: "100%", objectFit: "cover" }}
           />
         </div>
+      <FadeIn>
+      <div id="header-section">
         <h1>
           join <span id="header-spark-text">spark</span>
         </h1>
@@ -116,6 +119,7 @@ const JoinPage = () => {
       {/* <AppDetails /> */}
       <WhyJoin />
       <FAQ />
+      </FadeIn>
     </Layout>
   );
 };

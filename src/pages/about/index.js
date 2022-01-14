@@ -1,4 +1,6 @@
 import * as React from "react";
+import FadeIn from 'react-fade-in';
+
 import "./style.css";
 import "../../styles/global.css";
 import "../../styles/animations.css";
@@ -14,6 +16,7 @@ const AboutPage = () => {
   return (
     <Layout title="About | Spark">
       <Navbar />
+      <FadeIn>
       <div id="header-section">
         <h1>
           about <span id="header-spark-text">spark</span>
@@ -29,6 +32,7 @@ const AboutPage = () => {
       <Values />
       <Branches number="02"/>
       <Community />
+      </FadeIn>
     </Layout>
   );
 };

@@ -9,18 +9,22 @@ import About from "../components/sections/overview";
 import Work from "../components/sections/work";
 import Socials from "../components/sections/socials";
 
+import FadeIn from 'react-fade-in';
+
 const IndexPage = () => {
   return (
     <Layout title="Home | Spark">
       <Navbar/>
-      <div id="header-section">
-        <h1>
-          we are <span id="header-spark-text">spark</span>
-        </h1>
-      </div>
-      <About />    
-      <Work />
-      <Socials />
+      <FadeIn>
+        <div id="header-section">
+          <h1>
+            we are <span id="header-spark-text">spark</span>
+          </h1>
+        </div>
+        <About />    
+        <Work />
+        <Socials />
+      </FadeIn>
     </Layout>
   );
 };

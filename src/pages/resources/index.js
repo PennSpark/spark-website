@@ -6,10 +6,13 @@ import "../../styles/animations.css";
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
 
+import FadeIn from 'react-fade-in';
+
 const ResourcesPage = () => {
   return (
     <Layout title="Resources | Spark">
       <Navbar />
+      <FadeIn>
       <div id="header-section">
         <h1>
           <span id="header-spark-text">spark</span> resources
@@ -117,6 +120,7 @@ const ResourcesPage = () => {
           </ul>
         </div>
       </div>
+      </FadeIn>
     </Layout>
   );
 };
