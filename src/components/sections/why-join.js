@@ -10,9 +10,9 @@ export default function WhyJoin() {
         <h3>Gain Experience</h3>
         <p>
           Members gain a range of technical and interpersonal experience through
-          project development on teams. Blue team members learn and apply our
-          tech stack of Figma, HTML/CSS, React.js, and Node.js, while Red team
-          members deepen their current skillset through creating more
+          project development on teams. Blue members learn and apply our
+          tech stack of Figma (for designers), or HTML/CSS, React.js, and Django (for developers), while Red
+          members deepen their current skillset through building more
           technically rigorous projects. We take students from all majors and
           experience levels, and{" "}
           <span className="bold">
@@ -49,8 +49,9 @@ export default function WhyJoin() {
           between upperclassmen and underclassmen, workshops on resume writing
           and recruiting, and a referral network. Our current and previous
           members have gone on to work at a range of companies within the
-          technology, financial, and government industries, including big tech,
-          unicorns, and early-stage startups.
+          technology, financial, and government industries, including 
+          companies like Facebook, Amazon, and Robinhood.
+          {/* big tech, unicorns, and early-stage startups. */}
         </p>
       </div>
     </div>
