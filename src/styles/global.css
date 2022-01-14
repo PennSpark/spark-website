@@ -11,6 +11,10 @@ body {
   padding-bottom: 12px;
 }
 
+.hit-counters {
+  display: none;
+}
+
 #header-section {
   text-align: center;
   font-size: 2.5rem;

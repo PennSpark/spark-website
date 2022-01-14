@@ -18,6 +18,9 @@ const JoinPage = () => {
   return (
     <Layout title="Join | Spark">
       <Navbar />
+      <div className="hit-counters">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7926321&style=0007&nbdigits=5&type=ip&initCount=0" />
+      </div>
       <div
           style={{
             backgroundColor: "#DDE4F3",
