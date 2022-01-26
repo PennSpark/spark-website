@@ -26,7 +26,6 @@ const JoinPage = () => {
             textAlign: "center",
             height: "30vh",
             minHeight: "200px",
-            marginTop: "80px"
           }}
         >
           <img

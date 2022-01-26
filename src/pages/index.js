@@ -27,7 +27,6 @@ const IndexPage = () => {
             we are <span id="header-spark-text">spark</span>
           </h1>
         </div>
-        <About />
         <CenterContainer>
           <div className="home-btns-container">
             <a href="/about">
@@ -39,6 +38,8 @@ const IndexPage = () => {
             </a>
           </div>
         </CenterContainer>
+        <About />
+        
       </FadeIn>
     </Layout>
   );
