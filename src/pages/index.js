@@ -7,7 +7,6 @@ import Navbar from "../components/navbar";
 
 import About from "../components/sections/overview";
 import Work from "../components/sections/work";
-import Socials from "../components/sections/socials";
 
 import FadeIn from 'react-fade-in';
 
@@ -28,7 +27,6 @@ const IndexPage = () => {
         </div>
         <About />    
         <Work />
-        <Socials />
       </FadeIn>
     </Layout>
   );

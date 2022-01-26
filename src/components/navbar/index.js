@@ -4,13 +4,16 @@ import "../../styles/animations.css";
 
 import HomeImg from "../../images/bw-logo.png";
 
+//  target="_blank" rel="noopener noreferrer"
+
 export default function Navbar() {
   return (
     <div className="nav-container">
+
       <div className="nav-bar">
         <div className="nav-left">
           <a href="/">
-            <img src={HomeImg} />
+            <img src={HomeImg} alt="home-logo" />
           </a>
         </div>
         <div className="nav-right">
@@ -22,8 +25,8 @@ export default function Navbar() {
             </button>
             <div className="nav-dropdown-content">
               <a className="nav-link" href="/about">About Us</a>
-              <a className="nav-link" href="http://work.pennspark.org/" target="_blank" rel="noopener noreferrer">Our Work</a>
-              <a className="nav-link" href="https://community.pennspark.org/" target="_blank" rel="noopener noreferrer">Our Community</a>
+              <a className="nav-link" href="/work">Our Work</a>
+              <a className="nav-link" href="/community">Our Community</a>
             </div>
           </div>
 
