@@ -84,11 +84,6 @@
   border-bottom: 1px solid #ccc;
 }
 
-.nav-container {
-  margin: auto;
-  max-width: 820px;
-}
-
 .nav-link {
   font-weight: 500;
   width: 100px;

@@ -3,12 +3,13 @@ import "./style.css";
 import "../../styles/animations.css";
 
 import HomeImg from "../../images/bw-logo.png";
+import CenterContainer from "../center-container";
 
 //  target="_blank" rel="noopener noreferrer"
 
 export default function Navbar() {
   return (
-    <div className="nav-container">
+    <CenterContainer>
 
       <div className="nav-bar">
         <div className="nav-left">
@@ -42,6 +43,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </CenterContainer>
   );
 }

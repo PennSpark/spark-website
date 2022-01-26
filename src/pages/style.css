@@ -1,0 +1,16 @@
+.home-btns-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: 820px) {
+  .home-btns-container a button {
+      margin-left: 10px;
+    display: block;
+  }
+
+  .home-btns-container a {
+      text-decoration: none;
+  }
+}

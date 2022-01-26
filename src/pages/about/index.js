@@ -10,7 +10,6 @@ import Navbar from "../../components/navbar";
 
 import Values from "../../components/sections/values";
 import Branches from "../../components/sections/branches";
-import Community from "../../components/sections/community";
 
 const AboutPage = () => {
   return (
@@ -30,8 +29,7 @@ const AboutPage = () => {
         </p>
       </div>
       <Values />
-      <Branches number="02"/>
-      <Community />
+      <Branches />
       </FadeIn>
     </Layout>
   );

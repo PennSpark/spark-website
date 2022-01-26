@@ -5,7 +5,7 @@ class Branches extends React.Component {
   render() {
     return (
       <div id="branches-section" className="content-section">
-        <h2>{this.props.number}. Our Branches</h2>
+        <h2>Our Branches</h2>
         <br />
         <div
           className="branches-container"

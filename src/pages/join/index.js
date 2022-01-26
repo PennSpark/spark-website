@@ -8,7 +8,6 @@ import "../../styles/animations.css";
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
 
-import AppDetails from "../../components/sections/app-details";
 import WhyJoin from "../../components/sections/why-join";
 import FAQ from "../../components/sections/faq";
 
@@ -91,8 +90,6 @@ const JoinPage = () => {
           </a>
 
         </div>
-
-
 
 
         <div>

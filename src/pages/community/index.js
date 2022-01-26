@@ -3,11 +3,9 @@ import FadeIn from 'react-fade-in';
 
 import "./style.css";
 import "../../styles/global.css";
-import "../../styles/animations.css";
 
 import Layout from "../../components/layout";
-import Navbar from "../../components/navbar";
-
+import Navbar from "../../components/navbar"; 
 import Community from "../../components/sections/community";
 
 const CommunityPage = () => {

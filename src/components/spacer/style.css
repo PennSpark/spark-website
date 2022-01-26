@@ -1,0 +1,10 @@
+.spacer {
+  display: inline-block;
+  width: 24px;
+}
+
+@media (max-width: 820px) {
+  .spacer {
+    width: 0px;
+  }
+}

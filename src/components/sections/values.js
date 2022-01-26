@@ -4,7 +4,7 @@ import "./style.css"
 export default function Values() {
   return (
     <div id="values-section" className="content-section">
-      <h2>01. Our Values</h2>
+      <h2>Our Values</h2>
       <div className="values-container">
         <h3>Accessible Education</h3>
         <p>
