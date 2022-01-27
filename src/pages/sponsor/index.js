@@ -7,9 +7,11 @@ import "../../styles/global.css";
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
 
-const WorkWithUsPage = () => {
+import SponsorUs from "../../components/sections/sponsor";
+
+const SponsorPage = () => {
   return (
-    <Layout title="Sponsor Us | Spark 💡">
+    <Layout title="Sponsor | Spark 💡">
       <Navbar />
       <FadeIn>
       <div id="header-section">
@@ -17,13 +19,10 @@ const WorkWithUsPage = () => {
         sponsor <span id="header-spark-text">spark</span>
         </h1>
       </div>
-      <div style={{textAlign: "center"}}>
-        <p className="larger-text">Coming soon!</p>
-      </div>
-      <br/><br/>
+      <SponsorUs />
       </FadeIn>
     </Layout>
   );
 };
 
-export default WorkWithUsPage;
+export default SponsorPage;
