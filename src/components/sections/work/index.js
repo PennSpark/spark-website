@@ -9,6 +9,8 @@ import CommonCentsImg from "./img/commoncents.png"
 
 import CustomLink from "../../custom-link"
 
+import PitchDeckPdf from "./pdf/SP22-For-Clients.pdf"
+
 export default function Work() {
   return (
     <div id="work-section" className="content-section">
@@ -20,16 +22,29 @@ export default function Work() {
       with ADHD to developing a machine learning model that identifies
       pictures as emojis. We work on both client and passion projects!
     </p>
-    {/* <br/>
-    <p className="larger-text">
-      Spark prides itself
-    </p> */}
     <br/><br/>
     <a href="https://work.pennspark.org/" rel="noopener noreferrer">
-      <button>view past projects &rarr;</button>
+      <button>View Past Projects &rarr;</button>
     </a>
 
-    <div style={{height: "64px"}} />
+    <div style={{height: "72px"}} />
+
+    <div>
+      <h2>Work With Us</h2>
+      <p className="larger-text">
+        We offer a variety of engineering and design help to our clients, ranging from product branding to full-stack 
+        web applications.
+
+        Interested in potentially working together or learning more? While we currently are not looking for new Spring 2022 clients, feel 
+        free to <a href="mailto:upennspark@gmail.com">shoot us an email</a> to discuss working together 
+        in future cycles.
+      </p>
+      <br/><br/>
+      <CustomLink link={PitchDeckPdf} content={[<button style={{marginRight: "24px"}}>View Pitch Deck &rarr;</button>]} /> 
+      <CustomLink link="mailto:upennspark@gmail.com" content={[<button>Contact Us &rarr;</button>]} />
+    </div>
+
+    <div style={{height: "80px"}} />
 
     <h2>Our Past Clients</h2>
 
@@ -37,20 +52,17 @@ export default function Work() {
       <div className="work-client">
         <CustomLink link="https://www.counselab.com/" content={[<img src={CounselabImg} />]}/>
       </div>
-
       <div className="work-client">
         <CustomLink link="https://commoncents.org/" content={[<img src={CommonCentsImg} />]}/>
       </div>
-
       <div className="work-client">
         <CustomLink link="https://www.tryclarifi.com" content={[<img src={ClarifiImg} />]}/>
       </div>
-
       <div className="work-client">
         <CustomLink link="https://www.thebonfireapp.com/" content={[<img src={BonfireImg} />]}/>
       </div>
-
     </div>
+
   </div>
 
   );
