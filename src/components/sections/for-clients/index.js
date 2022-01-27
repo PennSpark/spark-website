@@ -19,7 +19,7 @@ export default function ForClients() {
           <br />
           <br />
           While we currently are not looking for new Spring 2022 clients, feel
-          free to <a href="mailto:upennspark@gmail.com">shoot us an email</a> to
+          free to <a href="mailto:upennspark@gmail.com?subject=Spark x YOURCOMPANYNAME Collaboration">shoot us an email</a> to
           discuss working together in future cycles.
         </p>
         <br />
@@ -33,7 +33,7 @@ export default function ForClients() {
           ]}
         />
         <CustomLink
-          link="mailto:upennspark@gmail.com"
+          link="mailto:upennspark@gmail.com?subject=Spark x YOURCOMPANYNAME Collaboration"
           content={[<button>Contact Us &rarr;</button>]}
         />
       </div>

@@ -83,7 +83,7 @@ export default function FAQ() {
           </p>
           <p className="faq-answer">
             While there's no cookie-cutter answer, we generally look for
-            curiosity in tech and/or design, a love for learning, community-fit,
+            curiosity in tech and/or design, community-fit,
             and demonstrated interest in our org.
           </p>
         </div>

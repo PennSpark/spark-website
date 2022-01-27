@@ -17,7 +17,7 @@ export default function SponsorUs() {
         design talent at Penn, and co-hosting events for Penn students.
       </p>
         <br/><br/>
-      <CustomLink link="mailto:upennspark@gmail.com" content={[<button>Sponsor Us &rarr;</button>]} />
+      <CustomLink link="mailto:upennspark@gmail.com?subject=Spark Sponsorship Interest" content={[<button>Sponsor Us &rarr;</button>]} />
 
     </div>
   );

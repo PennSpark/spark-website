@@ -41,7 +41,10 @@ const JoinPage = () => {
       </div>
       <div id="join-content-section" className="content-section">
         <p className="larger-text" style={{textAlign: "center"}}>
-          Our Spring 2022 applications are now live and due on <strong>Thursday, January 20th at 11:59pm EST</strong>!
+          We are no longer taking new members for the Spring 2022 cycle, but we encourage you to <a href="/mail" style={{color: "inherit"}}>
+            join our mailing list</a> to
+          be notified of when our apps open again next semester!
+          {/* Our Spring 2022 applications are now live and due on <strong>Thursday, January 20th at 11:59pm EST</strong>! */}
         </p>
         <br />
         <br />
