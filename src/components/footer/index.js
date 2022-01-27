@@ -6,7 +6,13 @@ import CustomLink from "../custom-link";
 export default function Footer() {
   return (
     <CenterContainer>
-      <div className="footer">
+      <div className="custom-footer">
+        <div className="hit-counters">
+          <img src="https://hitwebcounter.com/counter/counter.php?page=7926316&style=0007&nbdigits=6&type=page&initCount=0" alt="hits" />
+          <img src="https://hitwebcounter.com/counter/counter.php?page=7926317&style=0007&nbdigits=6&type=ip&initCount=0" alt="hits" />
+          <img src="https://hitwebcounter.com/counter/counter.php?page=7933180&style=0007&nbdigits=6&type=page&initCount=0" alt="hits" />
+          <img src="https://hitwebcounter.com/counter/counter.php?page=7933181&style=0007&nbdigits=6&type=ip&initCount=0" alt="hits" />
+        </div>
         <p>
           Made with &#9829; by Spark
           <br />

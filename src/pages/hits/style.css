@@ -1,7 +1,13 @@
 #hits-container {
   text-align: center;
+  padding: 20px 0px 10px 0px;
 }
 
 #hits-container img {
-    width: 80px;
+  height: 20px;
+}
+
+.hits-column {
+  display: inline-block;
+  width: 33%;
 }

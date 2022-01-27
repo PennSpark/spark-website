@@ -16,11 +16,6 @@ const IndexPage = () => {
   return (
     <Layout title="Home | Spark">
       <Navbar />
-      <div className="hit-counters">
-        {/* site hit counters */}
-        <img src="https://hitwebcounter.com/counter/counter.php?page=7926316&style=0007&nbdigits=6&type=page&initCount=0" />
-        <img src="https://hitwebcounter.com/counter/counter.php?page=7926317&style=0007&nbdigits=6&type=ip&initCount=0" />
-      </div>
       <FadeIn>
         <div id="header-section">
           <h1>

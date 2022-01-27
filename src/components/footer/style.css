@@ -1,14 +1,14 @@
-.footer {
+.custom-footer {
   text-align: center;
   border-top: solid 1px #ccc;
   padding: 30px 20px 30px 20px;
   color: #5c5c5c;
 }
 
-.footer p {
+.custom-footer p {
     line-height: 150%;
 }
 
-.footer p a {
-  color: inherit;
+.hit-counters {
+  display: none;
 }
