@@ -5,6 +5,7 @@ import "../../styles/animations.css";
 
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
+import CustomLink from "../../components/custom-link";
 
 import FadeIn from 'react-fade-in';
 
@@ -32,33 +33,31 @@ const ResourcesPage = () => {
 
           <h3>Penn Classes</h3>
           <ul>
-            <li><a href="">DSGN 234</a>: Art of the Web.</li>
+            <li><CustomLink link="https://art20.labud.nyc/" text="DSGN 234" />: Art of the Web.</li>
           </ul>
 
             <h3>Learning Design</h3>
           <ul>
             <li>
-              <a href="https://start.uxdesign.cc/">Start UX Design</a>: 9
+              <CustomLink link="https://start.uxdesign.cc/" text="Start UX Design" />: 9
               modules of learning design
             </li>
             <li>
-              <a href="https://www.degreeless.design/">Degreeless.Design</a>:
+              <CustomLink link="https://www.degreeless.design/" text="Degreeless.Design" />:
               Compiled list of how to start UX, made by a design major who
               summarizes his design school degree experience
             </li>
             <li>
-              <a href="https://lawsofux.com/">Laws of UX</a>: Collection of best
+              <CustomLink link="https://lawsofux.com/" text="Laws of UX" />: Collection of best
               practices that designers can consider when building user
               interfaces
             </li>
             <li>
-              <a href="https://designisaparty.com/">Design is a Party</a>:
+              <CustomLink link="https://designisaparty.com/" text="Design is a Party" />:
               Thoughts on learning &amp; teaching design
             </li>
             <li>
-              <a href="https://bcourses.berkeley.edu/courses/1458380">
-                CS160 User Interface Design and Development
-              </a>
+              <CustomLink link="https://bcourses.berkeley.edu/courses/1458380" text="CS160 User Interface Design and Development" />
               : UC Berkeley's Introduction to HCI course
             </li>
           </ul>
@@ -66,28 +65,28 @@ const ResourcesPage = () => {
           <h3>Learning Design Tools</h3>
           <ul>
             <li>
-              <a href="https://bit.ly/figmadecal">Intro to Figma Decal</a>: Decal taught by UC Berkeley students to teach Figma
+              <CustomLink link="https://bit.ly/figmadecal" text="Intro to Figma Decal" />: Decal taught by UC Berkeley students to teach Figma
             </li>
             <li>
-              <a href="https://www.youtube.com/watch?v=gnscqweM_NU&list=PLXDU_eVOJTx6zk5MDarIs0asNoZqlRG23&ab_channel=Figma">Figma 101</a>:
+              <CustomLink link="https://www.youtube.com/watch?v=gnscqweM_NU&list=PLXDU_eVOJTx6zk5MDarIs0asNoZqlRG23&ab_channel=Figma" text="Figma 101" />:
               Official Figma Youtube tutorials to explore design features
             </li>
           </ul>
 
           <h3>Free Design Resources</h3>
           <ul>
-              <li><a href="https://www.humaaans.com/">Humaaans</a>: Mix &amp; match illustration library of human vectors</li>
-              <li><a href="https://www.coolors.co/">Coolors.co</a>: Color scheme generator</li>
-              <li><a href="https://paletton.com/">Paletton</a>: Generate similar colors to a current color</li>
-              <li><a href="https://mobbin.design/">Mobbin</a>: Collection of modern mobile UI elements</li>
-              <li><a href="https://material.io/design/">Material Design</a>: Collection of UI components and guidelines</li>
+              <li><CustomLink link="https://www.humaaans.com/" text="Humaaans"/>: Mix &amp; match illustration library of human vectors</li>
+              <li><CustomLink link="https://www.coolors.co/" text="Coolors.co" />: Color scheme generator</li>
+              <li><CustomLink link="https://paletton.com/" text="Paletton" />: Generate similar colors to a current color</li>
+              <li><CustomLink link="https://mobbin.design/" text="Mobbin" />: Collection of modern mobile UI elements</li>
+              <li><CustomLink link="https://material.io/design/" text="Material Design" />: Collection of UI components and guidelines</li>
           </ul>
 
           <h3>Career Resources</h3>
           <ul>
-            <li><a href="https://interns.design/">Interns.Design</a>: Design related internships</li>
-            <li><a href="https://cofolios.com/">Cofolios</a>: Design internships at tech firms</li>
-            <li><a href="https://ladder.to/">Ladder.to</a>: Forum to ask tech and design related questions</li>
+            <li><CustomLink link="https://interns.design/" text="Interns.Design" />: Design related internships</li>
+            <li><CustomLink link="https://cofolios.com/" text="Cofolios" />: Design internships at tech firms</li>
+            <li><CustomLink link="https://ladder.to/" text="Ladder.to" />: Forum to ask tech and design related questions</li>
           </ul>
         </div>
 
@@ -98,25 +97,25 @@ const ResourcesPage = () => {
 
           <h3>Penn Classes</h3>
           <ul>
-            <li><a href="https://www.seas.upenn.edu/~cis197/">CIS 197</a>: Javascript Course. Good for learning general full-stack &amp; MERN.</li>
-            <li><a href="https://cis192.github.io/schedule/">CIS 192</a>: Python Course. Lecture 8 goes over Django full-stack development.</li>
+            <li><CustomLink link="https://www.seas.upenn.edu/~cis197/" text="CIS 197" />: Javascript Course. Good for learning general full-stack &amp; MERN.</li>
+            <li><CustomLink link="https://cis192.github.io/schedule/" text="CIS 192" />: Python Course. Lecture 8 goes over Django full-stack development.</li>
           </ul>
 
           <h3>Frontend Development</h3>
           <ul>
-          <li><a href="https://www.w3schools.com/">w3schools</a>: Syntax guides for HTML, CSS, and JavaScript</li>
-          <li><a href="https://flexboxfroggy.com/">Flexbox Froggy</a>: CSS practice exercises with cute frogs</li>
-          <li><a href="https://reactjs.org/tutorial/tutorial.html">React Tutorial</a>: Official tutorial for React.js</li>
+          <li><CustomLink link="https://www.w3schools.com/" text="w3schools" />: Syntax guides for HTML, CSS, and JavaScript</li>
+          <li><CustomLink link="https://flexboxfroggy.com/" text="Flexbox Froggy" />: CSS practice exercises with cute frogs</li>
+          <li><CustomLink link="https://reactjs.org/tutorial/tutorial.html" text="React Tutorial" />: Official tutorial for React.js</li>
           </ul>
 
           <h3>Backend Development</h3>
           <ul>
-            <li><a href="https://tutorial.djangogirls.org/en/">Django Girls Tutorial</a>: Tutorial on how to build a personal blog in Django</li>
+            <li><CustomLink link="https://tutorial.djangogirls.org/en/" text="Django Girls Tutorial" />: Tutorial on how to build a personal blog in Django</li>
           </ul>
 
           <h3>Career Resources</h3>
           <ul>
-            <li><a href="https://ladder.to/">Ladder.to</a>: Forum to ask tech and design related questions</li>
+            <li><CustomLink link="https://ladder.to/" text="Ladder.to" />: Forum to ask tech and design related questions</li>
           </ul>
         </div>
       </div>

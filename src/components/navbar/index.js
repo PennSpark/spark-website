@@ -5,8 +5,6 @@ import "../../styles/animations.css";
 import HomeImg from "../../images/bw-logo.png";
 import CenterContainer from "../center-container";
 
-//  target="_blank" rel="noopener noreferrer"
-
 export default function Navbar() {
   return (
     <CenterContainer>

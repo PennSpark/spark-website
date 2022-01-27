@@ -33,8 +33,8 @@ const IndexPage = () => {
               <button>Learn More &rarr;</button>
             </a>
             <Spacer/>
-            <a href="/mail">
-              <button>Join Mailing list &rarr;</button>
+            <a href="/mail" target="_blank" rel="noopener noreferrer">
+              <button>Join Mailing List &rarr;</button>
             </a>
           </div>
         </CenterContainer>
