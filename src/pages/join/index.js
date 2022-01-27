@@ -60,23 +60,7 @@ const JoinPage = () => {
         <div className="join-app-spacer" />
 
         <div id="join-red" className="join-app-container">
-          <strong style={{fontSize: "1.2rem", fontWeight: "600", color: "#cf6c5d"}}>Apply for Red Design</strong>
-
-          <div/>
-          <a href="https://forms.gle/xBeEsJsM55zp3KiCA" target="_blank" rel="noopener noreferrer">
-            <button id="red-button">Written Application &rarr;</button>
-          </a>
-
-          <a href="http://pennspark.org/static/RedDesign-495ae8e32a7dbc629b0686de3c89cf14.pdf" target="_blank" rel="noopener noreferrer">
-            <button id="red-button">Technical Assessment &rarr;</button>
-          </a>
-        </div>
-
-        <div className="join-app-spacer" />
-
-
-        <div id="join-red" className="join-app-container">
-          <strong style={{fontSize: "1.2rem", fontWeight: "600", color: "#cf6c5d"}}>Apply for Red Dev</strong>
+          <strong style={{fontSize: "1.2rem", fontWeight: "600", color: "#cf6c5d"}}>Apply for Red</strong>
 
           <div/>
          
@@ -85,7 +69,11 @@ const JoinPage = () => {
           </a>
 
           <a href="http://pennspark.org/static/RedDev-d3913678d968377f9f8a24ea1f3f6896.pdf" target="_blank" rel="noopener noreferrer">
-            <button id="red-button">Technical Assessment &rarr;</button>
+            <button id="red-button">Development Assessment &rarr;</button>
+          </a>
+
+          <a href="http://pennspark.org/static/RedDesign-495ae8e32a7dbc629b0686de3c89cf14.pdf" target="_blank" rel="noopener noreferrer">
+            <button id="red-button">Design Assessment &rarr;</button>
           </a>
 
         </div>
