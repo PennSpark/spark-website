@@ -1,5 +1,6 @@
 .about-stat-container {
   width: 28%;
+  vertical-align: top;
   display: inline-block;
 }
 

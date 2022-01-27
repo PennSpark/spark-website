@@ -2,9 +2,3 @@
   display: inline-block;
   width: 24px;
 }
-
-@media (max-width: 640px) {
-  .spacer {
-    width: 0px;
-  }
-}

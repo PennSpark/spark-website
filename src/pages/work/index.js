@@ -10,7 +10,7 @@ import Work from "../../components/sections/work";
 
 const WorkPage = () => {
   return (
-    <Layout title="Work | Spark">
+    <Layout title="Work | Spark 💡">
       <Navbar />
       <FadeIn>
       <div id="header-section">

@@ -14,7 +14,7 @@ import FadeIn from "react-fade-in";
 
 const IndexPage = () => {
   return (
-    <Layout title="Home | Spark">
+    <Layout title="Home | Spark 💡">
       <Navbar />
       <FadeIn>
         <div id="header-section">

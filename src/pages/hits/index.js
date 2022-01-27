@@ -9,7 +9,7 @@ import CenterContainer from "../../components/center-container";
 
 const AboutPage = () => {
   return (
-    <Layout title="Hits | Spark">
+    <Layout title="Hits | Spark 💡">
       <Navbar />
       <CenterContainer>
         <div id="hits-container">
@@ -22,10 +22,10 @@ const AboutPage = () => {
             <h2>UNIQUE VISITORS</h2>
             <img src="https://hitwebcounter.com/counter/counter.php?page=7926317&style=0007&nbdigits=6&type=ip&initCount=0" alt="hits" />
           </div>
-          <div className="hits-column">
+          {/* <div className="hits-column">
             <h2>JOIN UNIQUE VISITORS</h2>
             <img src="https://hitwebcounter.com/counter/counter.php?page=7926321&style=0007&nbdigits=5&type=ip&initCount=0" alt="hits" />
-          </div>
+          </div> */}
         </div>
 
         <div id="hits-container">

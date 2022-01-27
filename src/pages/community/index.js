@@ -10,7 +10,7 @@ import Community from "../../components/sections/community";
 
 const CommunityPage = () => {
   return (
-    <Layout title="Community | Spark">
+    <Layout title="Community | Spark 💡">
       <Navbar />
       <FadeIn>
       <div id="header-section">

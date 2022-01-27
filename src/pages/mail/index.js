@@ -9,7 +9,7 @@ const JoinBluePage = () => {
   return (
     <html>
       <head>
-        <title>Mailing List | Spark</title>
+        <title>Mail | Spark 💡</title>
         <meta http-equiv="refresh" content="0; url='https://pennspark.us5.list-manage.com/subscribe?u=93ce0114aa477284b7ee783d8&id=2121f4c4f0'" />
       </head>
       <body>

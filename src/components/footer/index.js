@@ -18,29 +18,29 @@ export default function Footer() {
           <br />
           <CustomLink
             link="https://facebook.com/pennspark"
-            text="Facebook"
+            content="Facebook"
           />{" "}
           &bull;{" "}
-          <CustomLink link="https://instagram.com/pennspark" text="Instagram" />{" "}
-          &bull; <CustomLink link="https://medium.com/@pennspark" text="Blog" />{" "}
+          <CustomLink link="https://instagram.com/pennspark" content="Instagram" />{" "}
+          &bull; <CustomLink link="https://medium.com/@pennspark" content="Blog" />{" "}
           &bull;{" "}
-          <CustomLink link="https://github.com/pennspark" text="GitHub" />{" "}
+          <CustomLink link="https://github.com/pennspark" content="GitHub" />{" "}
           &bull;{" "}
           <CustomLink
             link="https://www.linkedin.com/company/69605156/"
-            text="LinkedIn"
+            content="LinkedIn"
           />{" "}
           &bull;{" "}
           <CustomLink
             link="https://pennclubs.com/club/penn-spark"
-            text="PennClubs"
+            content="PennClubs"
           />{" "}
-          &bull; <CustomLink link="/mail" text="Newsletter" />
+          &bull; <CustomLink link="/mail" content="Newsletter" />
           <br />
           <span className="bold">Contact Us</span>:{" "}
           <CustomLink
             link="mailto:upennspark@gmail.com"
-            text="upennspark@gmail.com"
+            content="upennspark@gmail.com"
           />
         </p>
       </div>

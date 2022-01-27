@@ -7,7 +7,7 @@
 @media (max-width: 640px) {
   .home-btns-container a button {
     margin-left: 10px;
-    display: block;
+    /* display: block; */
   }
 
   .home-btns-container a {
