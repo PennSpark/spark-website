@@ -1,0 +1,27 @@
+.work-client {
+    width: 22%;
+    display: inline-block;
+    margin: 0px 3% 30px 0px;
+    vertical-align: top;
+  }
+  
+  .work-client img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  .work-clients {
+    margin-top: 30px;
+  }
+  
+  #for-clients a {
+    color: inherit;
+  }
+  
+  @media (max-width: 640px) {
+    .work-client {
+      width: 31%;
+      margin-right: 2%;
+    }
+  }
+  

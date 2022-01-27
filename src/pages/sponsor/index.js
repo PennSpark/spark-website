@@ -6,24 +6,24 @@ import "../../styles/global.css";
 
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
-import Work from "../../components/sections/work";
-import PastClients from "../../components/sections/clients"
 
-const WorkPage = () => {
+const WorkWithUsPage = () => {
   return (
-    <Layout title="Work | Spark 💡">
+    <Layout title="Sponsor Us | Spark 💡">
       <Navbar />
       <FadeIn>
       <div id="header-section">
         <h1>
-        <span id="header-spark-text">spark</span> work
+        sponsor <span id="header-spark-text">spark</span>
         </h1>
       </div>
-      <Work />
-      <PastClients />
+      <div style={{textAlign: "center"}}>
+        <p className="larger-text">Coming soon!</p>
+      </div>
+      <br/><br/>
       </FadeIn>
     </Layout>
   );
 };
 
-export default WorkPage;
+export default WorkWithUsPage;

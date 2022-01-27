@@ -31,6 +31,17 @@ export default function Navbar() {
 
           <div className="nav-dropdown">
             <button className="nav-dropbtn" >
+              <div className="nav-link">For Clients</div>
+              <i className="fa fa-caret-down"></i>
+            </button>
+            <div className="nav-dropdown-content">
+              <a className="nav-link" href="/workwithus">Work With Us</a>
+              <a className="nav-link" href="/sponsor">Sponsor Us</a>
+            </div>
+          </div>
+
+          <div className="nav-dropdown">
+            <button className="nav-dropbtn" >
               <div className="nav-link">For Students</div>
               <i className="fa fa-caret-down"></i>
             </button>
