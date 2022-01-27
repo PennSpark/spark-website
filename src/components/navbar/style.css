@@ -88,3 +88,10 @@
   font-weight: 500;
   width: 100px;
 }
+
+@media (max-width: 420px) {
+  .nav-link, .nav-dropdown-content {
+    width: 60px;
+    font-size: 0.9rem;
+  }
+}

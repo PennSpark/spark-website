@@ -75,12 +75,16 @@
   text-decoration: underline;
 }
 
+.content-section {
+  padding: 0px 20px 0px 20px;
+}
+
 /* MOBILE VIEW */
 @media (max-width: 760px) {
   .values-container,
   .why-join-container,
   .faq-container {
-    width: 98%;
+    width: 96%;
   }
 
   .branches-container {

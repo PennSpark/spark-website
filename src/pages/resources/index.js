@@ -26,7 +26,7 @@ const ResourcesPage = () => {
           link here once it's live!
         </p>
       </div>
-
+      <br/>
       <div className="content-section">
         <div className="resources-section">
           <h2>Design</h2>

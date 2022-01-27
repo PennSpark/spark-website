@@ -6,7 +6,7 @@ import "./style.css"
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
 
-import About from "../components/sections/overview";
+import Overview from "../components/sections/overview";
 import CenterContainer from "../components/center-container";
 import Spacer from "../components/spacer";
 
@@ -33,7 +33,7 @@ const IndexPage = () => {
             </a>
           </div>
         </CenterContainer>
-        <About />
+        <Overview />
         
       </FadeIn>
     </Layout>

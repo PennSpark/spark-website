@@ -75,11 +75,19 @@ button {
 
 button:hover {
   cursor: pointer;
-
   background-color: black;
   color: white;
   transition: all 0.2s ease;
 }
+
+/* MOBILE VIEW */
+@media (max-width: 640px) {
+  button {
+    font-size: 1.2rem;
+  }
+}
+
+
 
 /* ANIMATIONS */
 /* #header-section {
