@@ -20,8 +20,8 @@ const ResourcesPage = () => {
         </h1>
       </div>
       <div className="content-section" style={{ marginBottom: "30px" }}>
-        <p className="larger-text">
-          A compiled list of resources to learn dev &amp; design.<br/>Find our official <CustomLink link="https://pennspark.github.io/blue/" content="Spark Bootcamp here"/>.
+        <p className="larger-text" style={{textAlign: "center"}}>
+          A compiled list of resources to learn dev &amp; design.<br/>Find our official <CustomLink link="https://pennspark.github.io/blue/" content="Blue Bootcamp here"/>.
         </p>
       </div>
       <br/>
