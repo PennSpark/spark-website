@@ -21,9 +21,8 @@ const ResourcesPage = () => {
       </div>
       <div className="content-section" style={{ marginBottom: "30px" }}>
         <p className="larger-text">
-          A compiled list of resources to learn dev &amp; design. Our bootcamp
-          curriculum is currently undergoing renovation, but we'll publish the
-          link here once it's live!
+          A compiled list of resources to learn dev &amp; design. Find our official 
+          <CustomLink link="https://pennspark.github.io/blue/" content="Spark Bootcamp here"/>.
         </p>
       </div>
       <br/>
