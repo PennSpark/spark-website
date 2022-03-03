@@ -29,7 +29,7 @@ const IndexPage = () => {
             </a>
             <Spacer/>
             <a href="/mail" target="_blank" rel="noopener noreferrer">
-              <button>Join Mailing List &rarr;</button>
+              <button>Subscribe to Our Newsletter &rarr;</button>
             </a>
           </div>
         </CenterContainer>
