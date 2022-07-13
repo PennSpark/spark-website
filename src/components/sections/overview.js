@@ -14,7 +14,7 @@ export default function Overview() {
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#CF6C5D" }}>
-            36
+            30
           </span>
           <br />
           <span className="about-caption">Active Members</span>

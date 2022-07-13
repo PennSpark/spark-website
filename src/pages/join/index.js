@@ -41,7 +41,7 @@ const JoinPage = () => {
       </div>
       <div id="join-content-section" className="content-section">
         <p className="larger-text" style={{textAlign: "center"}}>
-          We are no longer taking new members for the Spring 2022 cycle, but we encourage you to <a href="/mail" style={{color: "inherit"}}>
+          We will soon begin recruiting for the Fall 2022 semester, but in the meantime we encourage you to <a href="/mail" style={{color: "inherit"}}>
             join our newsletter</a> to keep up to date with our club!
           {/* Our Spring 2022 applications are now live and due on <strong>Thursday, January 20th at 11:59pm EST</strong>! */}
         </p>
@@ -81,7 +81,7 @@ const JoinPage = () => {
         </div>
 
 
-        <div>
+        {/* <div>
           <p style={{padding: "14px 18px 14px 18px", border: "2px solid #ccc", borderRadius: "10px"}}>
             <strong style={{fontSize: "1.2rem", fontWeight: "600"}}>General Info Session</strong>
             <div style={{height: "4px"}} />
@@ -102,7 +102,7 @@ const JoinPage = () => {
                 </a>
 
           </p>
-        </div>
+        </div> */}
 
       </div>
       {/* <AppDetails /> */}
