@@ -98,7 +98,7 @@ const IndexPage = () => {
     <Layout title="Home | Spark 💡">
       <Navbar />
       <FadeIn>
-        {/* <div id="header-section">
+        <div id="header-section">
           <h1>
             we are <span id="header-spark-text">spark</span>
           </h1>
@@ -114,9 +114,9 @@ const IndexPage = () => {
             </a>
           </div>
         </CenterContainer>
-        <Overview /> */}
+        <Overview />
 
-        {/* redesign code */}
+        {/* redesign code
         <div>
           <Spacer height='40px' />
           <HeaderContainer>
@@ -156,7 +156,7 @@ const IndexPage = () => {
               </ValueContentDiv>
             </ValueDiv>
           </ValuesContainer>
-        </div>
+        </div> */}
       </FadeIn>
     </Layout>
   );
