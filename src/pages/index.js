@@ -8,21 +8,21 @@ import Navbar from "../components/navbar";
 
 import Overview from "../components/sections/overview";
 import CenterContainer from "../components/center-container";
-import Spacer from "../components/spacer";
 
 import FadeIn from "react-fade-in";
 
 import styled from "styled-components";
 
+import Circles from "../components/Circles"
+import Spacer from "../components/Spacer"
+
 const valueDivWidth = 600
-const circleSpacing = 20
 
 const HeaderContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 
   max-width: 650px;
   margin: auto;
@@ -43,7 +43,7 @@ const HeaderContainer = styled.div`
 const StrokeText = styled.b`
   color: black;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.7px;
   -webkit-text-stroke-color: black;
 `
 
@@ -67,14 +67,20 @@ const DateDiv = styled.div`
 const ValuesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 50px;
+
+  max-width: 650px;
+  margin: auto;
+
+  h2 {
+    font-size: 2em;
+  }
 `
 
 const ValueDiv = styled.div`
   display: flex;
   flex-direction: column;
 
-  max-width: 650px;
+  max-width: 300px;
   padding: 10px;
 
   border: 3px solid;
@@ -85,36 +91,6 @@ const ValueContentDiv = styled.div`
   border: 3px solid;
   padding: 20px;
 `
-
-const Circle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: ${props => props.radius}px;
-  height: ${props => props.radius}px;
-  border-radius: 50%;
-
-  border: 3px solid;
-`
-
-const Circles = (props) => {
-  return (
-    <div style={{ position: 'absolute', left: props.left, top: props.top }}>
-      <Circle radius={props.radius + circleSpacing * 5}>
-        <Circle radius={props.radius + circleSpacing * 4}>
-          <Circle radius={props.radius + circleSpacing * 3}>
-            <Circle radius={props.radius + circleSpacing * 2}>
-              <Circle radius={props.radius + circleSpacing}>
-                <Circle radius={props.radius} />
-              </Circle>
-            </Circle>
-          </Circle>
-        </Circle>
-      </Circle>
-    </div>
-  )
-}
 
 const IndexPage = () => {
   return (
@@ -144,27 +120,33 @@ const IndexPage = () => {
           <HeaderContainer>
             <h1>penn's premiere <StrokeText>tech</StrokeText></h1>
             <h1>and <StrokeTextWavy>design</StrokeTextWavy> community</h1>
+            <Spacer height='40px' />
             <DateDiv>
               <p>EST. 2021</p>
             </DateDiv>
+            <Spacer height='20px' />
             <a href="/mail" target="_blank" rel="noopener noreferrer">
               <b>Subscribe</b> to our newsletter for monthly updates!
             </a>
-            <Circles radius={200} left='-300px' top='100px' />
+            <Circles radius={200} left='-300px' top='60px' />
           </HeaderContainer>
-          <h2><StrokeText>OUR VALUES</StrokeText></h2>
+          <Spacer height='60px' />
           <ValuesContainer>
+            <h2><StrokeText>OUR VALUES</StrokeText></h2>
             <ValueDiv>
               <h3>1. Accessible education</h3>
               <ValueContentDiv>
                 <p>Spark is open to all experience levels, including both beginner and more experienced developers & designers. Beginners learn foundational design and development through our Blue Branch before diving into projects.</p>
+                <br />
                 <p>Outside of our bootcamp curriculum, we host workshops and events on a variety of creative topics.</p>
               </ValueContentDiv>
             </ValueDiv>
+            <Spacer height='40px' />
             <ValueDiv>
               <h3>2. Hands-On Experience</h3>
               <ValueContentDiv>
                 <p>Our members take ownership of their learning and gain hands-on experience by working with other designers and developers on a creative project each semester.</p>
+                <br />
                 <p>In addition to working with our tech stack, our Red members gain experience working with real-world clients and non-profits.</p>
               </ValueContentDiv>
             </ValueDiv>
