@@ -34,6 +34,7 @@ const HeaderContainer = styled.div`
   }
 
   a {
+    font-size: 1.2em;
     color: black;
     text-decoration: none;
   }
@@ -80,7 +81,7 @@ const ValueDiv = styled.div`
   display: flex;
   flex-direction: column;
 
-  max-width: 300px;
+  max-width: 250px;
   padding: 10px;
 
   border: 3px solid;
@@ -138,7 +139,8 @@ const IndexPage = () => {
             <ValueDiv>
               <h3>1. Accessible education</h3>
               <ValueContentDiv>
-                <p>Spark is open to all experience levels, including both beginner and more experienced developers & designers. Beginners learn foundational design and development through our Blue Branch before diving into projects.</p>
+                <p>Spark is open to <b>all experience levels,</b> including both beginner and more experienced developers & designers.
+                Beginners learn foundational design and development through our <b>Blue Branch</b> before diving into projects.</p>
                 <br />
                 <p>Outside of our bootcamp curriculum, we host workshops and events on a variety of creative topics.</p>
               </ValueContentDiv>
@@ -148,9 +150,9 @@ const IndexPage = () => {
             <ValueDiv>
               <h3>2. Hands-On Experience</h3>
               <ValueContentDiv>
-                <p>Our members take ownership of their learning and gain hands-on experience by working with other designers and developers on a creative project each semester.</p>
+                <p>Our members take ownership of their learning and gain hands-on experience by <b>working with other designers and developers</b> on a creative project each semester.</p>
                 <br />
-                <p>In addition to working with our tech stack, our Red members gain experience working with real-world clients and non-profits.</p>
+                <p>In addition to working with our tech stack, our Red members gain experience <b>working with real-world clients and non-profits.</b></p>
               </ValueContentDiv>
             </ValueDiv>
           </ValuesContainer>
