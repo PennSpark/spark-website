@@ -26,7 +26,6 @@ const HeaderContainer = styled.div`
 
   max-width: 650px;
   margin: auto;
-  padding-top: 30px;
 
   h1 {
     font-size: 3em;
@@ -77,6 +76,7 @@ const ValuesContainer = styled.div`
 `
 
 const ValueDiv = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -117,8 +117,10 @@ const IndexPage = () => {
 
         {/* redesign code */}
         <div>
+          <Spacer height='40px' />
           <HeaderContainer>
             <h1>penn's premiere <StrokeText>tech</StrokeText></h1>
+            <Spacer height='20px' />
             <h1>and <StrokeTextWavy>design</StrokeTextWavy> community</h1>
             <Spacer height='40px' />
             <DateDiv>
@@ -140,6 +142,7 @@ const IndexPage = () => {
                 <br />
                 <p>Outside of our bootcamp curriculum, we host workshops and events on a variety of creative topics.</p>
               </ValueContentDiv>
+              <Circles radius={100} left='250px' top='60px' />
             </ValueDiv>
             <Spacer height='40px' />
             <ValueDiv>
@@ -151,7 +154,6 @@ const IndexPage = () => {
               </ValueContentDiv>
             </ValueDiv>
           </ValuesContainer>
-          <Circles radius={100} />
         </div>
       </FadeIn>
     </Layout>

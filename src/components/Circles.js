@@ -11,7 +11,6 @@ const Circle = styled.div`
   width: ${props => props.radius}px;
   height: ${props => props.radius}px;
   border-radius: 50%;
-
   border: 3px solid;
 `
 
