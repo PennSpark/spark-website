@@ -3,5 +3,13 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "spark-tldr",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/favicon.png',
+      },
+    },
+  ],
 };
