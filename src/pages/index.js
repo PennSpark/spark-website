@@ -18,14 +18,21 @@ import Spacer from "../components/Spacer"
 
 const valueDivWidth = 600
 
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+`
+
 const HeaderContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   max-width: 650px;
-  margin: auto;
 
   h1 {
     font-size: 3em;
@@ -38,10 +45,17 @@ const HeaderContainer = styled.div`
     color: black;
     text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: min(9vw, 3em);
+    }
+  }
 `
 
 const StrokeText = styled.b`
   color: black;
+  font-weight: 900;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1.7px;
   -webkit-text-stroke-color: black;
@@ -86,6 +100,10 @@ const ValueDiv = styled.div`
 
   border: 3px solid;
   box-shadow: 10px 10px;
+
+  h3 {
+    font-weight: bold;
+  }
 `
 
 const ValueContentDiv = styled.div`
@@ -118,44 +136,46 @@ const IndexPage = () => {
 
         {/* redesign code
         <div>
-          <Spacer height='40px' />
-          <HeaderContainer>
-            <h1>penn's premiere <StrokeText>tech</StrokeText></h1>
-            <Spacer height='20px' />
-            <h1>and <StrokeTextWavy>design</StrokeTextWavy> community</h1>
+          <Center>
             <Spacer height='40px' />
-            <DateDiv>
-              <p>EST. 2021</p>
-            </DateDiv>
-            <Spacer height='20px' />
-            <a href="/mail" target="_blank" rel="noopener noreferrer">
-              <b>Subscribe</b> to our newsletter for monthly updates!
-            </a>
-            <Circles radius={200} left='-300px' top='60px' />
-          </HeaderContainer>
-          <Spacer height='60px' />
-          <ValuesContainer>
-            <h2><StrokeText>OUR VALUES</StrokeText></h2>
-            <ValueDiv>
-              <h3>1. Accessible education</h3>
-              <ValueContentDiv>
-                <p>Spark is open to <b>all experience levels,</b> including both beginner and more experienced developers & designers.
-                Beginners learn foundational design and development through our <b>Blue Branch</b> before diving into projects.</p>
-                <br />
-                <p>Outside of our bootcamp curriculum, we host workshops and events on a variety of creative topics.</p>
-              </ValueContentDiv>
-              <Circles radius={100} left='250px' top='60px' />
-            </ValueDiv>
-            <Spacer height='40px' />
-            <ValueDiv>
-              <h3>2. Hands-On Experience</h3>
-              <ValueContentDiv>
-                <p>Our members take ownership of their learning and gain hands-on experience by <b>working with other designers and developers</b> on a creative project each semester.</p>
-                <br />
-                <p>In addition to working with our tech stack, our Red members gain experience <b>working with real-world clients and non-profits.</b></p>
-              </ValueContentDiv>
-            </ValueDiv>
-          </ValuesContainer>
+            <HeaderContainer>
+              <h1>penn's premiere <StrokeText>tech</StrokeText></h1>
+              <Spacer height='20px' />
+              <h1>and <StrokeTextWavy>design</StrokeTextWavy> community</h1>
+              <Spacer height='40px' />
+              <DateDiv>
+                <p>EST. 2021</p>
+              </DateDiv>
+              <Spacer height='20px' />
+              <a href="/mail" target="_blank" rel="noopener noreferrer">
+                <b>Subscribe</b> to our newsletter for monthly updates!
+              </a>
+              <Circles radius={200} left='-300px' top='60px' />
+            </HeaderContainer>
+            <Spacer height='60px' />
+            <ValuesContainer>
+              <h2><StrokeText>OUR VALUES</StrokeText></h2>
+              <ValueDiv>
+                <h3>1. Accessible education</h3>
+                <ValueContentDiv>
+                  <p>Spark is open to <b>all experience levels,</b> including both beginner and more experienced developers & designers.
+                    Beginners learn foundational design and development through our <b>Blue Branch</b> before diving into projects.</p>
+                  <br />
+                  <p>Outside of our bootcamp curriculum, we host workshops and events on a variety of creative topics.</p>
+                </ValueContentDiv>
+                <Circles radius={100} left='250px' top='60px' />
+              </ValueDiv>
+              <Spacer height='40px' />
+              <ValueDiv>
+                <h3>2. Hands-On Experience</h3>
+                <ValueContentDiv>
+                  <p>Our members take ownership of their learning and gain hands-on experience by <b>working with other designers and developers</b> on a creative project each semester.</p>
+                  <br />
+                  <p>In addition to working with our tech stack, our Red members gain experience <b>working with real-world clients and non-profits.</b></p>
+                </ValueContentDiv>
+              </ValueDiv>
+            </ValuesContainer>
+          </Center>
         </div> */}
       </FadeIn>
     </Layout>
