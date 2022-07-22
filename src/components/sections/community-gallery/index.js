@@ -88,7 +88,7 @@ class CommunityGallery extends React.Component {
           <p className="legend">First GBM</p>
         </div>
 
-        
+
       </Carousel>
     );
   }
