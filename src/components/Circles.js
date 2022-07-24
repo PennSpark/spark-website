@@ -16,7 +16,7 @@ const Circle = styled.div`
 
 const Circles = (props) => {
   return (
-    <div style={{ position: 'absolute', left: props.left, top: props.top, zIndex: -1 }}>
+    <div style={{ position: 'absolute', left: props.left, right: props.right, top: props.top, zIndex: -1 }}>
       <Circle radius={props.radius + circleSpacing * 5}>
         <Circle radius={props.radius + circleSpacing * 4}>
           <Circle radius={props.radius + circleSpacing * 3}>
