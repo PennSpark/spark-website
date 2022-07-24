@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../styles/global.css";
-import Footer from "./footer"
+import Footer from "./Footer"
 
 import { Helmet } from "react-helmet";
 

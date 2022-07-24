@@ -109,12 +109,24 @@ const ValueDiv = styled.div`
 `
 
 const ValueContentDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 3px solid;
   padding: 20px;
 `
 
 const ValueLink = styled(Link)`
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 2em;
+  padding: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
   background-color: #ddd;
+  border-radius: 100px;
 `
 
 const Cloud = styled.img`
@@ -156,7 +168,7 @@ const IndexPage = () => {
                     Beginners learn foundational design and development through our <b>Blue Branch</b> before diving into projects.</p>
                   <br />
                   <p>Outside of our bootcamp curriculum, we host workshops and events on a variety of creative topics.</p>
-                  <ValueLink>Learn more about our branches</ValueLink>
+                  <ValueLink to="/about">Learn more about our branches</ValueLink>
                 </ValueContentDiv>
                 <Circles radius={100} right='-120px' top='100px' />
                 <Cloud src={cloud} />
@@ -168,9 +180,11 @@ const IndexPage = () => {
                   <p>Our members take ownership of their learning and gain hands-on experience by <b>working with other designers and developers</b> on a creative project each semester.</p>
                   <br />
                   <p>In addition to working with our tech stack, our Red members gain experience <b>working with real-world clients and non-profits.</b></p>
+                  <ValueLink to="/projects">Learn more about our projects</ValueLink>
                 </ValueContentDiv>
               </ValueDiv>
             </ValuesContainer>
+            <Spacer height='40px' />
           </Center>
         </div>
       </FadeIn>
