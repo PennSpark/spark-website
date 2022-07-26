@@ -27,6 +27,7 @@ const DateDiv = styled.div`
   margin: auto;
   padding: 3px;
   border: 3px solid;
+  background-color: #F9DB85;
 
   p {
     font-weight: bold;

@@ -1,12 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 const FooterContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
   background-color: #eee;
   gap: 40px;
+
+  .icon {
+    font-size: 1.5em;
+    color: black;
+  }
+
+  .a + .a {
+    margin-left: 20px;
+  }
 `
 
 const VerticalContainer = styled.div`
@@ -22,6 +34,10 @@ const Footer = () => {
     <FooterContainer>
       <VerticalContainer>
         <p className="subheader">Connect with us</p>
+        <a href="https://www.facebook.com/pennspark"><FontAwesomeIcon icon={faFacebook} className="icon" /></a>
+        <a href="https://www.instagram.com/pennspark/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+        <a href="https://github.com/PennSpark"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+        <a href="https://www.linkedin.com/company/pennspark/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
         <p>Penn Clubs</p>
         <p>Newsletter</p>
       </VerticalContainer>

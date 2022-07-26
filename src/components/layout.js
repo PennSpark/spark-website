@@ -1,9 +1,8 @@
 import React from "react";
-
 import "../styles/global.css";
-import Footer from "./Footer"
-
 import { Helmet } from "react-helmet";
+
+import Footer from "./Footer"
 
 class Layout extends React.Component {
   render() {
