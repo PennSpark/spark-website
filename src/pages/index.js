@@ -14,6 +14,8 @@ import FadeIn from "react-fade-in";
 
 import styled from "styled-components";
 
+import HeaderContainer, { StrokeText, StrokeTextWavy } from "../components/HeaderContainer"
+
 import Circles from "../components/Circles"
 import Spacer from "../components/Spacer"
 import cloud from "../images/cloud.svg"
@@ -25,48 +27,6 @@ const Center = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-`
-
-const HeaderContainer = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  max-width: 650px;
-
-  h1 {
-    font-size: 3em;
-    font-weight: normal;
-    line-height: 1em;
-  }
-
-  a {
-    font-size: 1.2em;
-    color: black;
-    text-decoration: none;
-  }
-
-  @media (max-width: 768px) {
-    h1 {
-      font-size: min(9vw, 3em);
-    }
-  }
-`
-
-const StrokeText = styled.b`
-  color: black;
-  font-weight: 900;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1.7px;
-  -webkit-text-stroke-color: black;
-`
-
-const StrokeTextWavy = styled(StrokeText)`
-  text-decoration: wavy underline;
-  text-decoration-thickness: 0.05em;
-  text-underline-offset: 10px;
 `
 
 const DateDiv = styled.div`

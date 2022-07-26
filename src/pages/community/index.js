@@ -5,20 +5,25 @@ import "./style.css";
 import "../../styles/global.css";
 
 import Layout from "../../components/layout";
-import Navbar from "../../components/navbar"; 
+import Navbar from "../../components/navbar";
 import Community from "../../components/sections/community";
+
+import Spacer from "../../components/Spacer";
+import HeaderContainer, { StrokeText } from "../../components/HeaderContainer";
 
 const CommunityPage = () => {
   return (
     <Layout title="Community | Spark 💡">
       <Navbar />
       <FadeIn>
-      <div id="header-section">
-        <h1>
-        <span id="header-spark-text">spark</span> community
-        </h1>
-      </div>
-      <Community />
+        <HeaderContainer>
+          <h1>the spark <StrokeText>community</StrokeText></h1>
+          <Spacer height='20px' />
+          <a href="/mail" target="_blank" rel="noopener noreferrer">
+            <b>Subscribe</b> to our newsletter for monthly updates!
+          </a>
+        </HeaderContainer>
+        <Community />
       </FadeIn>
     </Layout>
   );
