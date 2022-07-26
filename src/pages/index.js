@@ -22,13 +22,6 @@ import cloud from "../images/cloud.svg"
 
 const valueDivWidth = 600
 
-const Center = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`
-
 const DateDiv = styled.div`
   width: fit-content;
   margin: auto;
@@ -102,8 +95,6 @@ const IndexPage = () => {
       <Navbar />
       <FadeIn>
         <div>
-          <Center>
-            <Spacer height='40px' />
             <HeaderContainer>
               <h1>penn's premier <StrokeText>tech</StrokeText></h1>
               <Spacer height='20px' />
@@ -118,7 +109,7 @@ const IndexPage = () => {
               </a>
               <Circles radius={200} left='-400px' top='60px' />
             </HeaderContainer>
-            <Spacer height='60px' />
+            <Spacer height='40px' />
             <ValuesContainer>
               <h2><StrokeText>OUR VALUES</StrokeText></h2>
               <ValueDiv>
@@ -145,7 +136,6 @@ const IndexPage = () => {
               </ValueDiv>
             </ValuesContainer>
             <Spacer height='40px' />
-          </Center>
         </div>
       </FadeIn>
     </Layout>

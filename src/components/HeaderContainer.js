@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const StrokeText = styled.b`
   color: black;
-  font-weight: 900;
+  font-weight: 800;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1.7px;
   -webkit-text-stroke-color: black;
@@ -20,9 +20,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+padding-top: 40px;
+padding-bottom: 20px;
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: normal;
   line-height: 1em;
 }
