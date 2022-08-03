@@ -1,21 +1,20 @@
-import React from "react";
-import "../styles/global.css";
-import { Helmet } from "react-helmet";
+import React from "react"
+import "./global.css"
 
+import Navbar from "./Navbar"
+import Content from "./Content"
 import Footer from "./Footer"
 
-class Layout extends React.Component {
-  render() {
-    return (
-      <>
-        <Helmet>
-          <title>{this.props.title}</title>
-        </Helmet>
-        {this.props.children}
-        <Footer />
-      </>
-    )
-  }
+const Layout = props => {
+  return (
+    <div>
+      <Navbar />
+      <Content>
+        {props.children}
+      </Content>
+      <Footer />
+    </div>
+  )
 }
 
-export default Layout;
+export default Layout

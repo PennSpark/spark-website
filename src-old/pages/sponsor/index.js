@@ -12,7 +12,6 @@ import SponsorUs from "../../components/sections/sponsor";
 const SponsorPage = () => {
   return (
     <Layout title="Sponsor | Spark 💡">
-      <Navbar />
       <FadeIn>
       <div id="header-section">
         <h1>

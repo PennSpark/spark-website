@@ -1,0 +1,23 @@
+:root {
+  --yellow: #F9DB85;
+  --white: #F5F5F5;
+}
+
+* {
+  font-family: "HK Grotesk", "Inter", "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 64px;
+}
+
+.stroke {
+  font-weight: 800;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: black;
+}

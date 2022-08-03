@@ -14,7 +14,6 @@ import Branches from "../../components/sections/branches";
 const AboutPage = () => {
   return (
     <Layout title="About | Spark 💡">
-      <Navbar />
       <FadeIn>
       <div id="header-section">
         <h1>

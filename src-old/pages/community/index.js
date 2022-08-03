@@ -1,5 +1,6 @@
 import * as React from "react";
 import FadeIn from 'react-fade-in';
+import { useState } from "react";
 
 import "../../styles/global.css";
 
@@ -12,9 +13,9 @@ import Spacer from "../../components/Spacer";
 import HeaderContainer, { StrokeText } from "../../components/HeaderContainer";
 
 const CommunityPage = () => {
+  const [semester, setSemester] = useState("SPRING 2022")
   return (
     <Layout title="Community | Spark 💡">
-      <Navbar />
       <FadeIn>
         <HeaderContainer>
           <h1>the spark <StrokeText>community</StrokeText></h1>
@@ -28,6 +29,7 @@ const CommunityPage = () => {
           </p>
           <Spacer height="50px" />
           <CommunityGallery />
+          <h2><StrokeText style={{ fontSize: "2em" }}>SPRING 2022</StrokeText></h2>
         </div>
       </FadeIn>
     </Layout>

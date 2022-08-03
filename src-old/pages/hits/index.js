@@ -10,7 +10,6 @@ import CenterContainer from "../../components/center-container";
 const AboutPage = () => {
   return (
     <Layout title="Hits | Spark 💡">
-      <Navbar />
       <CenterContainer>
         <div id="hits-container">
           <h3>Since Jan 14, 2022</h3>
