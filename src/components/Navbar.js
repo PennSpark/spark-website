@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import HomeImg from "../images/bw-logo.png"
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;

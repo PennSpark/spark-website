@@ -22,9 +22,10 @@ const Index = () => {
       <DateDiv>
         <p>EST. 2021</p>
       </DateDiv>
-      <a href="/mail" target="_blank" rel="noopener noreferrer">
-        <b>Subscribe</b> to our newsletter for monthly updates!
-      </a>
+      <p className="centered"><a href="/mail" target="_blank" rel="noopener noreferrer">
+        <strong>Subscribe</strong> to our newsletter for monthly updates!
+      </a></p>
+      <h2 className="stroke">OUR VALUES</h2>
     </Layout>
   )
 }

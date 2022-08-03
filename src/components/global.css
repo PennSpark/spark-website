@@ -9,6 +9,18 @@
   padding: 0px;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.centered {
+  text-align: center;
+}
+
 .header {
   text-align: center;
   font-weight: normal;
