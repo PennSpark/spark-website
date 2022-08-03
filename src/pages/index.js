@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-
 import Layout from "../components/layout"
 
 const DateDiv = styled.div`
@@ -19,10 +18,13 @@ const Index = () => {
   return (
     <Layout>
       <h1 className="header">penn's premier <strong className="stroke">tech</strong>
-      <br />and <strong className="stroke">design</strong> community</h1>
+        <br />and <strong className="stroke">design</strong> community</h1>
       <DateDiv>
         <p>EST. 2021</p>
       </DateDiv>
+      <a href="/mail" target="_blank" rel="noopener noreferrer">
+        <b>Subscribe</b> to our newsletter for monthly updates!
+      </a>
     </Layout>
   )
 }

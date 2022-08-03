@@ -28,7 +28,6 @@ const NavLink = styled(Link)`
   
   :hover {
     background-color: var(--yellow);
-    color: black;
   }
 `
 
@@ -42,11 +41,11 @@ const Navbar = () => {
       </div>
 
       <div>
-        <NavLink to="/about" activeStyle={{ backgroundColor: '--var(yellow)' }}>about us</NavLink>
-        <NavLink to="/community" activeStyle={{ backgroundColor: '--var(yellow)' }}>our community</NavLink>
-        <NavLink to="/work" activeStyle={{ backgroundColor: '--var(yellow)' }}>our work</NavLink>
-        <NavLink to="/workwithus" activeStyle={{ backgroundColor: '--var(yellow)' }}>for clients</NavLink>
-        <NavLink to="/" activeStyle={{ backgroundColor: '--var(yellow)' }}>for students</NavLink>
+        <NavLink to="/about" activeStyle={{ backgroundColor: 'var(--yellow)' }}>about us</NavLink>
+        <NavLink to="/community" activeStyle={{ backgroundColor: 'var(--yellow)' }}>our community</NavLink>
+        <NavLink to="/work" activeStyle={{ backgroundColor: 'var(--yellow)' }}>our work</NavLink>
+        <NavLink to="/workwithus" activeStyle={{ backgroundColor: 'var(--yellow)' }}>for clients</NavLink>
+        <NavLink to="/" activeStyle={{ backgroundColor: 'var(--yellow)' }}>for students</NavLink>
       </div>
     </NavbarContainer>
   )

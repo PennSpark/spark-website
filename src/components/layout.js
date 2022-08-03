@@ -9,6 +9,7 @@ const Layout = props => {
   return (
     <div>
       <Navbar />
+      {/* Content component adds margin and padding */}
       <Content>
         {props.children}
       </Content>
