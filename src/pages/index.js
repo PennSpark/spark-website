@@ -16,7 +16,7 @@ const DateDiv = styled.div`
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout title="Home | Spark 💡">
       <h1 className="header">penn's premier <strong className="stroke">tech</strong>
         <br />and <strong className="stroke">design</strong> community</h1>
       <DateDiv>
