@@ -38,7 +38,6 @@ const OliviaZha = { name: "Olivia Zha", pic: "olivia-zha.jpg" }
 
 // { name: "", pic: ".jpg" }
 
-// import SumanthKadiyala from "../images/sp22-headshots/sumanth-kadiyala.jpg"
 // import EmilyGuo from "../images/sp22-headshots/emily-guo.jpg"
 // import YanjieZhang from "../images/sp22-headshots/yanjie-zhang.jpg"
 // import MykaelaSalvacion from "../images/sp22-headshots/mykaela-salvacion.jpg"
@@ -48,7 +47,6 @@ const OliviaZha = { name: "Olivia Zha", pic: "olivia-zha.jpg" }
 // import ChristianaGuan from "../images/sp22-headshots/christiana-guan.jpg"
 // import AllisonZhang from "../images/sp22-headshots/allison-zhang.jpg"
 // import ZainKhan from "../images/sp22-headshots/zain-khan.jpg"
-// import MatthewCho from "../images/sp22-headshots/matthew-cho.jpg"
 // import AlyssaNie from "../images/sp22-headshots/alyssa-nie.jpg"
 
 // Styling
@@ -179,10 +177,12 @@ const fa21teams = [
       { person: GraceJiang, role: "Co-Director" },
       { person: OliviaZha, role: "Co-Director" },
       { person: JaniceKim, role: "VP External" },
+      { person: JimmyRen, role: "VP Internal"}
     ]
   },
 ]
 
+// Maps the dropdown string to the array needed
 const dict = [
   {
     semester: "FALL 2022",
@@ -191,6 +191,10 @@ const dict = [
   {
     semester: "SPRING 2022",
     teams: sp22teams
+  },
+  {
+    semester: "FALL 2021",
+    teams: fa21teams
   }
 ]
 
