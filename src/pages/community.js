@@ -8,7 +8,6 @@ import Directory from "../components/Directory"
 
 
 const Community = () => {
-  const [semester, setSemester] = useState("SPRING 2022")
   return (
     <Layout title="Community | Spark 💡">
       <h1 className="header">the spark <strong className="stroke">community</strong></h1>
@@ -17,7 +16,6 @@ const Community = () => {
         we also strongly value the social relationships that our members share.
         Learn more about the people behind Spark!</p>
       <CommunityGallery />
-      <h2 className="stroke">{semester}</h2>
       <Directory />
     </Layout>
   )
