@@ -6,7 +6,7 @@ const Content = styled.div`
   max-width: 920px;
   line-height: 1.6;
   font-size: 18px;
-  padding: 0 10px;
+  padding: 0 20px;
 `
 
 export default Content

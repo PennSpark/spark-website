@@ -52,7 +52,7 @@ const OliviaZha = { name: "Olivia Zha", pic: "olivia-zha.jpg" }
 // Styling
 const ProfileContainer = styled.div`
   a {
-    color: black;
+    color: var(--black);
     text-decoration: none;
   }
 
@@ -93,6 +93,7 @@ const TeamMembersContainer = styled.div`
 
 const StyledSelect = styled.div`
   select {
+    background-color: var(--white);
     border: none;
     border-radius: 10px;
     padding: 0 10px;
@@ -102,9 +103,9 @@ const StyledSelect = styled.div`
     white-space: nowrap;
     font-size: 2em;
     font-weight: 800;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: var(--white);
     -webkit-text-stroke-width: 1.7px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: var(--black);
   }
 `
 
