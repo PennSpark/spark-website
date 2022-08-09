@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -16,76 +17,79 @@ import Pic12 from "../images/community-gallery/pic12.jpg";
 import Pic13 from "../images/community-gallery/pic13.jpg";
 import Pic14 from "../images/community-gallery/pic14.jpg";
 
+const CarouselWrapper = styled.div`
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+`
+
+const CarouselLabel = styled.p`
+  margin: auto;
+  width: fit-content;
+  background-color: pink;
+`
+
 const CommunityGallery = () => {
   return (
-    <Carousel>
-      <div>
-        <img src={Pic1} alt="pic" />
-        <p className="legend">Fall 21 Showcase</p>
-      </div>
-
-      <div>
-        <img src={Pic2} alt="pic" />
-        <p className="legend">Post Bootcamp Terakawa</p>
-      </div>
-
-      <div>
-        <img src={Pic13} alt="pic" />
-        <p className="legend">Spark x Hack4Impact Mixer</p>
-      </div>
-
-      <div>
-        <img src={Pic3} alt="pic" />
-        <p className="legend">gym bros</p>
-      </div>
-
-      <div>
-        <img src={Pic14} alt="pic" />
-        <p className="legend">FA21 Board Bagel Brunch</p>
-      </div>
-
-      <div>
-        <img src={Pic4} alt="pic" />
-        <p className="legend">??</p>
-      </div>
-
-      <div>
-        <img src={Pic6} alt="pic" />
-        <p className="legend">bromance</p>
-      </div>
-
-      <div>
-        <img src={Pic7} alt="pic" />
-        <p className="legend">Locust Barricade</p>
-      </div>
-
-      <div>
-        <img src={Pic8} alt="pic" />
-        <p className="legend">Ken's Seafood</p>
-      </div>
-
-      <div>
-        <img src={Pic9} alt="pic" />
-        <p className="legend">Squishies :D</p>
-      </div>
-
-      <div>
-        <img src={Pic10} alt="pic" />
-        <p className="legend">Hey Day</p>
-      </div>
-
-      <div>
-        <img src={Pic11} alt="pic" />
-        <p className="legend">art .. ??</p>
-      </div>
-
-      <div>
-        <img src={Pic12} alt="pic" />
-        <p className="legend">First GBM</p>
-      </div>
-
-
-    </Carousel>
+    <CarouselWrapper>
+      <Carousel>
+        <div>
+          <img src={Pic1} alt="pic" />
+          <p className="legend">Fall 21 Showcase</p>
+        </div>
+        <div>
+          <img src={Pic2} alt="pic" />
+          <p className="legend">Post Bootcamp Terakawa</p>
+        </div>
+        <div>
+          <img src={Pic13} alt="pic" />
+          <p className="legend">Spark x Hack4Impact Mixer</p>
+        </div>
+        <div>
+          <img src={Pic3} alt="pic" />
+          <p className="legend">gym bros</p>
+        </div>
+        <div>
+          <img src={Pic14} alt="pic" />
+          <p className="legend">FA21 Board Bagel Brunch</p>
+        </div>
+        <div>
+          <img src={Pic4} alt="pic" />
+          <p className="legend">??</p>
+        </div>
+        <div>
+          <img src={Pic6} alt="pic" />
+          <p className="legend">bromance</p>
+        </div>
+        <div>
+          <img src={Pic7} alt="pic" />
+          <p className="legend">Locust Barricade</p>
+        </div>
+        <div>
+          <img src={Pic8} alt="pic" />
+          <p className="legend">Ken's Seafood</p>
+        </div>
+        <div>
+          <img src={Pic9} alt="pic" />
+          <p className="legend">Squishies :D</p>
+        </div>
+        <div>
+          <img src={Pic10} alt="pic" />
+          <p className="legend">Hey Day</p>
+        </div>
+        <div>
+          <img src={Pic11} alt="pic" />
+          <p className="legend">art .. ??</p>
+        </div>
+        <div>
+          <img src={Pic12} alt="pic" />
+          <p className="legend">First GBM</p>
+        </div>
+      </Carousel>
+      <CarouselLabel>
+        Spring 2022 Showcase
+      </CarouselLabel>
+    </CarouselWrapper>
   )
 }
 

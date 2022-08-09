@@ -29,7 +29,7 @@ const Index = () => {
       <p className="centered"><a href="/mail" target="_blank" rel="noopener noreferrer">
         <strong>Subscribe</strong> to our newsletter for monthly updates!
       </a></p>
-      
+      <div style={{ height: "var(--spacer-height)" }} />
       <h2 className="stroke">OUR VALUES</h2>
       <Box title="1. Accessible education">
         <p>

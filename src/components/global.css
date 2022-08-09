@@ -5,6 +5,7 @@
   --white: #F5F5F5;
   --black: #000;
   --border: 3px solid;
+  --spacer-height: 40px;
 }
 
 * {
@@ -23,6 +24,10 @@ h1 {
 
 h2 {
   font-size: 2em;
+}
+
+a {
+  color: var(--black);
 }
 
 .centered {
