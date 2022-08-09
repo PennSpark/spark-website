@@ -45,7 +45,7 @@ const Navbar = () => {
         <NavLink to="/community" activeStyle={{ backgroundColor: 'var(--yellow)' }}>our community</NavLink>
         <NavLink to="/work" activeStyle={{ backgroundColor: 'var(--yellow)' }}>our work</NavLink>
         <NavLink to="/workwithus" activeStyle={{ backgroundColor: 'var(--yellow)' }}>for clients</NavLink>
-        <NavLink to="/" activeStyle={{ backgroundColor: 'var(--yellow)' }}>for students</NavLink>
+        <NavLink to="/join" activeStyle={{ backgroundColor: 'var(--yellow)' }}>for students</NavLink>
       </div>
     </NavbarContainer>
   )

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Layout from "../components/Layout"
-import Value from "../components/Value"
+import Box, { BoxLink } from "../components/Box"
 
 const DateDiv = styled.div`
   width: fit-content;
@@ -30,7 +30,7 @@ const Index = () => {
         <strong>Subscribe</strong> to our newsletter for monthly updates!
       </a></p>
       <h2 className="stroke">OUR VALUES</h2>
-      <Value title="1. Accessible education" link="/about" value="branches">
+      <Box title="1. Accessible education">
         <p>
           Spark is open to <strong>all experience levels, </strong>
           including both beginner and more experienced developers & designers.
@@ -41,9 +41,10 @@ const Index = () => {
           Outside of our bootcamp curriculum,
           we host workshops and events on a variety of creative topics.
         </p>
-      </Value>
+        <BoxLink to="/about">Learn more about our branches</BoxLink>
+      </Box>
       <div style={{ height: "40px" }} />
-      <Value title="2. Hands-On Experience" link="/projects" value="projects">
+      <Box title="2. Hands-On Experience">
         <p>
           Our members take ownership of their learning and gain hands-on experience
           by <strong>working with other designers and developers</strong> on a creative project each semester.
@@ -52,7 +53,8 @@ const Index = () => {
           In addition to working with our tech stack,
           our Red members gain experience <strong>working with real-world clients and non-profits.</strong>
         </p>
-      </Value>
+        <BoxLink to="/projects">Learn more about our projects</BoxLink>
+      </Box>
     </Layout>
   )
 }
