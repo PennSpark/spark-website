@@ -41,9 +41,7 @@ const JoinPage = () => {
       </div>
       <div id="join-content-section" className="content-section">
         <p className="larger-text" style={{textAlign: "center"}}>
-          We will soon begin recruiting for the Fall 2022 semester, but in the meantime we encourage you to <a href="/mail" style={{color: "inherit"}}>
-            join our newsletter</a> to keep up to date with our club!
-          {/* Our Spring 2022 applications are now live and due on <strong>Thursday, January 20th at 11:59pm EST</strong>! */}
+          Our Spring 2022 applications are now live and due on <strong>Thursday, January 20th at 11:59pm EST</strong>!
         </p>
         <br />
         <br />
