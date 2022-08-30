@@ -11,7 +11,7 @@ import Navbar from "../../components/navbar";
 import WhyJoin from "../../components/sections/why-join";
 import FAQ from "../../components/sections/faq";
 
-import CoverImg from "./sp22-cover.png";
+import CoverImg from "./fa22-cover.png";
 
 const JoinPage = () => {
   return (
@@ -41,7 +41,7 @@ const JoinPage = () => {
       </div>
       <div id="join-content-section" className="content-section">
         <p className="larger-text" style={{textAlign: "center"}}>
-          Our Spring 2022 applications are now live and due on <strong>Thursday, January 20th at 11:59pm EST</strong>!
+          Our Fall 2022 applications are now live and due on <strong>Friday, September 9, 2022 at 11:59PM EST</strong>!
         </p>
         <br />
         <br />
@@ -52,7 +52,7 @@ const JoinPage = () => {
 
           <div/>
 
-          <a href="https://forms.gle/3oBuVZx3Yb7peY6N9" target="_blank" rel="noopener noreferrer">
+          <a href="https://forms.gle/BirhEtNg9uxrwBXi6" target="_blank" rel="noopener noreferrer">
             <button id="blue-button">Written Application &rarr;</button>
           </a>
         </div>
@@ -68,39 +68,38 @@ const JoinPage = () => {
             <button id="red-button">Written Application &rarr;</button>
           </a>
 
-          <a href="http://pennspark.org/static/RedDev-d3913678d968377f9f8a24ea1f3f6896.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1dyTPfKc88NNMQXxeyz1cw7xqLYut0wfG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Development Assessment &rarr;</button>
           </a>
 
-          <a href="http://pennspark.org/static/RedDesign-495ae8e32a7dbc629b0686de3c89cf14.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/17QUepbKirWa5rg8u90OCrFW0cP-Z_aRL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Design Assessment &rarr;</button>
           </a>
 
         </div>
 
 
-        {/* <div>
+        <div>
           <p style={{padding: "14px 18px 14px 18px", border: "2px solid #ccc", borderRadius: "10px"}}>
             <strong style={{fontSize: "1.2rem", fontWeight: "600"}}>General Info Session</strong>
             <div style={{height: "4px"}} />
-            <em>Tuesday January 18th, 8pm EST</em>
+            <em>Tuesday September 6th, 7:00pm EST</em>
             <div style={{height: "16px"}} />
             Interested in learning more about Penn Spark? We are hosting a virtual
-            General Info Meeting on Tuesday, January 18th at 8pm EST. Join us to
+            General Info Meeting on Tuesday September 6th, at 7:00pm EST. Join us to
             learn more about what we do and get your questions answered about our
             application process! 
 
             <div style={{height: "24px"}} />
-              <a href="https://fb.com/events/885459545372927" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://fb.com/events/885459545372927" target="_blank" rel="noopener noreferrer">
                 <button id="gim-btn">Facebook Event &rarr;</button>
                 </a>
 
               <a href="https://upenn.zoom.us/my/gracejiang" target="_blank" rel="noopener noreferrer">
                 <button id="gim-btn">Zoom Link &rarr;</button>
-                </a>
-
-          </p>
-        </div> */}
+                </a> */}
+              </p>
+            </div>
 
       </div>
       {/* <AppDetails /> */}
