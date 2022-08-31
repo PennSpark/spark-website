@@ -83,8 +83,7 @@ const JoinPage = () => {
           <p style={{padding: "14px 18px 14px 18px", border: "2px solid #ccc", borderRadius: "10px"}}>
             <strong style={{fontSize: "1.2rem", fontWeight: "600"}}>General Info Session</strong>
             <div style={{height: "4px"}} />
-            <em>Berger Auditorium - Skirkanich Hall</em>
-            <em>Tuesday September 6th, 7:00pm EST</em>
+              Tuesday September 6th, 7:00pm EST
             <div style={{height: "16px"}} />
             Interested in learning more about Penn Spark? We are hosting a
             General Info Meeting on <b>Tuesday September 6th, at 7:00pm EST in Berger Auditorium</b>. Join us to
