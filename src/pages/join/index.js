@@ -91,14 +91,10 @@ const JoinPage = () => {
             application process! 
 
             <div style={{height: "24px"}} />
-              {/* <a href="https://fb.com/events/885459545372927" target="_blank" rel="noopener noreferrer">
-                <button id="gim-btn">Facebook Event &rarr;</button>
-                </a>
-
-              <a href="https://upenn.zoom.us/my/gracejiang" target="_blank" rel="noopener noreferrer">
-                <button id="gim-btn">Zoom Link &rarr;</button>
-                </a> */}
-              </p>
+            <a href="https://fb.me/e/aq7DCZAlU" target="_blank" rel="noopener noreferrer">
+              <button id="gim-btn">Facebook Event &rarr;</button>
+              </a>
+            </p>
             </div>
 
       </div>
