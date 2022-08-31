@@ -64,7 +64,7 @@ const JoinPage = () => {
 
           <div/>
          
-          <a href="https://forms.gle/xBeEsJsM55zp3KiCA" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIycsRVGMbzuxU-1XpY8tWiBUBFeAFSE8SFsEBM1XBCQd7hA/viewform" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Written Application &rarr;</button>
           </a>
 
