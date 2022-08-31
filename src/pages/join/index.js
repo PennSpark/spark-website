@@ -86,7 +86,7 @@ const JoinPage = () => {
             <em>Berger Auditorium - Skirkanich Hall</em>
             <em>Tuesday September 6th, 7:00pm EST</em>
             <div style={{height: "16px"}} />
-            Interested in learning more about Penn Spark? We are hosting a virtual
+            Interested in learning more about Penn Spark? We are hosting a
             General Info Meeting on <b>Tuesday September 6th, at 7:00pm EST in Berger Auditorium</b>. Join us to
             learn more about what we do and get your questions answered about our
             application process! 
