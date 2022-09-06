@@ -15,7 +15,7 @@ class Branches extends React.Component {
           <p>
             <span className="bold">What we do?</span>
             <br />
-            Participate in a 6 week bootcamp in either the design or development
+            Participate in a 10-week bootcamp in either the design or development
             track, followed by a creative team project.
             <br />
             <br />
