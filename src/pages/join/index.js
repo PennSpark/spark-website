@@ -85,17 +85,25 @@ const JoinPage = () => {
             <div style={{height: "4px"}} />
               Tuesday September 6th, 7:00pm EST
             <div style={{height: "16px"}} />
-            Interested in learning more about Penn Spark? We are hosting a
-            General Info Meeting on <b>Tuesday September 6th, at 7:00pm EST in Berger Auditorium</b>. Join us to
-            learn more about what we do and get your questions answered about our
-            application process! 
-
+              Interested in learning more about Penn Spark? We are hosting a
+              General Info Meeting on <b>Tuesday September 6th, at 7:00pm EST in Berger Auditorium</b>. Join us to
+              learn more about what we do and get your questions answered about our
+              application process! 
+              <br/>
+              <br/>
+              The password for the Zoom Recording is "<b>sparkupenn2022!</b>".
             <div style={{height: "24px"}} />
             <a href="https://fb.me/e/aq7DCZAlU" target="_blank" rel="noopener noreferrer">
               <button id="gim-btn">Facebook Event &rarr;</button>
-              </a>
-            </p>
-            </div>
+            </a>
+            <a href="https://upenn.zoom.us/rec/share/nIqDLujX_XgD7V1kFyAXC0dxAwWvlxyLLHkkfy5VPKZxSfwG2KIl2--OF0O6HJui.g8HJUEOtljjTjLj3?startTime=1662505185000" target="_blank" rel="noopener noreferrer">
+              <button id="gim-btn">Zoom Recording &rarr;</button>
+            </a>
+            <a href="https://docs.google.com/presentation/d/1lTD7PwAniSwVodA-no6qjQauxp8Gib07v8W07Kl3uDE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <button id="gim-btn">Meeting Slides &rarr;</button>
+            </a>
+          </p>
+        </div>
 
       </div>
       {/* <AppDetails /> */}
