@@ -11,7 +11,7 @@ import Navbar from "../../components/navbar";
 import WhyJoin from "../../components/sections/why-join";
 import FAQ from "../../components/sections/faq";
 
-import CoverImg from "./fa22-cover.png";
+import CoverImg from "./sp23-cover.png";
 
 const JoinPage = () => {
   return (
@@ -22,7 +22,7 @@ const JoinPage = () => {
       </div>
       <div
           style={{
-            backgroundColor: "#DDE4F3",
+            backgroundColor: "#EAD2DD",
             textAlign: "center",
             height: "30vh",
             minHeight: "200px",
