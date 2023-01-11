@@ -41,13 +41,13 @@ const JoinPage = () => {
       </div>
       <div id="join-content-section" className="content-section">
         <p className="larger-text" style={{textAlign: "center"}}>
-          Our Fall 2022 applications are now live and due on <strong>Friday, September 9, 2022 at 11:59PM EST</strong>!
+          Our Spring 2023 applications are now live and due on <strong>Wednesday, January 18, 2023 at 11:59PM EST</strong>!
         </p>
         <br />
         <br />
 
   
-        <div id="join-blue" className="join-app-container">
+        {/* <div id="join-blue" className="join-app-container">
           <strong style={{fontSize: "1.2rem", fontWeight: "600", color: "#577ed2"}}>Apply for Blue</strong>
 
           <div/>
@@ -55,7 +55,7 @@ const JoinPage = () => {
           <a href="https://forms.gle/BirhEtNg9uxrwBXi6" target="_blank" rel="noopener noreferrer">
             <button id="blue-button">Written Application &rarr;</button>
           </a>
-        </div>
+        </div> */}
 
         <div className="join-app-spacer" />
 
@@ -64,11 +64,11 @@ const JoinPage = () => {
 
           <div/>
          
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIycsRVGMbzuxU-1XpY8tWiBUBFeAFSE8SFsEBM1XBCQd7hA/viewform" target="_blank" rel="noopener noreferrer">
+          <a href="https://forms.gle/wVST4jjNjjbAvnfY6" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Written Application &rarr;</button>
           </a>
 
-          <a href="https://drive.google.com/file/d/1dyTPfKc88NNMQXxeyz1cw7xqLYut0wfG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/document/d/1H18S-k9OLCkZX_ehrI2IOlTvW2TJjClVyiBqyf_UpY0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Development Assessment &rarr;</button>
           </a>
 
