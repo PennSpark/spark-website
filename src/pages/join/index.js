@@ -72,7 +72,7 @@ const JoinPage = () => {
             <button id="red-button">Development Assessment &rarr;</button>
           </a>
 
-          <a href="https://drive.google.com/file/d/17QUepbKirWa5rg8u90OCrFW0cP-Z_aRL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/document/d/1pr3HvMFLjgP_nZABsvdKblvQGxMMK38UK_y06D1htHc/edit?usp=share_link" target="_blank" rel="noopener noreferrer">
             <button id="red-button">Design Assessment &rarr;</button>
           </a>
 
