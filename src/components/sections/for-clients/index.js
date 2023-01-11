@@ -18,9 +18,8 @@ export default function ForClients() {
           to fix any bugs and do minor adjustments.
           <br />
           <br />
-          We're currently looking for new clients for Fall 2022. If you're interested in working with us, feel
-          free to <a href="mailto:upennspark@gmail.com?subject=Spark x YOURCOMPANYNAME Collaboration">shoot us an email</a> or 
-          fill out <a href="https://forms.gle/6ygSt5yJg9b4KrAp7">this form</a>, and we'll reach out with more details. 
+          We're currently looking for new clients for Spring 2023. If you're interested in working with us, feel
+          free to <a href="mailto:upennspark@gmail.com?subject=Spark x YOURCOMPANYNAME Collaboration">shoot us an email</a> and we'll reach out with more details. 
         </p>
         <br />
         <br />
