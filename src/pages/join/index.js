@@ -79,7 +79,7 @@ const JoinPage = () => {
         </div>
 
 
-        <div>
+        {/* <div>
           <p style={{padding: "14px 18px 14px 18px", border: "2px solid #ccc", borderRadius: "10px"}}>
             <strong style={{fontSize: "1.2rem", fontWeight: "600"}}>General Info Session</strong>
             <div style={{height: "4px"}} />
@@ -103,7 +103,7 @@ const JoinPage = () => {
               <button id="gim-btn">Meeting Slides &rarr;</button>
             </a>
           </p>
-        </div>
+        </div> */}
 
       </div>
       {/* <AppDetails /> */}
