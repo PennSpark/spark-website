@@ -14,7 +14,7 @@ export default function Overview() {
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#CF6C5D" }}>
-            30
+            41
           </span>
           <br />
           <span className="about-caption">Active Members</span>
@@ -26,7 +26,7 @@ export default function Overview() {
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#EEDC9B" }}>
-            19
+            25
           </span>
           <br />
           <span className="about-caption">Projects Completed or In Progress</span>
@@ -38,7 +38,7 @@ export default function Overview() {
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#4170BF" }}>
-            3
+            4
           </span>
           <br />
           <span className="about-caption">Live Semesters</span>
