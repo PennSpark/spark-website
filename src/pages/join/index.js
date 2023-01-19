@@ -41,7 +41,10 @@ const JoinPage = () => {
       </div>
       <div id="join-content-section" className="content-section">
         <p className="larger-text" style={{textAlign: "center"}}>
-          Our Spring 2023 applications are now live and due on <strong>Wednesday, January 18, 2023 at 11:59PM EST</strong>!
+          Our Spring 2023 applications are now live and due on <s> <strong>Wednesday, January 18, 2023 at 11:59PM EST</strong>! </s>
+        </p>
+        <p className="larger-text" style={{textAlign: "center", color: "#cf6c5d"}}>
+          The deadline has been extended to <strong>Friday, January 20, 2023 at 11:59PM EST</strong>!
         </p>
         <br />
         <br />
