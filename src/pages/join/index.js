@@ -17,40 +17,46 @@ const JoinPage = () => {
   return (
     <Layout title="Join | Spark 💡">
       <Navbar />
-      <div className="hit-counters">
+      {/* <div className="hit-counters">
         <img src="https://hitwebcounter.com/counter/counter.php?page=7926321&style=0007&nbdigits=5&type=ip&initCount=0" />
-      </div>
-      <div
-          style={{
-            backgroundColor: "#EAD2DD",
-            textAlign: "center",
-            height: "30vh",
-            minHeight: "200px",
-          }}
-        >
-          <img
-            src={CoverImg}
-            style={{ height: "100%", maxWidth: "100%", objectFit: "cover" }}
-          />
-        </div>
+      </div> */}
+      {/* <div
+        style={{
+          backgroundColor: "#EAD2DD",
+          textAlign: "center",
+          height: "30vh",
+          minHeight: "200px",
+        }}
+      >
+        <img
+          src={CoverImg}
+          style={{ height: "100%", maxWidth: "100%", objectFit: "cover" }}
+        />
+      </div> */}
       <FadeIn>
-      <div id="header-section">
-        <h1>
-          join <span id="header-spark-text">spark</span>
-        </h1>
-      </div>
-      <div id="join-content-section" className="content-section">
-        <p className="larger-text" style={{textAlign: "center"}}>
-          Our Spring 2023 applications are now live and due on <s> <strong>Wednesday, January 18, 2023 at 11:59PM EST</strong>! </s>
-        </p>
-        <p className="larger-text" style={{textAlign: "center", color: "#cf6c5d"}}>
-          The deadline has been extended to <strong>Friday, January 20, 2023 at 11:59PM EST</strong>!
-        </p>
+        {/* <div id="header-section">
+          <h1>
+            join <span id="header-spark-text">spark</span>
+          </h1>
+        </div> */}
         <br />
         <br />
+        <br />
+        <div style={{ minHeight: "100vh" }} id="join-content-section" className="content-section">
+          <p className="larger-text" style={{ textAlign: "center" }}>
+            Applications will open early in the fall. In the meantime, check out our <a href="/resources">student resources</a>.
+          </p>
+          {/* <p className="larger-text" style={{ textAlign: "center" }}>
+            Our Spring 2023 applications are now live and due on <s> <strong>Wednesday, January 18, 2023 at 11:59PM EST</strong>! </s>
+          </p>
+          <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
+            The deadline has been extended to <strong>Friday, January 20, 2023 at 11:59PM EST</strong>!
+          </p> */}
+          <br />
+          <br />
 
-  
-        {/* <div id="join-blue" className="join-app-container">
+
+          {/* <div id="join-blue" className="join-app-container">
           <strong style={{fontSize: "1.2rem", fontWeight: "600", color: "#577ed2"}}>Apply for Blue</strong>
 
           <div/>
@@ -60,7 +66,7 @@ const JoinPage = () => {
           </a>
         </div> */}
 
-        <div className="join-app-spacer" />
+          {/* <div className="join-app-spacer" />
 
         <div id="join-red" className="join-app-container">
           <strong style={{fontSize: "1.2rem", fontWeight: "600", color: "#cf6c5d"}}>Apply for Red</strong>
@@ -79,10 +85,10 @@ const JoinPage = () => {
             <button id="red-button">Design Assessment &rarr;</button>
           </a>
 
-        </div>
+        </div> */}
 
 
-        {/* <div>
+          {/* <div>
           <p style={{padding: "14px 18px 14px 18px", border: "2px solid #ccc", borderRadius: "10px"}}>
             <strong style={{fontSize: "1.2rem", fontWeight: "600"}}>General Info Session</strong>
             <div style={{height: "4px"}} />
@@ -108,10 +114,10 @@ const JoinPage = () => {
           </p>
         </div> */}
 
-      </div>
-      {/* <AppDetails /> */}
-      <WhyJoin />
-      <FAQ />
+        </div>
+        {/* <AppDetails /> */}
+        {/* <WhyJoin /> */}
+        {/* <FAQ /> */}
       </FadeIn>
     </Layout>
   );
