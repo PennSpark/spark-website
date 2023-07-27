@@ -3,7 +3,7 @@ import "../style.css";
 import "./style.css";
 import CustomLink from "../../custom-link";
 
-import PitchDeckPdf from "./pdf/FA22-For-Clients.pdf";
+import PitchDeckPdf from "./pdf/FA23-For-Clients.pdf";
 
 export default function ForClients() {
   return (
@@ -18,8 +18,8 @@ export default function ForClients() {
           to fix any bugs and do minor adjustments.
           <br />
           <br />
-          We're currently looking for new clients for Spring 2023. If you're interested in working with us, feel
-          free to <a href="mailto:upennspark@gmail.com?subject=Spark x YOURCOMPANYNAME Collaboration">shoot us an email</a> and we'll reach out with more details. 
+          We're currently looking for new clients for Fall 2023. If you're interested in working with us, feel
+          free to <a href="mailto:upennspark@gmail.com?subject=Spark x YOURCOMPANYNAME Collaboration">shoot us an email</a> or fill out this <a href="https://forms.gle/J9jQuzSfnvWK3zpz5">form</a> and we'll reach out with more details.
         </p>
         <br />
         <br />
