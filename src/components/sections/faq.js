@@ -25,18 +25,18 @@ export default function FAQ() {
           </p>
 
           <p className="faq-answer">
-            <span className="bold">For Developers</span>: If you have CIS120/equivalent experience, 
-              familiarity with web development frameworks (or can pick up new frameworks fairly easily), and/or
-              previous software engineering internship experience, we recommend applying for Red. If you're new to coding 
-              or web development in general, we recommend applying for Blue. Feel free to apply for both 
-              if you're unsure which one suits you better!
-              <br/><br/>
-              <span className="bold">For Designers</span>: If you have experience with Figma/Adobe Suite, a design portfolio,
-              and/or previous design internship experience, we recommend applying for Red. If you're new to design or looking 
-              to build up your fundamentals, we recommend applying for Blue. Feel free to apply for both 
-              if you're unsure which one suits you better!   
+            <span className="bold">For Developers</span>: If you have CIS1200/equivalent experience,
+            familiarity with web development frameworks (or can pick up new frameworks fairly easily), and/or
+            previous software engineering internship experience, we recommend applying for Red. If you're new to coding
+            or web development in general, we recommend applying for Blue. Feel free to apply for both
+            if you're unsure which one suits you better!
+            <br /><br />
+            <span className="bold">For Designers</span>: If you have experience with Figma/Adobe Suite, a design portfolio,
+            and/or previous design internship experience, we recommend applying for Red. If you're new to design or looking
+            to build up your fundamentals, we recommend applying for Blue. Feel free to apply for both
+            if you're unsure which one suits you better!
           </p>
-          
+
           {/* <p className="faq-answer">
             Feel free to look over our bootcamp and see how much content you're
             comfortable with.
