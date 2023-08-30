@@ -5,21 +5,23 @@ a {
 }
 
 .banner-link {
+  align-items: center;
+  color: white;
   display: flex;
   flex-direction: row;
   font-family: "IBM Plex Mono", monospace;
   justify-content: space-between;
   text-decoration: none;
-  color: white;
 }
 
 .banner-container {
   background: linear-gradient(90deg, #e66465, #9198e5);
   box-sizing: border-box;
+  justify-content: center;
   margin: auto;
   max-width: 900px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 10px;
+  text-align: center;
 }
 
 .animate-enter {

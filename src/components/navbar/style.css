@@ -29,10 +29,6 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-
-  @media (max-width: 480px) {
-    padding: 4px 6px;
-  }
 }
 
 .nav-right a:hover,
@@ -93,10 +89,14 @@
   /* width: 100px; */
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .nav-link,
   .nav-dropdown-content {
     max-width: 120px;
     font-size: 0.9rem;
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    padding: 4px 6px;
   }
 }
