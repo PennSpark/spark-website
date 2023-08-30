@@ -76,7 +76,6 @@ button {
   margin-top: 10px;
 }
 
-
 button:hover {
   cursor: pointer;
   background-color: black;
@@ -96,8 +95,6 @@ button:hover {
     transition: 0.2s;
   }
 }
-
-
 
 /* ANIMATIONS */
 /* #header-section {

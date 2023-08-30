@@ -1,10 +1,11 @@
 import * as React from "react";
 import "../styles/global.css";
 import "../styles/animations.css";
-import "./style.css"
+import "./style.css";
 
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
+import RecruitingBanner from "../components/recruiting-banner/recruiting-banner";
 
 import Overview from "../components/sections/overview";
 import CenterContainer from "../components/center-container";
@@ -13,10 +14,10 @@ import FadeIn from "react-fade-in";
 
 import styled from "styled-components";
 
-import Circles from "../components/Circles"
-import Spacer from "../components/Spacer"
+import Circles from "../components/Circles";
+import Spacer from "../components/Spacer";
 
-const valueDivWidth = 600
+const valueDivWidth = 600;
 
 const HeaderContainer = styled.div`
   position: relative;
@@ -38,20 +39,20 @@ const HeaderContainer = styled.div`
     color: black;
     text-decoration: none;
   }
-`
+`;
 
 const StrokeText = styled.b`
   color: black;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1.7px;
   -webkit-text-stroke-color: black;
-`
+`;
 
 const StrokeTextWavy = styled(StrokeText)`
   text-decoration: wavy underline;
   text-decoration-thickness: 0.05em;
   text-underline-offset: 10px;
-`
+`;
 
 const DateDiv = styled.div`
   width: fit-content;
@@ -62,7 +63,7 @@ const DateDiv = styled.div`
   p {
     font-weight: bold;
   }
-`
+`;
 
 const ValuesContainer = styled.div`
   display: flex;
@@ -74,7 +75,7 @@ const ValuesContainer = styled.div`
   h2 {
     font-size: 2em;
   }
-`
+`;
 
 const ValueDiv = styled.div`
   position: relative;
@@ -86,18 +87,19 @@ const ValueDiv = styled.div`
 
   border: 3px solid;
   box-shadow: 10px 10px;
-`
+`;
 
 const ValueContentDiv = styled.div`
   border: 3px solid;
   padding: 20px;
-`
+`;
 
 const IndexPage = () => {
   return (
     <Layout title="Home | Spark 💡">
       <Navbar />
       <FadeIn>
+        <RecruitingBanner />
         <div id="header-section">
           <h1>
             we are <span id="header-spark-text">spark</span>
