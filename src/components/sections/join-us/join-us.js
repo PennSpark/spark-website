@@ -102,11 +102,11 @@ export default function JoinUs() {
             Interested in learning more about Penn Spark? We are hosting a
             General Info Meeting on{" "}
             <b>
-              Tuesday September 5th, at 7:00pm EST in Skirkanich Auditorium
+              Tuesday September 5th, at 7:00pm EST in Berger Auditorium
             </b>{" "}
-            (located in the engineering complex). Join us to learn more about
-            what we do and get your questions answered about our application
-            process!
+            (located in Skirkanich Hall at the engineering quad). Join us to
+            learn more about what we do and get your questions answered about
+            our application process!
             <br />
             <br />
             {/* The password for the Zoom Recording is "<b>sparkupenn2022!</b>". */}
