@@ -17,7 +17,7 @@ const RecruitingBanner = () => {
       <div className="banner-container">
         <a className="banner-link" href="join">
           <h4 className="banner-text">
-            We're recruiting now for Red and Blue!
+            Apps are open and we have extended the deadline for Red {":)"}
           </h4>
           <i
             className="banner-icon"
