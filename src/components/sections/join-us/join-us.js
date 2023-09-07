@@ -30,8 +30,9 @@ export default function JoinUs() {
           Applications will open early in the fall. In the meantime, check out our <a href="/resources">student resources</a>.
         </p> */}
         <p className="larger-text" style={{ textAlign: "center" }}>
-          Our Fall 2023 applications are now live and due on{" "}
-          <strong>Thursday, September 7, 2023 at 11:59PM EST</strong>!
+          Our Fall 2023 applications are now live and blue apps are due on{" "}
+          <strong>Thursday, September 7, 2023 at 11:59PM EST</strong>. <i>Red apps have been extended to
+            <strong> Friday, September 8, 2023 at noon EST</strong>!</i>
         </p>
         {/* <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
           The deadline has been extended to <strong>Friday, January 20, 2023 at 11:59PM EST</strong>!
