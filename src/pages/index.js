@@ -99,7 +99,6 @@ const IndexPage = () => {
     <Layout title="Home | Spark 💡">
       <Navbar />
       <FadeIn>
-        <RecruitingBanner />
         <div id="header-section">
           <h1>
             we are <span id="header-spark-text">spark</span>
