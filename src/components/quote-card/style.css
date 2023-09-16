@@ -1,0 +1,8 @@
+.quote-card-wrapper {
+  width: 45%;
+  max-height: 500px; /* Adjust this value as per your requirement */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
