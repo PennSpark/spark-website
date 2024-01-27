@@ -40,15 +40,15 @@ export default function JoinUs() {
           ) : (
             <p className="larger-text" style={{ textAlign: "center" }}>
               Our Spring 2024 applications are now live and red apps are due on {""}
-              <strong>Sunday, January 28, 2024 at 11:59PM EST</strong>. <i>Note: We will ONLY be accepting
+              <strong><s>Sunday, January 28, 2024 at 11:59PM EST</s></strong>. <i>Note: We will ONLY be accepting
                 red apps in the Spring due to the blue being a year-long curriculum.</i>
             </p>
           )
         }
 
-        {/* <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
-          The deadline has been extended to <strong>Friday, January 20, 2023 at 11:59PM EST</strong>!
-        </p> */}
+        <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
+          The deadline has been extended to <strong>Monday, January 29, 2023 at 08:00PM EST</strong>!
+        </p>
         <br />
         <br />
 
