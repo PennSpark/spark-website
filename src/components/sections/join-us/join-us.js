@@ -47,7 +47,7 @@ export default function JoinUs() {
         }
 
         <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
-          The deadline has been extended to <strong>Monday, January 29, 2023 at 08:00PM EST</strong>!
+          The deadline has been extended to <strong>Monday, January 29, 2024 at 08:00PM EST</strong>!
         </p>
         <br />
         <br />
