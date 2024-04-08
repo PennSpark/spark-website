@@ -14,13 +14,13 @@ export default function Footer() {
           <img src="https://hitwebcounter.com/counter/counter.php?page=7933181&style=0007&nbdigits=6&type=ip&initCount=0" alt="hits" />
         </div>
         <p>
+          <CustomLink link="https://instagram.com/pennspark" content="Instagram" />{" "}
+          &bull;{" "}
           <CustomLink
             link="https://facebook.com/pennspark"
             content="Facebook"
           />{" "}
-          &bull;{" "}
-          <CustomLink link="https://instagram.com/pennspark" content="Instagram" />{" "}
-          &bull; <CustomLink link="https://medium.com/@pennspark" content="Blog" />{" "}
+          {/* &bull; <CustomLink link="https://medium.com/@pennspark" content="Blog" />{" "} */}
           &bull;{" "}
           <CustomLink link="https://github.com/pennspark" content="GitHub" />{" "}
           &bull;{" "}
@@ -33,7 +33,6 @@ export default function Footer() {
             link="https://pennclubs.com/club/penn-spark"
             content="PennClubs"
           />{" "}
-          &bull; <CustomLink link="/mail" content="Newsletter" />
           <br />
           <span className="bold">Contact Us</span>:{" "}
           <CustomLink

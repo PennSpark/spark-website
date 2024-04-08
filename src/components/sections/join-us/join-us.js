@@ -4,17 +4,18 @@ import FadeIn from "react-fade-in";
 
 import WhyJoin from "../why-join";
 import FAQ from "../faq";
-
-
-
 import CustomLink from "../../custom-link";
 import RedApp from "./red-app";
 
+const RECRUITING_DEADLINE = new Date("2025-01-21T23:59:00-05:00");
+const SHOW_APPS_DATE = new Date("2025-01-14T00:00:00-05:00");
+const CLOSE_APPS_DATE = new Date(RECRUITING_DEADLINE.getTime() + 24 * 60 * 60 * 1000);
+
+
 export default function JoinUs() {
   const currentDate = new Date();
-  const applicationDeadline = new Date("2024-01-21T23:59:00-05:00"); // Set the application deadline date and time
 
-  const shouldDisplayRedApp = currentDate > applicationDeadline;
+  const shouldDisplayRedApp = currentDate > RECRUITING_DEADLINE;
   return (
     <FadeIn>
       <div id="header-section">
@@ -33,7 +34,7 @@ export default function JoinUs() {
         {
           !shouldDisplayRedApp ? (
             <p className="larger-text" style={{ textAlign: "center" }}>
-              Applications for Spring 2024 coming very soon - stay tuned!
+              Applications open early in the semester - stay tuned!
               <br />
               Keep scrolling to read more about our application process.
             </p>
@@ -45,12 +46,12 @@ export default function JoinUs() {
             </p>
           )
         }
-
-        <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
+        {/* <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
           The deadline has been extended to <strong>Monday, January 29, 2024 at 08:00PM EST</strong>!
         </p>
         <br />
-        <br />
+        <br /> */}
+
 
         {/* <div id="join-blue" className="join-app-container">
           <strong

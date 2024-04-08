@@ -16,8 +16,12 @@ import styled from "styled-components";
 
 import Circles from "../components/Circles";
 import Spacer from "../components/Spacer";
+import { current } from "@reduxjs/toolkit";
 
+
+import { RECRUITING_DEADLINE, SHOW_APPS_DATE, CLOSE_APPS_DATE } from "../components/sections/join-us/join-us";
 const valueDivWidth = 600;
+
 
 const HeaderContainer = styled.div`
   position: relative;
@@ -95,11 +99,16 @@ const ValueContentDiv = styled.div`
 `;
 
 const IndexPage = () => {
+  const currentDate = new Date();
   return (
     <Layout title="Home | Spark 💡">
       <Navbar />
       <FadeIn>
-        <RecruitingBanner />
+        {
+          (currentDate < CLOSE_APPS_DATE && currentDate > SHOW_APPS_DATE) && (
+            <RecruitingBanner />
+          )
+        }
         <div id="header-section">
           <h1>
             we are <span id="header-spark-text">spark</span>
@@ -110,10 +119,10 @@ const IndexPage = () => {
             <a href="/about">
               <button>Learn More &rarr;</button>
             </a>
-            <Spacer />
+            {/* <Spacer />
             <a href="/mail" target="_blank" rel="noopener noreferrer">
               <button>Subscribe to Our Newsletter &rarr;</button>
-            </a>
+            </a> */}
           </div>
         </CenterContainer>
         <Overview />
