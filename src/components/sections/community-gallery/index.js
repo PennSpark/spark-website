@@ -15,6 +15,11 @@ import Pic11 from "./img/pic11.jpg";
 import Pic12 from "./img/pic12.jpg";
 import Pic13 from "./img/pic13.jpg";
 import Pic14 from "./img/pic14.jpg";
+import Pic15 from "./img/pic15.jpg";
+import Pic16 from "./img/pic16.jpg";
+import Pic17 from "./img/pic17.jpg";
+import Pic18 from "./img/pic18.jpg";
+
 
 
 import "./style.css"
@@ -23,6 +28,26 @@ class CommunityGallery extends React.Component {
   render() {
     return (
       <Carousel>
+        {/* <div >
+          <img  src={Pic18} alt="pic" />
+          <p className="legend">{"<3"}</p>
+        </div> */}
+
+        <div>
+          <img src={Pic17} alt="pic" />
+          <p className="legend">Sp'24 retreat</p>
+        </div>
+
+        <div>
+          <img src={Pic16} alt="pic" />
+          <p className="legend">boy band</p>
+        </div>
+
+        <div>
+          <img src={Pic15} alt="pic" />
+          <p className="legend">At the beach!</p>
+        </div>
+
         <div>
           <img src={Pic1} alt="pic" />
           <p className="legend">Fall 21 Showcase</p>
@@ -88,7 +113,7 @@ class CommunityGallery extends React.Component {
           <p className="legend">First GBM</p>
         </div>
 
-        
+
       </Carousel>
     );
   }
