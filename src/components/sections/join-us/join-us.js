@@ -41,11 +41,15 @@ export default function JoinUs() {
               Keep scrolling to read more about our application process.
             </p>
           ) : (
-            <p className="larger-text" style={{ textAlign: "center" }}>
-              Our Spring 2024 applications are now live and red apps are due on {""}
-              <strong><s>Sunday, January 28, 2024 at 11:59PM EST</s></strong>. <i>Note: We will ONLY be accepting
-                red apps in the Spring due to the blue being a year-long curriculum.</i>
-            </p>
+            <div>
+              <p className="larger-text" style={{ textAlign: "center" }}>
+                Our Fall 2024 applications are now live! Applications are due on {""}
+                <strong>Friday, September 6th, 2024 at 11:59PM EST</strong>. 
+              </p>
+              <p>
+                <i>Note: If you're interested in our Blue track, please apply now as we only recruit in the fall!</i>
+              </p>
+            </div>
           )
         }
         {/* <p className="larger-text" style={{ textAlign: "center", color: "#cf6c5d" }}>
@@ -75,7 +79,7 @@ export default function JoinUs() {
 
         {
           shouldDisplayBlueApp && ( // Only display the Red app if the current date is after the application deadline
-            <RedApp />
+            <BlueApp />
           )
         }
 
