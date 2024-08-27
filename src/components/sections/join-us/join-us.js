@@ -49,6 +49,9 @@ export default function JoinUs() {
               <p>
                 <i>Note: If you're interested in our Blue track, please apply now as we only recruit in the fall!</i>
               </p>
+              <br></br>
+              <br></br>
+              <br></br>
             </div>
           )
         }

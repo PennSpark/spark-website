@@ -19,7 +19,7 @@ import Spacer from "../components/Spacer";
 import { current } from "@reduxjs/toolkit";
 
 
-import { RECRUITING_DEADLINE, SHOW_APPS_DATE, CLOSE_APPS_DATE } from "../components/sections/join-us/join-us";
+import { RECRUITING_DEADLINE, SHOW_APPS_DATE } from "../components/sections/join-us/join-us";
 const valueDivWidth = 600;
 
 
@@ -100,12 +100,13 @@ const ValueContentDiv = styled.div`
 
 const IndexPage = () => {
   const currentDate = new Date();
+  const shouldDisplayBanner = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
   return (
     <Layout title="Home | Spark 💡">
       <Navbar />
       <FadeIn>
         {
-          ((currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE)) ? (
+          shouldDisplayBanner ? (
             <RecruitingBanner />
           ) : ( <div/> )
         }
