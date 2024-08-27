@@ -106,7 +106,7 @@ const IndexPage = () => {
       <Navbar />
       <FadeIn>
         {
-          // shouldDisplayBanner ? (   THIS DOES NOT WORK
+          // shouldDisplayBanner ? (   THIS DOES NOT WORK - PLEASE COMMENT/UNCOMMENT THIS AND THE JOIN US BUTTON
             <RecruitingBanner />
           // ) : ( <div/> )
         }
@@ -120,6 +120,15 @@ const IndexPage = () => {
             <a href="/about">
               <button>Learn More &rarr;</button>
             </a>
+
+            <Spacer />
+
+            <a href="/join">
+              <button style="background: linear-gradient(90deg, #e66465, #9198e5); border: none; color: white;">
+                Join Us &rarr;
+              </button>
+            </a>
+
             {/* <Spacer />
             <a href="/mail" target="_blank" rel="noopener noreferrer">
               <button>Subscribe to Our Newsletter &rarr;</button>
