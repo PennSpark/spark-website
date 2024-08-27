@@ -105,9 +105,9 @@ const IndexPage = () => {
       <Navbar />
       <FadeIn>
         {
-          (currentDate < RECRUITING_DEADLINE && currentDate > SHOW_APPS_DATE) && (
+          // (currentDate < RECRUITING_DEADLINE && currentDate > SHOW_APPS_DATE) && (
             <RecruitingBanner />
-          )
+          // )
         }
         <div id="header-section">
           <h1>
