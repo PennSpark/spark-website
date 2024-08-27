@@ -42,12 +42,12 @@ export default function Navbar() {
 
           <div className="nav-dropdown">
             <button className="nav-dropbtn" >
-              <div className="nav-link">For Students</div>
+              <div className="nav-link">Join Us</div>
               <i className="fa fa-caret-down"></i>
             </button>
             <div className="nav-dropdown-content">
-              <a className="nav-link" href="/resources">Resources</a>
-              <a className="nav-link" href="/join">Join Us</a>
+              {/* <a className="nav-link" href="/resources">Resources</a> */}
+              <a className="nav-link" href="/join">Applications</a>
             </div>
           </div>
         </div>

@@ -106,9 +106,9 @@ const IndexPage = () => {
       <Navbar />
       <FadeIn>
         {
-          shouldDisplayBanner ? (
+          // shouldDisplayBanner ? (   THIS DOES NOT WORK
             <RecruitingBanner />
-          ) : ( <div/> )
+          // ) : ( <div/> )
         }
         <div id="header-section">
           <h1>

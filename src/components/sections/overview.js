@@ -5,10 +5,10 @@ export default function Overview() {
   return (
     <div id="about-section" className="content-section">
       <p className="larger-text">
-        We’re a community of students at the University of Pennsylvania that
+        We’re a group of students at the University of Pennsylvania that
         bridge <span className="bold">tech</span> and{" "}
-        <span className="bold">design</span> to build both creative and client
-        projects from ground-up.
+        <span className="bold">design</span> to build both creative projects and impactful
+        products for clients and the community.
       </p>
       <br /><br />
       <div className="about-stat-container">
@@ -26,10 +26,10 @@ export default function Overview() {
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#EEDC9B" }}>
-            19
+            38
           </span>
           <br />
-          <span className="about-caption">Projects Completed or In Progress</span>
+          <span className="about-caption">Projects Completed</span>
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function Overview() {
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#4170BF" }}>
-            6
+            7
           </span>
           <br />
           <span className="about-caption">Live Semesters</span>
