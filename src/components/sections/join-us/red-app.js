@@ -15,7 +15,7 @@ export default function RedApp() {
       <div />
 
       <a
-        href="https://forms.gle/eqZsdm4SgK8C1gnT6"
+        href="https://docs.google.com/forms/d/18E1VAc0ODu7LB-HRjkmS6PFilGeu1INMdGcGWSkKHW0/viewform"
         target="_blank"
         rel="noopener noreferrer"
       >

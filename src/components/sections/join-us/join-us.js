@@ -6,16 +6,18 @@ import WhyJoin from "../why-join";
 import FAQ from "../faq";
 import CustomLink from "../../custom-link";
 import RedApp from "./red-app";
+import BlueApp from "./blue-app";
 
-const RECRUITING_DEADLINE = new Date("2025-01-21T23:59:00-05:00");
-const SHOW_APPS_DATE = new Date("2025-01-14T00:00:00-05:00");
-const CLOSE_APPS_DATE = new Date(RECRUITING_DEADLINE.getTime() + 24 * 60 * 60 * 1000);
+const RECRUITING_DEADLINE = new Date("2024-09-06T23:59:00-04:00");
+const SHOW_APPS_DATE = new Date("2024-08-27T00:00:00-04:00");
+// const CLOSE_APPS_DATE = new Date(RECRUITING_DEADLINE.getTime() + 24 * 60 * 60 * 1000);
 
 
 export default function JoinUs() {
   const currentDate = new Date();
 
-  const shouldDisplayRedApp = currentDate > RECRUITING_DEADLINE;
+  const shouldDisplayBlueApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
+  const shouldDisplayRedApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
   return (
     <FadeIn>
       <div id="header-section">
@@ -70,6 +72,12 @@ export default function JoinUs() {
             <button id="blue-button">Blue Application &rarr;</button>
           </a>
         </div> */}
+
+        {
+          shouldDisplayBlueApp && ( // Only display the Red app if the current date is after the application deadline
+            <RedApp />
+          )
+        }
 
         {
           shouldDisplayRedApp && ( // Only display the Red app if the current date is after the application deadline
