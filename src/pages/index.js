@@ -124,7 +124,7 @@ const IndexPage = () => {
             <Spacer />
 
             <a href="/join">
-              <button style="background: linear-gradient(90deg, #e66465, #9198e5); border: none; color: white;">
+              <button id="join-us-button">
                 Join Us &rarr;
               </button>
             </a>
