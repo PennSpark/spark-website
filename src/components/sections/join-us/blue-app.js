@@ -10,6 +10,12 @@ export default function BlueApp() {
         Apply for Blue
       </strong>
 
+      <p
+        style={{ fontSize: "1rem", fontWeight: "400", color: "#577ed2" }}
+      >
+        Our educational track - no experience required
+      </p>
+
       <div />
 
       <a

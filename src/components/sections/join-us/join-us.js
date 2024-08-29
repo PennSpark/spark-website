@@ -47,10 +47,10 @@ export default function JoinUs() {
                 <strong>Friday, September 6th, 2024 at 11:59PM EST</strong>. 
                 If you're not sure which branch to apply to, you can learn about both Blue and Red <a href='https://pennspark.org/about/'>here!</a>
               </p>
+              <br></br>
               <p>
                 <i>Note: If you're interested in our Blue track, please apply now as we only recruit in the fall!</i>
               </p>
-              <br></br>
               <br></br>
               <br></br>
             </div>

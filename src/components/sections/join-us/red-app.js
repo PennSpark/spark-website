@@ -12,6 +12,12 @@ export default function RedApp() {
         Apply for Red
       </strong>
 
+      <p
+        style={{ fontSize: "1rem", fontWeight: "400", color: "#cf6c5d" }}
+      >
+        Our experienced track - jump right into projects
+      </p>
+
       <div />
 
       <a

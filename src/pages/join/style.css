@@ -41,6 +41,18 @@
   border: 2px solid black;
 }
 
+#interest-button {
+  background: linear-gradient(90deg, #e66465, #9198e5);
+  border: none;
+  color: white;
+  /* margin-right: 20px;
+  margin-bottom: 14px; */
+}
+
+#interest-button:hover {
+  background-color: black;
+}
+
 #gim-btn {
   color: white;
   background-color: #666;
@@ -61,6 +73,11 @@
 
 #join-red {
   border: 2px solid #cf6c5d;
+  border-radius: 10px;
+}
+
+#interest-form {
+  border: 2px solid linear-gradient(90deg, #e66465, #9198e5);
   border-radius: 10px;
 }
 
