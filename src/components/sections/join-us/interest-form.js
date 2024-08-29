@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../style.css";
 
-export default function BlueApp() {
+export default function InterestForm() {
   return (
     <div id="interest-form" className="join-app-container">
       <strong

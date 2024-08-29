@@ -7,6 +7,7 @@ import FAQ from "../faq";
 import CustomLink from "../../custom-link";
 import RedApp from "./red-app";
 import BlueApp from "./blue-app";
+import InterestForm from "./interest-form";
 
 const RECRUITING_DEADLINE = new Date("2024-09-06T23:59:00-04:00");
 const SHOW_APPS_DATE = new Date("2024-08-27T00:00:00-04:00");
@@ -16,6 +17,7 @@ const SHOW_APPS_DATE = new Date("2024-08-27T00:00:00-04:00");
 export default function JoinUs() {
   const currentDate = new Date();
 
+  const shouldDisplayInterestForm = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
   const shouldDisplayBlueApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
   const shouldDisplayRedApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
   return (
@@ -80,6 +82,12 @@ export default function JoinUs() {
             <button id="blue-button">Blue Application &rarr;</button>
           </a>
         </div> */}
+
+        {
+          shouldDisplayInterestForm && (
+            <InterestForm />
+          )
+        }
 
         {
           shouldDisplayBlueApp && ( // Only display the Red app if the current date is after the application deadline
