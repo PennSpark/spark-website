@@ -83,11 +83,11 @@ export default function JoinUs() {
           </a>
         </div> */}
 
-        {
+        {/* {
           shouldDisplayInterestForm && (
             <InterestForm />
           )
-        }
+        } */}
 
         {
           shouldDisplayBlueApp && ( // Only display the Red app if the current date is after the application deadline
