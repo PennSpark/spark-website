@@ -9,7 +9,7 @@ import RedApp from "./red-app";
 import BlueApp from "./blue-app";
 import InterestForm from "./interest-form";
 
-const RECRUITING_DEADLINE = new Date("2024-09-06T23:59:00-04:00");
+const RECRUITING_DEADLINE = new Date("2024-09-07T17:05:00-04:00");
 const SHOW_APPS_DATE = new Date("2024-08-27T00:00:00-04:00");
 // const CLOSE_APPS_DATE = new Date(RECRUITING_DEADLINE.getTime() + 24 * 60 * 60 * 1000);
 
@@ -46,7 +46,7 @@ export default function JoinUs() {
             <div>
               <p className="larger-text" style={{ textAlign: "center" }}>
                 Our Fall 2024 applications are now live! Applications are due on {""}
-                <strong>Friday, September 6th, 2024 at 11:59PM EST</strong>. 
+                <s>Friday, September 6th, 2024 at 11:59PM EST</s> <strong>Saturday, September 7th, 2024 at 5:00PM EST</strong>. 
                 If you're not sure which branch to apply to, you can learn about both Blue and Red <a href='https://pennspark.org/about/'>here!</a>
               </p>
               <br></br>
