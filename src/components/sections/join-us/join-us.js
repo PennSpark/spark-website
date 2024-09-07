@@ -38,9 +38,9 @@ export default function JoinUs() {
         {
           !shouldDisplayRedApp ? (
             <p className="larger-text" style={{ textAlign: "center" }}>
-              Applications open early in the semester - stay tuned!
+              Our next recruiting cycle will be Spring 2025. Applications open early in the semester - stay tuned!
               <br />
-              Keep scrolling to read more about our application process.
+              If you're a Fall 2024 applicant with an <strong>approved</strong> extension, please email <a href='mailto:upennspark@gmail.com'>upennspark@gmail.com</a> to access the application form.
             </p>
           ) : (
             <div>

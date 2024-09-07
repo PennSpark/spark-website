@@ -107,7 +107,7 @@ const IndexPage = () => {
       <FadeIn>
         {
           // shouldDisplayBanner ? (   THIS DOES NOT WORK - PLEASE COMMENT/UNCOMMENT THIS AND THE JOIN US BUTTON
-            <RecruitingBanner />
+            // <RecruitingBanner />
           // ) : ( <div/> )
         }
         <div id="header-section">
@@ -123,11 +123,11 @@ const IndexPage = () => {
 
             <Spacer />
 
-            <a href="/join">
+            {/* <a href="/join">
               <button id="join-us-button">
                 Join Us &rarr;
               </button>
-            </a>
+            </a> */}
 
             {/* <Spacer />
             <a href="/mail" target="_blank" rel="noopener noreferrer">
