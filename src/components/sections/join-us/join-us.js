@@ -17,9 +17,13 @@ const SHOW_APPS_DATE = new Date("2024-08-27T00:00:00-04:00");
 export default function JoinUs() {
   const currentDate = new Date();
 
-  const shouldDisplayInterestForm = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
-  const shouldDisplayBlueApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
-  const shouldDisplayRedApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
+  // const shouldDisplayInterestForm = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
+  // const shouldDisplayBlueApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
+  // const shouldDisplayRedApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
+  // lmfao idk who broke this
+  const shouldDisplayInterestForm = false;
+  const shouldDisplayBlueApp = false;
+  const shouldDisplayRedApp = false;
   return (
     <FadeIn>
       <div id="header-section">
