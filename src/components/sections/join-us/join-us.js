@@ -44,7 +44,9 @@ export default function JoinUs() {
             <p className="larger-text" style={{ textAlign: "center" }}>
               Our next recruiting cycle will be Spring 2025. Applications open early in the semester - stay tuned!
               <br />
-              If you're a Fall 2024 applicant with an <strong>approved</strong> extension, please email <a href='mailto:upennspark@gmail.com'>upennspark@gmail.com</a> to access the application form.
+              {/* If you're a Fall 2024 applicant with an <strong>approved</strong> extension, please email <a href='mailto:upennspark@gmail.com'>upennspark@gmail.com</a> to access the application form. */}
+              <br/>
+              Keep scrolling to learn more about our application process!
             </p>
           ) : (
             <div>
