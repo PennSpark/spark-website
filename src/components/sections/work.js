@@ -15,7 +15,7 @@ export default function Work() {
       pictures as emojis. We work on both client and passion projects!
     </p>
     <br/><br/>
-    <CustomLink link="https://work.pennspark.org/" content={[<button style={{margin: "0px 24px 12px 0px"}}>View Past Projects &rarr;</button>]} />
+    <a href="https://work.pennspark.org/"><button style={{margin: "0px 24px 12px 0px"}}>View Past Projects &rarr;</button></a>
     <CustomLink link="https://github.com/pennspark" content={[<button>Our GitHub&rarr;</button>]} />
     <div style={{height: "10px"}} />
 

@@ -15,7 +15,7 @@ export default function Community() {
       </p>
       <br />
       <br />
-      <CustomLink link="https://community.pennspark.org/" content={[<button>spark community directory &rarr;</button>]} />
+      <a href="https://community.pennspark.org/" ><button>spark community directory &rarr;</button></a>
       <div style={{ height: "60px" }} />
       <CommunityGallery />
     </div>
