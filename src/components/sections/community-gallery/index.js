@@ -19,6 +19,10 @@ import Pic15 from "./img/pic15.jpg";
 import Pic16 from "./img/pic16.jpg";
 import Pic17 from "./img/pic17.jpg";
 import Pic18 from "./img/pic18.jpg";
+import Pic19 from "./img/pic19.jpg";
+import Pic20 from "./img/pic20.jpg";
+import Pic21 from "./img/pic21.jpg";
+import Pic22 from "./img/pic22.jpg";
 
 
 
@@ -28,19 +32,39 @@ class CommunityGallery extends React.Component {
   render() {
     return (
       <Carousel>
-        {/* <div >
+        <div>
+          <img  src={Pic22} alt="pic" />
+          <p className="legend">{"fall 2024 retreat to the poconos!"}</p>
+        </div>
+        
+        <div >
+          <img  src={Pic21} alt="pic" />
+          <p className="legend">{"generations of spark"}</p>
+        </div>
+
+        <div >
+          <img  src={Pic20} alt="pic" />
+          <p className="legend">{"fall '24 newbies @ retreat!"}</p>
+        </div>
+
+        <div >
+          <img  src={Pic19} alt="pic" />
+          <p className="legend">{"who said spark boys aren't cute?"}</p>
+        </div>
+
+        <div >
           <img  src={Pic18} alt="pic" />
           <p className="legend">{"<3"}</p>
-        </div> */}
+        </div>
 
         <div>
           <img src={Pic17} alt="pic" />
-          <p className="legend">Sp'24 retreat</p>
+          <p className="legend">Spring '24 Retreat</p>
         </div>
 
         <div>
           <img src={Pic16} alt="pic" />
-          <p className="legend">boy band</p>
+          <p className="legend">spark boy band</p>
         </div>
 
         <div>
@@ -50,12 +74,12 @@ class CommunityGallery extends React.Component {
 
         <div>
           <img src={Pic1} alt="pic" />
-          <p className="legend">Fall 21 Showcase</p>
+          <p className="legend">Fall '21 Showcase</p>
         </div>
 
         <div>
           <img src={Pic2} alt="pic" />
-          <p className="legend">Post Bootcamp Terakawa</p>
+          <p className="legend">Post-Bootcamp Terakawa</p>
         </div>
 
         <div>
@@ -70,7 +94,7 @@ class CommunityGallery extends React.Component {
 
         <div>
           <img src={Pic14} alt="pic" />
-          <p className="legend">FA21 Board Bagel Brunch</p>
+          <p className="legend">Fall '21 Board Bagel Brunch</p>
         </div>
 
         <div>
