@@ -6,6 +6,7 @@ import "./style.css";
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
 import RecruitingBanner from "../components/recruiting-banner/recruiting-banner";
+import ShowcaseBanner from "../components/recruiting-banner/showcase-banner";
 
 import Overview from "../components/sections/overview";
 import CenterContainer from "../components/center-container";
@@ -106,8 +107,10 @@ const IndexPage = () => {
       <Navbar />
       <FadeIn>
         {
-          // shouldDisplayBanner ? (   THIS DOES NOT WORK - PLEASE COMMENT/UNCOMMENT THIS AND THE JOIN US BUTTON
+          // shouldDisplayBanner ? (   THIS DOES NOT WORK - PLEASE COMMENT/UNCOMMENT JUST THE BANNER TAG, AND THE JOIN US BUTTON LATER ON
             // <RecruitingBanner />
+            <ShowcaseBanner />
+
           // ) : ( <div/> )
         }
         <div id="header-section">
