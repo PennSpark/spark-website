@@ -107,11 +107,8 @@ const IndexPage = () => {
       <Navbar />
       <FadeIn>
         {
-          // shouldDisplayBanner ? (   THIS DOES NOT WORK - PLEASE COMMENT/UNCOMMENT JUST THE BANNER TAG, AND THE JOIN US BUTTON LATER ON
             // <RecruitingBanner />
-            <ShowcaseBanner />
-
-          // ) : ( <div/> )
+            // <ShowcaseBanner />
         }
         <div id="header-section">
           <h1>
