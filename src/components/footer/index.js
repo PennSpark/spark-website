@@ -16,12 +16,6 @@ export default function Footer() {
         <p>
           <CustomLink link="https://instagram.com/pennspark" content="Instagram" />{" "}
           &bull;{" "}
-          <CustomLink
-            link="https://facebook.com/pennspark"
-            content="Facebook"
-          />{" "}
-          {/* &bull; <CustomLink link="https://medium.com/@pennspark" content="Blog" />{" "} */}
-          &bull;{" "}
           <CustomLink link="https://github.com/pennspark" content="GitHub" />{" "}
           &bull;{" "}
           <CustomLink
@@ -29,9 +23,11 @@ export default function Footer() {
             content="LinkedIn"
           />{" "}
           &bull;{" "}
+          <CustomLink link="https://pennspark.substack.com/" content="Newsletter" />{" "}
+          &bull;{" "}
           <CustomLink
             link="https://pennclubs.com/club/penn-spark"
-            content="PennClubs"
+            content="Penn Clubs"
           />{" "}
           <br />
           <span className="bold">Contact Us</span>:{" "}

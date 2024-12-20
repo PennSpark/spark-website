@@ -7,13 +7,13 @@ export default function RedApp() {
   return (
     <div id="join-red" className="join-app-container">
       <strong
-        style={{ fontSize: "1.2rem", fontWeight: "600", color: "#cf6c5d" }}
+        style={{ fontSize: "1.2rem", fontWeight: "bold", color: "#cf6c5d" }}
       >
-        Apply for Red
+        SPARK RED
       </strong>
 
       <p
-        style={{ fontSize: "1rem", fontWeight: "400", color: "#cf6c5d" }}
+        style={{ fontSize: "1rem", fontWeight: "600", color: "#cf6c5d" }}
       >
         Our experienced track - jump right into projects
       </p>
@@ -21,7 +21,7 @@ export default function RedApp() {
       <div />
 
       <a
-        href="https://docs.google.com/forms/d/18E1VAc0ODu7LB-HRjkmS6PFilGeu1INMdGcGWSkKHW0/viewform"
+        href=""
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -21,7 +21,8 @@ const ResourcesPage = () => {
       </div>
       <div className="content-section" style={{ marginBottom: "30px" }}>
         <p className="larger-text" style={{textAlign: "center"}}>
-          A compiled list of resources to learn dev &amp; design.<br/>Find our official <CustomLink link="https://pennspark.github.io/blue/" content="Blue Bootcamp here"/>.
+          A compiled list of resources to learn dev &amp; design.<br/>
+          {/* Find our official <CustomLink link="https://pennspark.github.io/blue/" content="Blue Bootcamp here"/>. */}
         </p>
       </div>
       <br/>
@@ -31,7 +32,10 @@ const ResourcesPage = () => {
 
           <h3>Penn Classes</h3>
           <ul>
-            <li><CustomLink link="https://art20.labud.nyc/" content="DSGN 234" />: Art of the Web.</li>
+            <li><CustomLink link="https://www.design.upenn.edu/courses/dsgn-1020/" content="DSGN 1020" />: Art of the Web.</li>
+            <li><CustomLink link="https://www.design.upenn.edu/courses/dsgn-2570/" content="DSGN 2570" />: UI/UX Design.</li>
+            <li><CustomLink link="https://cis4120.seas.upenn.edu/" content="CIS 4120" />: Human-Computer Interaction.</li>
+
           </ul>
 
             <h3>Learning Design</h3>
@@ -78,6 +82,8 @@ const ResourcesPage = () => {
               <li><CustomLink link="https://paletton.com/" content="Paletton" />: Generate similar colors to a current color</li>
               <li><CustomLink link="https://mobbin.design/" content="Mobbin" />: Collection of modern mobile UI elements</li>
               <li><CustomLink link="https://material.io/design/" content="Material Design" />: Collection of UI components and guidelines</li>
+              <li><CustomLink link="https://www.qualtrics.com/blog/ux-design-glossary/" content="UX Design Glossary" />: A glossary of UI/UX terminology. 
+                Thank you to the Harrison Park Girl Scout Troop for recommending this resource!</li>
           </ul>
 
           <h3>Career Resources</h3>
@@ -95,8 +101,9 @@ const ResourcesPage = () => {
 
           <h3>Penn Classes</h3>
           <ul>
-            <li><CustomLink link="https://www.seas.upenn.edu/~cis197/" content="CIS 197" />: Javascript Course. Good for learning general full-stack &amp; MERN.</li>
-            <li><CustomLink link="https://cis192.github.io/schedule/" content="CIS 192" />: Python Course. Lecture 8 goes over Django full-stack development.</li>
+          <li><CustomLink link="https://cis4120.seas.upenn.edu/" content="CIS 4120" />: Human-Computer Interaction.</li>
+          <li><CustomLink link="https://www.design.upenn.edu/courses/dsgn-1020/" content="DSGN 1020" />: Art of the Web.</li>
+            <li><CustomLink link="https://www.seas.upenn.edu/~cis1920/tliu/" content="CIS 1920" />: Python Programming.</li>
           </ul>
 
           <h3>Frontend Development</h3>

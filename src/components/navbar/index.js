@@ -46,8 +46,8 @@ export default function Navbar() {
               <i className="fa fa-caret-down"></i>
             </button>
             <div className="nav-dropdown-content">
-              {/* <a className="nav-link" href="/resources">Resources</a> */}
               <a className="nav-link" href="/join">Applications</a>
+              <a className="nav-link" href="/resources">Resources</a>
             </div>
           </div>
         </div>

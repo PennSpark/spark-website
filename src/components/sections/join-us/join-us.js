@@ -35,29 +35,27 @@ export default function JoinUs() {
       <br />
       <br />
       <div
-        style={{ minHeight: "60vh" }}
+        style={{}}
         id="join-content-section"
         className="content-section"
       >
         {
           !shouldDisplayRedApp ? (
-            <p className="larger-text" style={{ textAlign: "center" }}>
+            <p className="larger-text" style={{ textAlign: "center", marginBottom: "80px" }}>
               Our next recruiting cycle will be Spring 2025. Applications open early in the semester - stay tuned!
               <br />
-              {/* If you're a Fall 2024 applicant with an <strong>approved</strong> extension, please email <a href='mailto:upennspark@gmail.com'>upennspark@gmail.com</a> to access the application form. */}
-              <br/>
-              Keep scrolling to learn more about our application process!
+              {/* If you're an applicant with an <strong>approved</strong> extension, please email <a href='mailto:upennspark@gmail.com'>upennspark@gmail.com</a> to access the application form. */}
             </p>
           ) : (
             <div>
               <p className="larger-text" style={{ textAlign: "center" }}>
-                Our Fall 2024 applications are now live! Applications are due on {""}
-                <s>Friday, September 6th, 2024 at 11:59PM EST</s> <strong>Saturday, September 7th, 2024 at 5:00PM EST</strong>. 
+                Our Spring 2025 applications are now live! Applications are due on {""}
+                <strong>INSERT DATE, 2025 at 11:59PM EST</strong>. 
                 If you're not sure which branch to apply to, you can learn about both Blue and Red <a href='https://pennspark.org/about/'>here!</a>
               </p>
               <br></br>
               <p>
-                <i>Note: If you're interested in our Blue track, please apply now as we only recruit in the fall!</i>
+                <i>Note: If you're interested in our Blue track, please stay tuned for next semester - Blue is a yearlong program, and we only recruit in the fall!</i>
               </p>
               <br></br>
               <br></br>
@@ -89,11 +87,11 @@ export default function JoinUs() {
           </a>
         </div> */}
 
-        {/* {
+        {
           shouldDisplayInterestForm && (
             <InterestForm />
           )
-        } */}
+        }
 
         {
           shouldDisplayBlueApp && ( // Only display the Red app if the current date is after the application deadline
