@@ -13,13 +13,13 @@ export default function InterestForm() {
       <p
         style={{ fontSize: "1rem", fontWeight: "600", color: "black" }}
       >
-        We're hosting a GIM at PLACE at TIME on DATE. Join us to meet the team and learn about what we do! Sign up so you won't miss a thing.
+        We're hosting a GIM on Tuesday, January 21st at 7:00PM in Huntsman F60. Join us to meet the team and learn about what we do! Sign up so you won't miss a thing.
       </p>
 
       <div />
 
       <a
-        href=""
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdeWW2PBCYE0FCutX-DT-XL9ymG4NPSSmgrdJ0Q1FN2b9G8zQ/viewform?usp=header"
         target="_blank"
         rel="noopener noreferrer"
       >

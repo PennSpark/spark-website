@@ -21,9 +21,9 @@ export default function JoinUs() {
   // const shouldDisplayBlueApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
   // const shouldDisplayRedApp = (currentDate > SHOW_APPS_DATE) || (currentDate < RECRUITING_DEADLINE);
   // lmfao idk who broke this
-  const shouldDisplayInterestForm = false;
+  const shouldDisplayInterestForm = true;
   const shouldDisplayBlueApp = false;
-  const shouldDisplayRedApp = false;
+  const shouldDisplayRedApp = true;
   return (
     <FadeIn>
       <div id="header-section">
@@ -50,7 +50,7 @@ export default function JoinUs() {
             <div>
               <p className="larger-text" style={{ textAlign: "center" }}>
                 Our Spring 2025 applications are now live! Applications are due on {""}
-                <strong>INSERT DATE, 2025 at 11:59PM EST</strong>. 
+                <strong>January 27th, 2025 at 5:00PM EST</strong>. 
                 If you're not sure which branch to apply to, you can learn about both Blue and Red <a href='https://pennspark.org/about/'>here!</a>
               </p>
               <br></br>

@@ -21,7 +21,7 @@ export default function RedApp() {
       <div />
 
       <a
-        href=""
+        href="https://forms.gle/cUUTc34xeHRYSCQ16"
         target="_blank"
         rel="noopener noreferrer"
       >
