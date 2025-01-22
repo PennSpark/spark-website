@@ -38,7 +38,7 @@ export default function Overview() {
       <div className="about-stat-container">
         <p>
           <span className="about-stat" style={{ color: "#4170BF" }}>
-            8
+            9
           </span>
           <br />
           <span className="about-caption">Live Semesters</span>

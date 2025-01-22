@@ -7,13 +7,13 @@ export default function InterestForm() {
       <strong
         style={{ fontSize: "1.2rem", fontWeight: "bold", color: "black" }}
       >
-        GENERAL INFORMATION MEETING
+        VISIT US AT SAC FAIR
       </strong>
 
       <p
         style={{ fontSize: "1rem", fontWeight: "600", color: "black" }}
       >
-        We're hosting a GIM on Tuesday, January 21st at 7:00PM in Huntsman F60. Join us to meet the team and learn about what we do! Sign up so you won't miss a thing.
+        We'll be at SAC Fair on Saturday, January 25th from 12 - 3pm in Houston Hall! Join us to meet the team and learn about what we do! Sign up so you won't miss a thing.
       </p>
 
       <div />
