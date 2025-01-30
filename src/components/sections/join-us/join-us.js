@@ -9,9 +9,9 @@ import BlueApp from "./blue-app";
 import InterestForm from "./interest-form";
 
 export default function JoinUs() {
-  const shouldDisplayInterestForm = true;
+  const shouldDisplayInterestForm = false;
   const shouldDisplayBlueApp = false; 
-  const shouldDisplayRedApp = true;
+  const shouldDisplayRedApp = false;
 
   return (
     <FadeIn>

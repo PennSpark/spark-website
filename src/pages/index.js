@@ -107,7 +107,7 @@ const IndexPage = () => {
       <Navbar />
       <FadeIn>
         {
-            <RecruitingBanner />
+            // <RecruitingBanner />
             // <ShowcaseBanner />
         }
         <div id="header-section">
