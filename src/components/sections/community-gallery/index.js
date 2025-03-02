@@ -23,6 +23,7 @@ import Pic19 from "./img/pic19.jpg";
 import Pic20 from "./img/pic20.jpg";
 import Pic21 from "./img/pic21.jpg";
 import Pic22 from "./img/pic22.jpg";
+import Pic23 from "./img/pic23.jpg";
 
 
 
@@ -32,6 +33,11 @@ class CommunityGallery extends React.Component {
   render() {
     return (
       <Carousel>
+        <div>
+          <img  src={Pic23} alt="pic" />
+          <p className="legend">{"spring 2025 onboarding dinner!"}</p>
+        </div>
+
         <div>
           <img  src={Pic22} alt="pic" />
           <p className="legend">{"fall 2024 retreat to the poconos!"}</p>
