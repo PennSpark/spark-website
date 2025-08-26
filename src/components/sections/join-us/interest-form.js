@@ -13,7 +13,7 @@ export default function InterestForm() {
       <p
         style={{ fontSize: "1rem", fontWeight: "600", color: "black" }}
       >
-        We'll be at SAC Fair on Tuesday, August 26th from 4pm-7pm in Houston Hall! Join us to meet the team and learn about what we do! Sign up so you won't miss a thing.
+        We'll be at SAC Fair on Wednesday, August 27th from 4pm-7pm on Locust! Join us to meet the team and learn about what we do! Sign up so you won't miss a thing.
       </p>
 
       <div />
