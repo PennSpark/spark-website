@@ -19,7 +19,7 @@ export default function BlueApp() {
       <div />
 
       <a
-        href=""
+        href="https://forms.gle/pYQwbVj6LGwFTgmP9"
         target="_blank"
         rel="noopener noreferrer"
       >

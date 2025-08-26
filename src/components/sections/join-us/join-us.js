@@ -9,9 +9,9 @@ import BlueApp from "./blue-app";
 import InterestForm from "./interest-form";
 
 export default function JoinUs() {
-  const shouldDisplayInterestForm = false;
-  const shouldDisplayBlueApp = false; 
-  const shouldDisplayRedApp = false;
+  const shouldDisplayInterestForm = true;
+  const shouldDisplayBlueApp = true; 
+  const shouldDisplayRedApp = true;
 
   return (
     <FadeIn>
@@ -26,18 +26,14 @@ export default function JoinUs() {
       <div id="join-content-section" className="content-section">
         {!shouldDisplayRedApp ? (
           <p className="larger-text" style={{ textAlign: "center", marginBottom: "80px" }}>
-            Our next recruiting cycle will be Fall 2025. Applications open early in the semester - stay tuned!
+            Applications open for Fall 2025! Due Aug 30 @ 5pm EST
           </p>
         ) : (
           <div>
             <p className="larger-text" style={{ textAlign: "center" }}>
-              Our Spring 2025 applications are now live! Applications are due on{" "}
-              <strong>January 27th, 2025 at 5:00PM EST</strong>. 
+              Our Fall 2025 applications are now live! Applications are due on{" "}
+              <strong>August 30th, 2025 at 5:00PM EST</strong>. 
               If you're not sure which branch to apply to, you can learn about both Blue and Red <a href='https://pennspark.org/about/'>here!</a>
-            </p>
-            <br />
-            <p>
-              <i>Note: If you're interested in our Blue track, please stay tuned for next semester - Blue is a yearlong program, and we only recruit in the fall!</i>
             </p>
             <br />
             <br />
