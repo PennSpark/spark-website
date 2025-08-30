@@ -31,8 +31,8 @@ export default function JoinUs() {
         ) : (
           <div>
             <p className="larger-text" style={{ textAlign: "center" }}>
-              Our Fall 2025 applications are now live! Applications are due on{" "}
-              <strong>August 30th, 2025 at 5:00PM EST</strong>. 
+              DEADLINE EXTENDED IN LIGHT OF ESAC UPDATE: Our Fall 2025 applications are now live! Applications are due on{" "}
+              <strong>September 5th, 2025 at 5:00PM EST</strong>. 
               If you're not sure which branch to apply to, you can learn about both Blue and Red <a href='https://pennspark.org/about/'>here!</a>
             </p>
             <br />
