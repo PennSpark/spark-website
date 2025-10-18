@@ -8,6 +8,8 @@ import "../../styles/animations.css";
 import Layout from "../../components/layout";
 import Navbar from "../../components/navbar";
 
+import headerImg from "/public/static/projects/project-home-header.png";
+
 // import Fall21 from "./fall21"
 // import Fall22 from "./fall22"
 // import Fall23 from "./fall23"
@@ -15,7 +17,7 @@ import Navbar from "../../components/navbar";
 // import Spring21 from "./spring21"
 // import Spring22 from "./spring22"
 // import Spring23 from "./spring23"
-// import Spring24 from "./spring24"
+import Spring24 from "./spring24/spring24.js";
 
 // const seasons = [
 //   { id: "f24", name: "Fall 2024", component: Fall24 },
@@ -28,17 +30,41 @@ import Navbar from "../../components/navbar";
 //   { id: "s21", name: "Spring 2021", component: Spring21 },
 // ];
 
+const seasons = [
+    { id: "s24", name: "Spring 2024", component: Spring24 },
+];
+
 const ProjectsPage = () => {
     return (
         <Layout title="Projects | Spark 💡">
             <Navbar />
             <FadeIn>
-                <div id="header-section">
-                    <h1>
-                        PROJECTS
-                    </h1>
+                <div
+                    style={{
+                    position: "relative",
+                    width: "100%",
+                    paddingTop: "136px",
+                    paddingBottom: "136px",
+                    textAlign: "center",
+                        backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0) 50%, white 100%), url(${headerImg})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    }}
+                >
+                    <h1 style={{ fontSize: "4rem" }}>Project Showcases</h1>
                 </div>
             </FadeIn>
+            {seasons.map(({ name, component: SeasonComp }) => {
+                if (!SeasonComp) return null;
+                const id = name.toLowerCase().replace(/\s+/g, "-");
+                return (
+                <section key={name} id={id} style={{ padding: "24px 0", marginTop: "36px" }}>
+                    <h2 style={{ textAlign: "center", marginBottom: 16 }}>{name}</h2>
+                    <hr/>
+                    <SeasonComp />
+                </section>
+                );
+            })}
         </Layout>
     );
 };

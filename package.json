@@ -24,6 +24,8 @@
     "react-helmet": "^6.1.0",
     "react-responsive-carousel": "^3.2.22",
     "react-transition-group": "^4.4.5",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
     "styled-components": "^5.3.5"
   }
 }
