@@ -37,34 +37,28 @@ const seasons = [
 const ProjectsPage = () => {
     return (
         <Layout title="Projects | Spark 💡">
-            <Navbar />
-            <FadeIn>
-                <div
-                    style={{
-                    position: "relative",
-                    width: "100%",
-                    paddingTop: "136px",
-                    paddingBottom: "136px",
-                    textAlign: "center",
-                        backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0) 50%, white 100%), url(${headerImg})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    }}
-                >
-                    <h1 style={{ fontSize: "4rem" }}>Project Showcases</h1>
-                </div>
-            </FadeIn>
-            {seasons.map(({ name, component: SeasonComp }) => {
-                if (!SeasonComp) return null;
-                const id = name.toLowerCase().replace(/\s+/g, "-");
-                return (
-                <section key={name} id={id} style={{ padding: "24px 0", marginTop: "36px" }}>
-                    <h2 style={{ textAlign: "center", marginBottom: 16 }}>{name}</h2>
-                    <hr/>
-                    <SeasonComp />
-                </section>
-                );
-            })}
+            <div className="projects-page">
+                <Navbar />
+
+                <FadeIn>
+                    <div className="projects-hero" style={{ "--header-img": `url(${headerImg})` }}>
+                        <h1 className="projects-hero__title">Project Showcases</h1>
+                    </div>
+                </FadeIn>
+
+                {seasons.map(({ name, component: SeasonComp }) => {
+                    if (!SeasonComp) return null;
+                    const id = name.toLowerCase().replace(/\s+/g, "-");
+
+                    return (
+                        <section key={name} id={id} className="season-section">
+                            <h2>{name}</h2>
+                            <hr />
+                            <SeasonComp />
+                        </section>
+                    );
+                })}
+            </div>
         </Layout>
     );
 };

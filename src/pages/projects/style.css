@@ -1,0 +1,38 @@
+/* Scope rules to this page only */
+.projects-page nav {
+    position: relative;
+    z-index: 1000; /* ensure nav stays above hero background */
+}
+
+/* HERO */
+.projects-hero {
+    pointer-events: none;            /* prevent hover-gap issues with dropdowns */
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding: 136px 0;
+    text-align: center;
+
+    /* header image passed from JS via --header-img */
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, white 100%),
+    var(--header-img);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-hero__title {
+    font-size: 4rem;
+    pointer-events: auto;            /* re-enable interaction for text/links if needed */
+}
+
+/* SEASONS LIST */
+.season-section {
+    padding: 24px 0;
+    margin-top: 36px;
+}
+
+.season-section > h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
