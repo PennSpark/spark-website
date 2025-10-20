@@ -3,93 +3,65 @@ import { Client } from "@notionhq/client";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-var jsonparser = bodyParser.json();
-
 const app = express();
 app.use(cors());
+app.use(bodyParser.json());
 
-const PORT = 4000;
+const NOTION_TOKEN = process.env.NOTION_TOKEN;
+const DATABASE_ID = process.env.NOTION_DB_ID;
 
-const HOST = "localhost";
+const notion = new Client({ auth: NOTION_TOKEN });
 
-
-const notion = new Client({ auth: "ntn_bg132571928bg9bHOBnRrDzljYGMs3KKnoxTatNwWzA0uB" });
-const databaseId = "28b007e6e3188013ba92f3d97782bdd3";
-
-
-app.post("/submitFormToNotion", jsonparser, async (req, res) => {
-
-  const name = req.body.name;
-  const label = req.body.label;
-
+app.post("/submitFormToNotion", async (req, res) => {
+  const { name, label } = req.body ?? {};
   try {
-    const response = await notion.pages.create({
-      parent: { database_id: databaseId },
-      properties: { 
-        Name: {
-          title: [
-            {
-              text: {
-                content: name
-              }
-            }
-          ]
-        },
-        "Label": {
-          rich_text: [
-            {
-              text: {
-                content: label
-              }
-            }
-          ]
-        }
-      }
+    const page = await notion.pages.create({
+      parent: { database_id: DATABASE_ID },
+      properties: {
+        Name: { title: [{ text: { content: name } }] },
+        Label: { rich_text: [{ text: { content: label } }] },
+      },
     });
-    console.log(response);
-    console.log("Success! Entry added.");
-    res.status(200).json({ success: true, data: response });
-
+    res.status(200).json({ success: true, data: page });
   } catch (error) {
     console.error("Error adding entry:", error);
     res.status(500).json({ success: false, error: error.message });
   }
-  
-})
-
-
-app.listen(PORT, HOST, () =>
-{
-  console.log(`Running on http://${HOST}:${PORT}`)
-}
-);
-
+});
 
 app.get("/getNotionData", async (req, res) => {
   try {
-    const database = await notion.databases.retrieve({ database_id: databaseId });
-    const dataSources = database.data_sources || [];
+    const start_cursor = typeof req.query.start === "string" ? req.query.start : undefined;
 
-    const allPages = [];
+    const resp = await notion.databases.query({
+      database_id: DATABASE_ID,
+      start_cursor,
+      page_size: 100,
+      // filter: { property: "Status", status: { equals: "Published" } },
+      // sorts: [{ property: "Created", direction: "descending" }],
+    });
 
-    for (const source of dataSources) {
-      const dataSource = await notion.dataSources.retrieve({ data_source_id: source.id });
-      const pages = await notion.dataSources.query({ data_source_id: dataSource.id });
+    const rows = resp.results.map((r) => {
+      const p = r.properties ?? {};
+      return {
+        id: r.id,
+        name: p.Name?.title?.[0]?.plain_text ?? "",
+        label: p.Label?.rich_text?.[0]?.plain_text ?? "",
+      };
+    });
 
-      pages.results.forEach(page => {
-        allPages.push({
-          id: page.id,
-          name: page.properties.Name?.title[0]?.text?.content || "",
-          label: page.properties.Label?.rich_text[0]?.text?.content || "",
-        });
-      });
-    }
-
-    res.status(200).json({ success: true, data: allPages });
-
+    res.status(200).json({
+      success: true,
+      data: rows,
+      has_more: resp.has_more,
+      next_cursor: resp.next_cursor ?? null,
+    });
   } catch (error) {
     console.error("Error fetching Notion data:", error);
     res.status(500).json({ success: false, error: error.message });
   }
 });
 
+app.listen(4000, "localhost", () => {
+  console.log("Running on http://localhost:4000");
+});

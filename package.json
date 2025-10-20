@@ -1,29 +1,27 @@
 {
-  "name": "spark-tldr",
-  "version": "1.0.0",
+  "name": "spark-website",
+  "version": "0.1.0",
   "private": true,
-  "description": "spark-tldr",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.3",
-    "gatsby": "^4.25.9",
-    "gatsby-plugin-manifest": "^4.18.1",
-    "gatsby-plugin-react-helmet": "^5.18.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-fade-in": "^2.0.1",
-    "react-helmet": "^6.1.0",
-    "react-responsive-carousel": "^3.2.22",
-    "react-transition-group": "^4.4.5",
-    "styled-components": "^5.3.5"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.5.6"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.6",
+    "@eslint/eslintrc": "^3"
   }
 }
