@@ -1,26 +1,149 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+body {
+  padding-bottom: 12px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+#header-section {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 30px 6px 36px 6px;
+  transition: 0.2s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+#header-spark-text {
+  -webkit-text-stroke: 2px black;
+  color: rgb(0, 0, 0, 0);
+}
+
+.content-section {
+  margin: auto;
+  max-width: 920px;
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+h1 {
+  font-family:  "HK Grotesk", "Inter", "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+  color: #383838;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+li {
+  transform: translateX(16px);
+}
+
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.larger-text {
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 30px 8px 30px;
+  font-family: "HK Grotesk", "Inter", "Karla", sans-serif;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 640px) {
+  button {
+    font-size: 1.2rem;
+    transition: 0.2s;
+  }
+
+  #header-section {
+    font-size: 2rem;
+    transition: 0.2s;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ANIMATIONS */
+/* #header-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
 }
+
+#about-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.1s;
+}
+
+#values-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.2s;
+}
+
+#branches-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.3s;
+}
+
+#work-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.4s;
+}
+
+#why-join-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.5s;
+}
+
+#socials-section {
+  opacity: 0;
+  animation: fadeinfromtop 0.2s forwards;
+  animation-delay: 0.7s;
+} */
