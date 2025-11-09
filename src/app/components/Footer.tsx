@@ -1,24 +1,28 @@
-import Image from "next/image"
 import Link from "next/link"
 export default function Navbar() {
   return (
-        <nav className="h-[78px] flex justify-center items-center gap-8 bg-[#E4E4E4] underline font-light">
-          <Link href="/about" className="text-sm tracking-wide hover:opacity-80">
+        <nav className="w-full h-[117px] flex justify-center items-center gap-2 font-light underline-offset-2 decoration-1 bg-[#E4E4E4]">
+          <Link href="/about" className="hover:opacity-80 underline">
             Instagram
           </Link>
-          <Link href="/projects" className="text-sm tracking-wide hover:opacity-80">
+          • 
+          <Link href="/projects" className="hover:opacity-80 underline">
             Github
           </Link>
-          <Link href="/community" className="text-sm tracking-wide hover:opacity-80">
+          • 
+          <Link href="/community" className="hover:opacity-80 underline">
             LinkedIn
           </Link>
-          <Link href="/clients" className="text-sm tracking-wide hover:opacity-80">
+          • 
+          <Link href="/clients" className="hover:opacity-80 underline">
             Newsletter
           </Link>
-          <Link href="/join" className="text-sm tracking-wide hover:opacity-80">
+          • 
+          <Link href="https://pennclubs.com/club/penn-spark" className="hover:opacity-80 underline">
             Penn Clubs
           </Link>
-          <Link href="/join" className="text-sm tracking-wide hover:opacity-80">
+          • 
+          <Link href="mailto:pennspark@gmail.com" className="hover:opacity-80 underline">
             Contact
           </Link>          
         </nav>

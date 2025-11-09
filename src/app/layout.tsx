@@ -18,7 +18,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-ibm-plex-sans',
 });
 
@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`antialiased ${ibmPlexSans.variable} ${ibmPlexMono.variable} ${hankenGrotesk.variable} flex flex-col min-h-screen`}
       >
         <Navbar />
-          <main className="flex-1 pt-[78px]">
+          <main>
           {children}
           </main>
         <Footer />
