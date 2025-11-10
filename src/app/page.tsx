@@ -67,7 +67,8 @@ function Title() {
           alt="Spark Brand Icons"
           width={180}
           height={42}
-          className="mb-[-5]"
+          className="mb-[-5] hover:scale-110
+            transition-transform duration-300"
         />
         <h1 id="big-header">
           we are <span id="header-spark-text">spark</span>
@@ -145,7 +146,7 @@ export default function HomePage() {
 
       <section
         id="about"
-        className="justify-center items-center flex flex-col mx-20 mb-40"
+        className="justify-center items-center flex flex-col mb-40"
       >
         <section className="flex gap-10">
           <h1 id="big-header">
@@ -156,9 +157,11 @@ export default function HomePage() {
             alt="Spark Brand Icon"
             width={64}
             height={42}
+            className="hover:scale-110
+            transition-transform duration-300"
           ></img>
         </section>
-        <p className="larger-text text-center max-w-[49vw] mb-1 mx-2">
+        <p className="larger-text text-center max-w-[49vw]">
           Established in Spring 2021, Spark is a community of student developers
           and designers at the University of Pennsylvania that builds both
           creative and client projects.
@@ -189,7 +192,7 @@ export default function HomePage() {
 
       <section
         id="recent-work"
-        className="justify-center items-center flex flex-col mx-20 mb-40"
+        className="justify-center items-center flex flex-col mb-40"
       >
         <section className="flex gap-10">
           <h1 id="big-header">
@@ -200,6 +203,8 @@ export default function HomePage() {
             alt="Spark Brand Icon"
             width={64}
             height={42}
+            className="hover:scale-110
+            transition-transform duration-300"
           ></img>
         </section>
         <ProjectCarousel></ProjectCarousel>
@@ -207,7 +212,7 @@ export default function HomePage() {
 
       <section
         id="work-with-spark"
-        className="justify-center items-center flex flex-col mx-20 mb-40"
+        className="justify-center items-center flex flex-col mb-40"
       >
         <section className="flex gap-10">
           <h1 id="big-header">
@@ -218,9 +223,11 @@ export default function HomePage() {
             alt="Spark Brand Icon"
             width={64}
             height={42}
+            className="hover:scale-110
+            transition-transform duration-300"
           ></img>
         </section>
-        <p className="larger-text text-center max-w-[49vw] mb-1 mx-2">
+        <p className="larger-text text-center max-w-[49vw]">
           Interested in working together or learning more? We provide
           engineering and design services, from product branding to full-stack
           web development. Most projects run for about 8 weeks, followed by a
@@ -234,6 +241,45 @@ export default function HomePage() {
             <Link href="/about">Contact Us</Link>
           </button>
         </section>
+      </section>
+
+      <section
+        className={`relative flex-col px-8 lg:px-42 w-[100svw] items-start justify-center flex`}
+      >
+        {" "}
+        <p className="larger-text bold text-left max-w-[49vw]">
+          Our past clients
+        </p>
+        <div className="flex flex-row flex-wrap gap-10 mt-10">
+          <Image
+            src="/clients/counselab.png"
+            alt="Counselab Logo"
+            width={250}
+            height={100}
+            className="object-contain"
+          ></Image>
+          <Image
+            src="/clients/gaiaai.png"
+            alt="GaiaAI Logo"
+            width={250}
+            height={100}
+            className="object-contain"
+          ></Image>
+          <Image
+            src="/clients/clarifi.png"
+            alt="Clarifi Logo"
+            width={250}
+            height={100}
+            className="object-contain"
+          ></Image>
+          <Image
+            src="/clients/bonfire.png"
+            alt="Bonfire Logo"
+            width={250}
+            height={100}
+            className="object-contain"
+          ></Image>
+        </div>
       </section>
 
       {/* <Navbar /> */}
