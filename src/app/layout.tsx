@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${ibmPlexSans.variable} ${ibmPlexMono.variable} ${hankenGrotesk.variable} flex flex-col min-h-screen`}
+        className={`antialiased ${ibmPlexSans.variable} ${ibmPlexMono.variable} ${hankenGrotesk.variable}`}
       >
         <Navbar />
         <main>{children}</main>
