@@ -20,7 +20,7 @@ main {
 #header-section {
   text-align: center;
   font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   padding: 30px 6px 36px 6px;
   margin-top: 40px;
@@ -28,6 +28,7 @@ main {
   max-width: 920px;
   transition: 0.2s;
 }
+
 #header-spark-text {
   font-weight: 700;
   color: white;
@@ -210,6 +211,54 @@ button.yellow-circular {
 button.yellow-circular:hover {
   background-color: #FFD552;
   color: black;
+}
+
+/* Application cards buttons — match Figma specs */
+button.application-button {
+  width: 178px;
+  height: 47px;
+  flex-shrink: 0;
+
+  border-radius: 9px;
+  border: 1.25px solid #000;
+
+  /* override global button defaults */
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* default (non-hover) states with fills from your mockup */
+button.application-button--yellow {
+  background-color: #FFD552;
+  color: #000000;
+}
+
+button.application-button--blue {
+  background-color: #246DED;
+  color: #ffffff;
+}
+
+button.application-button--red {
+  background-color: #F5654E;
+  color: #ffffff;
+}
+
+/* hover: transparent background, black text */
+button.application-button:hover {
+  background-color: transparent;
+  color: #000000;
+  border-color: #000000;
 }
 
 /* MOBILE VIEW */
