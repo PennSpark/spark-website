@@ -6,6 +6,9 @@ import ProjectList from "./components/ProjectList";
 import ProjectCarousel from "./components/ProjectCarousel";
 import WhyJoin from "./components/WhyJoin";
 import ApplicationForms from "./components/ApplicationForms";
+import DesignResourcesPage from "./components/DesignResources";
+import DevResourcesPage from "./components/DevResources";
+import CareerResourcesPage from "./components/CareerResources";
 
 export default function Projects() {
     return (
@@ -39,6 +42,15 @@ export default function Projects() {
             <p className="description-paragraph">
                 A compiled list of resources to learn about development & design.
             </p>
+        </section>
+        <section>
+            <DesignResourcesPage />
+        </section>
+        <section>
+            <DevResourcesPage />
+        </section>
+        <section>
+            <CareerResourcesPage />
         </section>
         {/* <section className="content-section">
             <CommunityGrid />

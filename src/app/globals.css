@@ -261,6 +261,136 @@ button.application-button:hover {
   border-color: #000000;
 }
 
+/* Root just centers the whole block in the page */
+.design-resources-root {
+  display: flex;
+  justify-content: center;
+}
+
+/* Container that controls width; header and box share this width */
+.design-resources-container {
+  width: 1400px;
+  flex-shrink: 0;
+  margin: 40px auto 80px auto;
+}
+
+/* Header: left aligned, same left edge as the box */
+#header-section.design-resources-header {
+  text-align: left;
+  margin: 0 0 24px 0;
+  padding-left: 6px; /* optional small inset to match your Figma */
+}
+
+.design-resources-panel {
+  width: 100%;          /* equals 1400px via container */
+  height: 554px;
+  flex-shrink: 0;
+
+  border-radius: 24px;
+  border: 1.5px solid #000;
+  background: #f5f3f0;
+  padding: 32px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;   /* ensures scrollbar/content never visually exceeds box */
+}
+
+/* "Penn Classes" title */
+.design-resources-section-title {
+  margin: 0 0 24px 0;
+
+  color: #000;
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  text-transform: none;
+}
+
+/* Scroll area inside the fixed-height box */
+.design-resources-scroll {
+  flex: 1;
+  min-height: 0;      /* critical so flexbox lets it shrink and scroll */
+
+  overflow-y: auto;
+  padding-right: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Course cards + text + button (unchanged from before) */
+.course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  padding: 24px 28px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1.5px solid #000;
+  box-sizing: border-box;
+}
+
+.course-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Course code: Hanken Grotesk, 30px, 500 */
+.course-code {
+  color: #000;
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Course name: IBM Plex Sans, 25px, 300 */
+.course-name {
+  margin-top: 6px;
+
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.redirect-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 32px;
+  border-radius: 9999px;
+  border: 1.5px solid #000;
+
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.redirect-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
 /* MOBILE VIEW */
 @media (max-width: 640px) {
   button {
@@ -271,6 +401,21 @@ button.application-button:hover {
   #header-section {
     font-size: 2rem;
     transition: 0.2s;
+  }
+
+  .design-resources-panel {
+    padding: 24px 18px;
+  }
+
+  .course-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .redirect-button {
+    align-self: stretch;
+    justify-content: center;
+    width: 100%;
   }
 }
 
