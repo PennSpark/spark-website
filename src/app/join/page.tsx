@@ -1,9 +1,7 @@
 "use client";
-import Image from "next/image";
+
 import HeaderBanner from "../components/HeaderBanner";
 
-import ProjectList from "./components/ProjectList";
-import ProjectCarousel from "./components/ProjectCarousel";
 import WhyJoin from "./components/WhyJoin";
 import ApplicationForms from "./components/ApplicationForms";
 import DesignResourcesPage from "./components/DesignResources";
