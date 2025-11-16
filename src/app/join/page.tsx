@@ -9,6 +9,7 @@ import ApplicationForms from "./components/ApplicationForms";
 import DesignResourcesPage from "./components/DesignResources";
 import DevResourcesPage from "./components/DevResources";
 import CareerResourcesPage from "./components/CareerResources";
+import FAQ from "./components/FAQ";
 
 export default function Projects() {
     return (
@@ -52,9 +53,10 @@ export default function Projects() {
         <section>
             <CareerResourcesPage />
         </section>
-        {/* <section className="content-section">
-            <CommunityGrid />
-        </section> */}
+        <section id="header-section">FAQ</section>
+        <section>
+            <FAQ />
+        </section>
         </>
     );
 }
