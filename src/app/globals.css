@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x:hidden;
+  overflow-x: hidden;
   top: 0;
   left: 0;
 }
@@ -16,7 +16,7 @@ body {
   width: 100%;
   min-height: 100svh;
   overflow-x: hidden;
-  font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 main {
@@ -74,7 +74,7 @@ main {
 }
 
 h1 {
-  font-family:  "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
   margin-bottom: 20px;
@@ -183,20 +183,16 @@ button.yellow-circular:hover {
   position: relative;
   overflow: visible;
   /* Add a mask/fade at the edges */
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
+  mask-image: linear-gradient(to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%);
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%);
 }
 
 /* Fixed-height box; cards are absolutely positioned inside */
@@ -216,7 +212,8 @@ button.yellow-circular:hover {
   left: 50%;
 
   width: var(--project-card-width);
-  height: var(--project-card-height-inactive); /* default inactive size */
+  height: var(--project-card-height-inactive);
+  /* default inactive size */
   flex-shrink: 0;
 
   border-radius: 30px;
@@ -231,8 +228,7 @@ button.yellow-circular:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
   /* Simple 2D translation - just horizontal movement */
-  transform: translate(-50%, -50%)
-    translateX(calc(var(--rel) * var(--project-card-offset)));
+  transform: translate(-50%, -50%) translateX(calc(var(--rel) * var(--project-card-offset)));
 
   transition:
     transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
@@ -295,6 +291,8 @@ button.yellow-circular:hover {
   font-weight: 400;
 }
 
+button.ignore {}
+
 /* Description */
 .project-card-description {
   margin-top: 10px;
@@ -314,66 +312,67 @@ button.black-circular {
   border: 2.5px solid black;
 }
 
-button.black-circular:hover {
-  background-color: white;
-  color: black;
-  transition: all 0.2s ease;
-}
-
-/* MOBILE VIEW */
-@media (max-width: 640px) {
-  button {
-    font-size: 1.2rem;
-    transition: 0.2s;
+  button.black-circular:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease;
   }
 
-  #header-section {
-    font-size: 2rem;
-    transition: 0.2s;
-    padding-left: 3rem;
-    padding-right: 3rem;
+  /* MOBILE VIEW */
+  @media (max-width: 640px) {
+    button {
+      font-size: 1.2rem;
+      transition: 0.2s;
+    }
+
+    #header-section {
+      font-size: 2rem;
+      transition: 0.2s;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    .content-section {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .design-resources-panel {
+      padding: 24px 18px;
+    }
+
+    .course-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .redirect-button {
+      align-self: stretch;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .projects-carousel-root {
+      padding: 40px 0;
+    }
+
+    .projects-carousel-row {
+      max-width: 100%;
+    }
   }
 
-  .content-section {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  @media (max-width: 480px) {
+    #big-header {
+      font-size: 4rem;
+      transition: 0.2s;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
 
-  .design-resources-panel {
-    padding: 24px 18px;
-  }
-
-  .course-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .redirect-button {
-    align-self: stretch;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .projects-carousel-root {
-    padding: 40px 0;
-  }
-
-  .projects-carousel-row {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  #big-header {
-    font-size: 4rem;
-    transition: 0.2s;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-    transition: 0.2s;
-  }
+    h1 {
+      font-size: 2.5rem;
+      transition: 0.2s;
+    }
 
   .content-section {
     padding-left: 1.5rem;
