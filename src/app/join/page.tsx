@@ -1,6 +1,7 @@
 "use client";
 
 import HeaderBanner from "../components/banners/HeaderBanner";
+import BulbBanner from "../components/banners/BulbBanner";
 
 import WhyJoin from "../components/WhyJoin";
 import ApplicationForms from "./components/ApplicationForms";
@@ -12,8 +13,9 @@ import FAQ from "./components/FAQ";
 export default function Projects() {
     return (
         <>
-        <HeaderBanner className="bg-[#F5654E] text-white mb-20 ">
-            <h1>
+        <HeaderBanner className="bg-black text-white mb-20 ">
+            <BulbBanner/>
+            <h1 className='pointer-events-none shadow-xl'>
             Light your spark — <br></br> Join the team.
             </h1>
         </HeaderBanner>
