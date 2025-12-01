@@ -1,9 +1,18 @@
 'use client'
+import { useState } from 'react'
 import Image from "next/image"
 import HeaderBanner from "../components/banners/HeaderBanner"
-import CommunityGrid from "./components/CommunityGrid"
+import CurrentGrid from "./components/CurrentGrid"
+import DirectoryGrid from './components/DirectoryGrid'
+import FormerGrid from './components/FormerGrid'
 
 export default function Community() {
+    const [view, setView] = useState<'current' | 'former' | 'directory'>('current');
+
+    const handleSetView = (newView: 'current' | 'former' | 'directory') => {
+        setView(newView);
+    }
+
     return (
         <>
         <HeaderBanner
@@ -23,13 +32,22 @@ export default function Community() {
         </section>
         <section className="content-section">
             <div className='flex flex-row gap-1 justify-center'>
-                <p>current</p>
-                <p>former</p>
-                <p>directory</p>
+                <button onClick={() => handleSetView('current')}>
+                    current
+                </button>
+                <button onClick={() => handleSetView('former')}>
+                    former
+                </button>
+                <button onClick={() => handleSetView('directory')}>
+                    directory
+                </button>
             </div>
         </section>
         <section className="content-section">
-            <CommunityGrid />
+            {view === 'directory' ? <DirectoryGrid /> :
+                view === 'former' ? <FormerGrid /> :
+                    <CurrentGrid />
+            }
         </section>
         </>
     )

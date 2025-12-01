@@ -16,35 +16,35 @@ const projects: Project[] = [
     term: "Fall 2024",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageSrc: "/images/stride.png",
+    imageSrc: "/project-images/stride/cover.png",
   },
   {
     title: "Project 2",
     term: "Spring 2024",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    imageSrc: "/images/stride.png",
+    imageSrc: "/project-images/stride/cover.png",
   },
   {
     title: "Project 3",
     term: "Summer 2024",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    imageSrc: "/images/stride.png",
+    imageSrc: "/project-images/stride/cover.png",
   },
   {
     title: "Project 4",
     term: "Fall 2023",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    imageSrc: "/images/stride.png",
+    imageSrc: "/project-images/stride/cover.png",
   },
   {
     title: "Project 5",
     term: "Spring 2023",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    imageSrc: "/images/stride.png",
+    imageSrc: "/project-images/stride/cover.png",
   },
 ];
 

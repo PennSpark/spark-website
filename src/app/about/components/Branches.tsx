@@ -39,7 +39,7 @@ export default function Branches() {
             <h3>
               What we do?
             </h3>
-            <p>
+            <p className='mb-4'>
               {card.whatwedo}
             </p>
 
