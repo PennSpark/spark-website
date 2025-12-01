@@ -73,7 +73,7 @@ export default function ProjectList() {
               key={tag}
               onClick={() => toggleTag(tag)}
               className={[
-                'h-fit select-none cursor-pointer px-3 py-1',
+                'h-fit select-none cursor-pointer',
                 'transition-colors duration-200',
                 isActive
                   ? 'bg-black text-white border-black'
@@ -132,10 +132,7 @@ export default function ProjectList() {
                   <div className="flex flex-wrap gap-2">
                   {p.tags?.length > 0 && (
                     p.tags.map((tag) => (
-                      <label
-                        key={tag}
-                        className="border-box px-3 py-1"
-                      >
+                      <label key={tag}>
                         {tag}
                       </label>
                     )))}

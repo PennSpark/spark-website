@@ -21,18 +21,15 @@ export default function About() {
         </p>
 
       <div className='flex flex-row gap-10 justify-center mt-10'>
-          <button className="ignore
-            px-4 py-2 bg-[#FFFFFF] rounded-full hover:bg-[#FFD552] transition-colors duration-300">
+          <label className="pill-toggle pill-toggle--yellow">
             Education
-          </button>
-          <button className="ignore
-            px-4 py-2 bg-[#FFFFFF] rounded-full hover:bg-[#FFD552] transition-colors duration-300">   
+          </label>
+          <label className="pill-toggle pill-toggle--red">
             Experience
-          </button>
-          <button className="ignore
-            px-4 py-2 bg-[#FFFFFF] rounded-full hover:bg-[#FFD552] transition-colors duration-300">
+          </label>
+          <label className="pill-toggle pill-toggle--blue">
               Community
-          </button>
+          </label>
       </div>
       
     </section>

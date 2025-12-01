@@ -34,7 +34,7 @@ export default function Community() {
         <div className="flex flex-row gap-2 justify-center">
         <label
             className={[
-            "pill-toggle",
+            "cursor-pointer pill-toggle",
             "pill-toggle--yellow",
             view === "current" ? "pill-toggle--active" : "",
             ].join(" ")}
@@ -45,7 +45,7 @@ export default function Community() {
 
         <label
             className={[
-            "pill-toggle",
+            "cursor-pointer pill-toggle",
             "pill-toggle--red",
             view === "former" ? "pill-toggle--active" : "",
             ].join(" ")}
@@ -56,7 +56,7 @@ export default function Community() {
 
         <label
             className={[
-            "pill-toggle",
+            "cursor-pointer pill-toggle",
             "pill-toggle--blue",
             view === "directory" ? "pill-toggle--active" : "",
             ].join(" ")}

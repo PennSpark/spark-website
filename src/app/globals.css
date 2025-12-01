@@ -116,6 +116,13 @@ label {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  line-height: 1;
+  border: 1.25px solid black;
 }
 
 p {
@@ -254,21 +261,13 @@ button.black-circular {
 
 /* Special Elements */
 label.pill-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 9999px;
-  padding: 4px 12px 4px 22px;
-  line-height: 1;
-  color: #000000;
-  cursor: pointer;
   overflow: hidden;
+  color: #000000;
   transition:
     color 0.2s ease,
     border-color 0.2s ease,
     background-color 0.2s ease;
-
-  /* default color, overridden per pill */
+  padding-left: 1.5rem;
   --pill-color: #000000;
 }
 
