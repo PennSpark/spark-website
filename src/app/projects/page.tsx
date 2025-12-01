@@ -8,7 +8,7 @@ import ProjectCarousel from "./components/ProjectCarousel";
 export default function Projects() {
   return (
     <>
-      <HeaderBanner className="bg-[#F5654E] text-white mb-20 ">
+      <HeaderBanner className="bg-[#F5654E] text-white mb-20">
         <h1>
           Making ideas tangible <br></br> through design and code.
         </h1>
