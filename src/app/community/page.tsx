@@ -31,17 +31,40 @@ export default function Community() {
             </p>
         </section>
         <section className="content-section">
-            <div className='flex flex-row gap-1 justify-center'>
-                <button onClick={() => handleSetView('current')}>
-                    current
-                </button>
-                <button onClick={() => handleSetView('former')}>
-                    former
-                </button>
-                <button onClick={() => handleSetView('directory')}>
-                    directory
-                </button>
-            </div>
+        <div className="flex flex-row gap-2 justify-center">
+        <label
+            className={[
+            "pill-toggle",
+            "pill-toggle--yellow",
+            view === "current" ? "pill-toggle--active" : "",
+            ].join(" ")}
+            onClick={() => handleSetView("current")}
+        >
+            current
+        </label>
+
+        <label
+            className={[
+            "pill-toggle",
+            "pill-toggle--red",
+            view === "former" ? "pill-toggle--active" : "",
+            ].join(" ")}
+            onClick={() => handleSetView("former")}
+        >
+            former
+        </label>
+
+        <label
+            className={[
+            "pill-toggle",
+            "pill-toggle--blue",
+            view === "directory" ? "pill-toggle--active" : "",
+            ].join(" ")}
+            onClick={() => handleSetView("directory")}
+        >
+            directory
+        </label>
+        </div>
         </section>
         <section className="content-section">
             {view === 'directory' ? <DirectoryGrid /> :

@@ -1,9 +1,8 @@
 "use client";
-import Image from "next/image";
 import DrawBanner from "../components/banners/DrawBanner";
 
 import ProjectList from "./components/ProjectList";
-import ProjectCarousel from "./components/ProjectCarousel";
+import ProjectGrid from "./components/ProjectGrid";
 
 export default function Projects() {
   return (
@@ -15,16 +14,7 @@ export default function Projects() {
       </DrawBanner>
 
       <section id="header-section">
-        <h1>
-          spark <span id="header-spark-text">work</span>
-          <Image
-            src="/brand-icons/red-surprised-face.svg"
-            alt="Spark Work Icon"
-            width={42}
-            height={42}
-            className="inline-block ml-3 mb-3.5"
-          />
-        </h1>
+        <h1>spark <span id="header-spark-text">work</span></h1>
         <p className="description-paragraph">
           Each semester, our members come together to work on a variety of
           engineering and/or design projects. In the past, projects have ranged
@@ -33,10 +23,8 @@ export default function Projects() {
           emojis. We work on both client and passion projects!
         </p>
       </section>
-      <section id="header-section">Recent Works</section>
-      <section className="full-width-content-section">
-        <ProjectCarousel />
-      </section>
+      <h2>Recent Works</h2>
+      <ProjectGrid />
       <section id="header-section">Our Projects</section>
       <section className="content-section w-full">
         <ProjectList />

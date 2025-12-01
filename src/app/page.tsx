@@ -7,6 +7,7 @@ import Image from "next/image";
 import Title from "./components/Title";
 import ProjectCarousel from "./projects/components/ProjectCarousel";
 import PastClients from "./components/PastClients";
+import SubstackGrid from "./components/SubstackGrid";
 
 export default function HomePage() {
   return (
@@ -78,6 +79,8 @@ export default function HomePage() {
 
         <ProjectCarousel />
       </section>
+
+      <SubstackGrid />
 
       <section className="content-section w-full">
         <h1>
