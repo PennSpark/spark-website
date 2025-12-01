@@ -27,114 +27,28 @@ const cards: BranchCard[] = [
 
 export default function Branches() {
   return (
-    <section
-      style={{
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-      }}
-    >
-      <div
-        style={{
-          width: '1315px', // 2 * 620 + 1 * 75 gutter
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'stretch',
-        }}
+    <section className="content-section w-full">
+      <div className="w-full flex flex-col md:flex-row gap-4"
       >
         {cards.map((card) => (
-          <div
-            key={card.title}
-            style={{
-              width: '620px',
-              height: '489px',
-              flexShrink: 0,
-              borderRadius: '30px',
-              border: '1.3px solid #000',
-              background: '#FFF',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              justifyContent: 'space-between',
-              padding: '56px 56px 56px',
-              boxSizing: 'border-box',
-              textAlign: 'left',
-            }}
-          >
-            <h2
-            style={{
-                textAlign: 'left',
-                fontFamily: '"Hanken Grotesk", "Inter", "Karla", sans-serif',
-                fontSize: '2rem',
-                fontWeight: 600,
-                transition: '0.2s',
-                margin: 0,
-                marginBottom: '16px',
-                color: card.color,
-                textTransform: 'none'
-            }}
-            >
+          <div key={card.title} className='border-box flex flex-col justify-start items-start text-left p-4 md:p-8 flex-1'>
+            <h2 className='mb-4' style={{ color: card.color }}>
                 {card.title}
             </h2>
 
-
-            <section>
-
-            <p
-              style={{
-                margin: '8px 0 0px',
-                fontFamily: "'IBM Plex Sans', sans-serif",
-                fontSize: '25px',
-                fontWeight: 500,
-                color: '#4B4B4B',
-                lineHeight: '1.4',
-              }}
-            >
+            <h3>
               What we do?
-            </p>
-            
-            <p
-              style={{
-                margin: '8px 0 24px',
-                fontFamily: "'IBM Plex Sans', sans-serif",
-                fontSize: '20px',
-                fontWeight: 400,
-                color: '#4B4B4B',
-                lineHeight: '1.4',
-              }}
-            >
+            </h3>
+            <p>
               {card.whatwedo}
             </p>
-            </section>
 
-            <section>
-            <p
-              style={{
-                margin: '8px 0 0px',
-                fontFamily: "'IBM Plex Sans', sans-serif",
-                fontSize: '25px',
-                fontWeight: 500,
-                color: '#4B4B4B',
-                lineHeight: '1.4',
-              }}
-            >
+            <h3>
               Who can join?
-            </p>
-            <p
-              style={{
-                margin: '8px 0 24px',
-                fontFamily: "'IBM Plex Sans', sans-serif",
-                fontSize: '20px',
-                fontWeight: 400,
-                color: '#4B4B4B',
-                lineHeight: '1.4',
-              }}
-            >
+            </h3>
+            <p>
               {card.whocanjoin}
-            </p>
-            </section>
-
-            
+            </p>   
           </div>
         ))}
       </div>

@@ -2,7 +2,7 @@
 
 import HeaderBanner from "../components/banners/HeaderBanner";
 
-import WhyJoin from "./components/WhyJoin";
+import WhyJoin from "../components/WhyJoin";
 import ApplicationForms from "./components/ApplicationForms";
 import DesignResourcesPage from "./components/DesignResources";
 import DevResourcesPage from "./components/DevResources";
@@ -30,10 +30,8 @@ export default function Projects() {
             <h3>Application Forms</h3>
             <ApplicationForms />
         </section>
-        <section className="content-section w-full">
-            <h3>Why Join?</h3>
+
             <WhyJoin />
-        </section>
         <section className="content-section w-full">
             <h1>
                 get <span id="header-spark-text">resources</span>

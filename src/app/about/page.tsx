@@ -1,5 +1,5 @@
-import WhyJoin from "./components/WhyJoin";
-import HeaderBanner from "../components/HeaderBanner";
+import WhyJoin from "../components/WhyJoin";
+import HeaderBanner from "../components/banners/HeaderBanner";
 import Branches from "./components/Branches";
 
 export default function About() {
@@ -15,15 +15,7 @@ export default function About() {
         <h1>
           about <span id="header-spark-text">spark</span>
         </h1>
-                <p className="description-paragraph"               
-        style={{
-                margin: '8px 0 24px',
-                fontFamily: "'IBM Plex Sans', sans-serif",
-                fontSize: '23px',
-                fontWeight: 400,
-                color: '#000000',
-                lineHeight: '1.4',
-              }}>
+        <p>
           Established in Spring 2021, Spark is a community of student developers 
           and designers at the University of Pennsylvania that builds both creative and client projects.
         </p>
@@ -48,7 +40,7 @@ export default function About() {
 
       <WhyJoin />
 
-      <section id="header-section">Branches
+      <section id="header-section">Our Branches
 
         
       </section>
