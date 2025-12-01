@@ -8,14 +8,20 @@ import DesignResourcesPage from "./components/DesignResources";
 import DevResourcesPage from "./components/DevResources";
 import CareerResourcesPage from "./components/CareerResources";
 import FAQ from "./components/FAQ";
+import ThreeSection from "./components/ThreeSection";
 
 export default function Projects() {
     return (
         <>
-        <HeaderBanner className="bg-[#F5654E] text-white mb-20 ">
+        <HeaderBanner className="bg-[#111111] text-white mb-20 ">
             <h1>
             Light your spark — <br></br> Join the team.
             </h1>
+            <div className="absolute inset-0 pointer-events-none"
+            style={{ cursor: "grab" }}
+            >
+                <ThreeSection/>
+            </div>
         </HeaderBanner>
 
         <section id="header-section">
