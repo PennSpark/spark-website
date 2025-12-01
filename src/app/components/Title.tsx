@@ -16,7 +16,7 @@ export default function Title() {
   return (
     <>
       <div
-        className={`absolute -z-5 w-screen min-w-[100svh] h-screen bg-gradient-to-r from-white to-white/20 
+        className={`absolute -z-5 w-screen h-screen bg-gradient-to-r from-white to-white/20 
         transition-opacity duration-700 ease-in-out 
         ${
           showingProjects
