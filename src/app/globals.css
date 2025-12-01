@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x:hidden;
+  overflow-x: hidden;
   top: 0;
   left: 0;
 }
@@ -16,7 +16,7 @@ body {
   width: 100%;
   min-height: 100svh;
   overflow-x: hidden;
-  font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 main {
@@ -42,16 +42,20 @@ main {
 #header-spark-text {
   font-weight: 700;
   color: white;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
+  -webkit-text-stroke: 4px black;
+  /* outline */
+  paint-order: stroke fill;
+  /* ensures outline goes outside the fill */
 }
 
 #red-header-spark-text {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.01em;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
+  -webkit-text-stroke: 4px black;
+  /* outline */
+  paint-order: stroke fill;
+  /* ensures outline goes outside the fill */
   color: #FF6058;
 }
 
@@ -59,8 +63,10 @@ main {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.01em;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
+  -webkit-text-stroke: 4px black;
+  /* outline */
+  paint-order: stroke fill;
+  /* ensures outline goes outside the fill */
   color: #FFC130;
 }
 
@@ -68,8 +74,10 @@ main {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.01em;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
+  -webkit-text-stroke: 4px black;
+  /* outline */
+  paint-order: stroke fill;
+  /* ensures outline goes outside the fill */
   color: #246DED;
 }
 
@@ -93,17 +101,17 @@ main {
   align-items: flex-start;
   text-align: left;
   padding-left: 20px;
-} 
+}
 
 h1 {
-  font-family:  "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
   margin-bottom: 20px;
 }
 
 #big-header {
-  font-family:  "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
   font-weight: 700;
   font-size: 6rem;
   margin-bottom: 20px;
@@ -290,11 +298,13 @@ button.application-button:hover {
 #header-section.design-resources-header {
   text-align: left;
   margin: 0 0 24px 0;
-  padding-left: 6px; /* optional small inset to match your Figma */
+  padding-left: 6px;
+  /* optional small inset to match your Figma */
 }
 
 .design-resources-panel {
-  width: 100%;          /* equals 1400px via container */
+  width: 100%;
+  /* equals 1400px via container */
   height: 554px;
   flex-shrink: 0;
 
@@ -306,7 +316,8 @@ button.application-button:hover {
 
   display: flex;
   flex-direction: column;
-  overflow: hidden;   /* ensures scrollbar/content never visually exceeds box */
+  overflow: hidden;
+  /* ensures scrollbar/content never visually exceeds box */
 }
 
 /* "Penn Classes" title */
@@ -326,7 +337,8 @@ button.application-button:hover {
 /* Scroll area inside the fixed-height box */
 .design-resources-scroll {
   flex: 1;
-  min-height: 0;      /* critical so flexbox lets it shrink and scroll */
+  min-height: 0;
+  /* critical so flexbox lets it shrink and scroll */
 
   overflow-y: auto;
   padding-right: 8px;
@@ -562,20 +574,16 @@ button.application-button:hover {
   position: relative;
   overflow: visible;
   /* Add a mask/fade at the edges */
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
+  mask-image: linear-gradient(to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%);
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%);
 }
 
 /* Fixed-height box; cards are absolutely positioned inside */
@@ -595,7 +603,8 @@ button.application-button:hover {
   left: 50%;
 
   width: var(--project-card-width);
-  height: var(--project-card-height-inactive); /* default inactive size */
+  height: var(--project-card-height-inactive);
+  /* default inactive size */
   flex-shrink: 0;
 
   border-radius: 30px;
@@ -610,8 +619,7 @@ button.application-button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
   /* Simple 2D translation - just horizontal movement */
-  transform: translate(-50%, -50%)
-    translateX(calc(var(--rel) * var(--project-card-offset)));
+  transform: translate(-50%, -50%) translateX(calc(var(--rel) * var(--project-card-offset)));
 
   transition:
     transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
@@ -787,6 +795,8 @@ button.application-button:hover {
   font-weight: 400;
 }
 
+button.ignore {}
+
 /* Description */
 .project-card-description {
   margin-top: 10px;
@@ -794,82 +804,86 @@ button.application-button:hover {
   font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
-button.black-circular {
-  border-radius: 9999px;
-  width: 3rem;
-  padding: 0rem 0.5rem;
-  aspect-ratio: 1 / 1;
-  background-color: black;
-  color: white;
-  border: 2.5px solid black;
+
+  button.black-circular {
+    border-radius: 9999px;
+    width: 3rem;
+    padding: 0rem 0.5rem;
+    aspect-ratio: 1 / 1;
+    background-color: black;
+    color: white;
+    border: 2.5px solid black;
+  }
+
+  button.black-circular:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease;
+  }
+
+  /* MOBILE VIEW */
+  @media (max-width: 640px) {
+    button {
+      font-size: 1.2rem;
+      transition: 0.2s;
+    }
+
+    #header-section {
+      font-size: 2rem;
+      transition: 0.2s;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    .content-section {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .design-resources-panel {
+      padding: 24px 18px;
+    }
+
+    .course-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .redirect-button {
+      align-self: stretch;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .projects-carousel-root {
+      padding: 40px 0;
+    }
+
+    .projects-carousel-row {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #big-header {
+      font-size: 4rem;
+      transition: 0.2s;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      transition: 0.2s;
+    }
+
+    .content-section {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
 }
 
-button.black-circular:hover {
-  background-color: white;
-  color: black;
-  transition: all 0.2s ease;
-}
-
-/* MOBILE VIEW */
-@media (max-width: 640px) {
-  button {
-    font-size: 1.2rem;
-    transition: 0.2s;
-  }
-
-  #header-section {
-    font-size: 2rem;
-    transition: 0.2s;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .content-section {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .design-resources-panel {
-    padding: 24px 18px;
-  }
-
-  .course-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .redirect-button {
-    align-self: stretch;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .projects-carousel-root {
-    padding: 40px 0;
-  }
-
-  .projects-carousel-row {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  #big-header {
-    font-size: 4rem;
-    transition: 0.2s;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-    transition: 0.2s;
-  }
-
-  .content-section {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
 /* ANIMATIONS */
 /* #header-section {
   opacity: 0;

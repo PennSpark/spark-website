@@ -44,7 +44,7 @@ export default function FeatureBlocks() {
           <div
             key={feature.title}
             style={{
-              width: "1401px",
+              width: "1315px",
               height: "448px",
               flexShrink: 0,
               display: "flex",
