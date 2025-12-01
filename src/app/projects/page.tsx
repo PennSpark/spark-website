@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import HeaderBanner from "../components/HeaderBanner";
+import DrawBanner from "../components/banners/DrawBanner";
 
 import ProjectList from "./components/ProjectList";
 import ProjectCarousel from "./components/ProjectCarousel";
@@ -8,11 +8,11 @@ import ProjectCarousel from "./components/ProjectCarousel";
 export default function Projects() {
   return (
     <>
-      <HeaderBanner className="bg-[#F5654E] text-white mb-20 ">
-        <h1>
+      <DrawBanner className="absolute text-black mb-20 z-5">
+        <h1 className='pointer-events-none select-none'>
           Making ideas tangible <br></br> through design and code.
         </h1>
-      </HeaderBanner>
+      </DrawBanner>
 
       <section id="header-section">
         <h1>

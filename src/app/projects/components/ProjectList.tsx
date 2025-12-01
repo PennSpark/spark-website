@@ -15,7 +15,7 @@ export default function ProjectList() {
         return (
           <div
             key={i}
-            className={`w-full group cursor-pointer px-7 my-5 border-[1.5px] rounded-[1.5rem] transition-[padding,background-color] duration-300 ease-out ${isOpen ? 'py-7 bg-[#FFD552]' : 'py-4 bg-white'}`}
+            className={`w-full group cursor-pointer px-7 my-5 border-box transition-[padding,background-color] duration-300 ease-out ${isOpen ? 'py-7 bg-[#FFD552]' : 'py-4 bg-white'}`}
             onMouseEnter={() => setOpenIndex(i)}
             onMouseLeave={() => setOpenIndex(null)}
             onClick={() => setOpenIndex(isOpen ? null : i)}
@@ -35,7 +35,7 @@ export default function ProjectList() {
             >
                 {/* left image: height linked to width */}
                 <div className="overflow-hidden rounded-xl">
-                    <div className="relative w-full aspect-[1/1] border-[1.5px] rounded-[1.2rem] overflow-hidden">
+                    <div className="relative w-full aspect-[1/1] border-box overflow-hidden">
                     <Image
                         src='/project-images/stride/cover.png'
                         alt={`${p.title} header`}

@@ -42,35 +42,8 @@ main {
 #header-spark-text {
   font-weight: 700;
   color: white;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
-}
-
-#red-header-spark-text {
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: -0.01em;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
-  color: #FF6058;
-}
-
-#yellow-header-spark-text {
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: -0.01em;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
-  color: #FFC130;
-}
-
-#blue-header-spark-text {
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: -0.01em;
-  -webkit-text-stroke: 4px black; /* outline */
-  paint-order: stroke fill; /* ensures outline goes outside the fill */
-  color: #246DED;
+  -webkit-text-stroke: 2.5px black;
+  paint-order: stroke fill;
 }
 
 .content-section {
@@ -95,6 +68,11 @@ main {
   padding-left: 20px;
 } 
 
+.border-box {
+  border: 1.2px solid black;
+  border-radius: 30px;
+}
+
 h1 {
   font-family:  "Hanken Grotesk", "Inter", "Karla", sans-serif;
   font-weight: 700;
@@ -102,24 +80,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-#big-header {
-  font-family:  "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-weight: 700;
-  font-size: 6rem;
-  margin-bottom: 20px;
-}
-
-#hanken {
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-}
-
 h2 {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Hanken Grotesk", sans-serif;
   color: #383838;
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: 16px;
 }
 
 h3 {
@@ -139,7 +104,7 @@ li {
 
 p {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -152,28 +117,15 @@ p {
 }
 
 button {
-  background-color: white;
+  cursor: pointer;
   color: black;
-  border: 2px solid black;
-  padding: 8px 30px 8px 30px;
+  border: 1.25px solid black;
+  padding: 6px 30px 6px 30px;
   font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border-radius: 8px;
   font-weight: 500;
-  transition: 0.2s;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#white-button {
-  background-color: white;
-  color: black;
-  border: 2.5px solid black;
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 1rem;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: 0.2s;
+  transition: all 0.2s ease;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -181,35 +133,16 @@ button {
 #black-button {
   background-color: black;
   color: white;
-  border: 2.5px solid black;
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 1rem;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: 0.2s;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#white-button:hover {
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-#black-button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  transition: all 0.2s ease;
 }
 
 button:hover {
-  cursor: pointer;
   background-color: black;
   color: white;
-  transition: all 0.2s ease;
+}
+
+#black-button:hover {
+  background-color: white;
+  color: black;
 }
 
 /* alternative circular button in projects page */
@@ -223,318 +156,6 @@ button.yellow-circular {
 button.yellow-circular:hover {
   background-color: #FFD552;
   color: black;
-}
-
-/* Application cards buttons — match Figma specs */
-button.application-button {
-  width: 178px;
-  height: 47px;
-  flex-shrink: 0;
-
-  border-radius: 9px;
-  border: 1.25px solid #000;
-
-  /* override global button defaults */
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-/* default (non-hover) states with fills from your mockup */
-button.application-button--yellow {
-  background-color: #FFD552;
-  color: #000000;
-}
-
-button.application-button--blue {
-  background-color: #246DED;
-  color: #ffffff;
-}
-
-button.application-button--red {
-  background-color: #F5654E;
-  color: #ffffff;
-}
-
-/* hover: transparent background, black text */
-button.application-button:hover {
-  background-color: transparent;
-  color: #000000;
-  border-color: #000000;
-}
-
-/* Root just centers the whole block in the page */
-.design-resources-root {
-  display: flex;
-  justify-content: center;
-}
-
-/* Container that controls width; header and box share this width */
-.design-resources-container {
-  width: 1400px;
-  flex-shrink: 0;
-  margin: 40px auto 80px auto;
-}
-
-/* Header: left aligned, same left edge as the box */
-#header-section.design-resources-header {
-  text-align: left;
-  margin: 0 0 24px 0;
-  padding-left: 6px; /* optional small inset to match your Figma */
-}
-
-.design-resources-panel {
-  width: 100%;          /* equals 1400px via container */
-  height: 554px;
-  flex-shrink: 0;
-
-  border-radius: 24px;
-  border: 1.5px solid #000;
-  background: #f5f3f0;
-  padding: 32px;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;   /* ensures scrollbar/content never visually exceeds box */
-}
-
-/* "Penn Classes" title */
-.design-resources-section-title {
-  margin: 0 0 24px 0;
-
-  color: #000;
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-align: left;
-  text-transform: none;
-}
-
-/* Scroll area inside the fixed-height box */
-.design-resources-scroll {
-  flex: 1;
-  min-height: 0;      /* critical so flexbox lets it shrink and scroll */
-
-  overflow-y: auto;
-  padding-right: 8px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Course cards + text + button (unchanged from before) */
-.course-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-
-  padding: 24px 28px;
-  border-radius: 28px;
-  background: #ffffff;
-  border: 1.5px solid #000;
-  box-sizing: border-box;
-}
-
-.course-card-text {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Course code: Hanken Grotesk, 30px, 500 */
-.course-code {
-  color: #000;
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-/* Course name: IBM Plex Sans, 25px, 300 */
-.course-name {
-  margin-top: 6px;
-
-  color: #000;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.redirect-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px 32px;
-  border-radius: 9999px;
-  border: 1.5px solid #000;
-
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.redirect-button:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* ===== FAQ accordion ===== */
-
-.faq-container {
-  width: 1401px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 60px;
-}
-
-/* Shared box styles for both states */
-.faq-item {
-  width: 1401px;
-  flex-shrink: 0;
-
-  border-radius: 30px;
-  border: 1.25px solid #000;
-  box-sizing: border-box;
-
-  padding: 32px 48px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  overflow: hidden;
-
-  transition:
-    height 0.25s ease,
-    background-color 0.25s ease;
-}
-
-/* Collapsed question box */
-.faq-item-collapsed {
-  height: 146px;
-  background: #ffffff;
-}
-
-/* Expanded question box */
-.faq-item-expanded {
-  height: 226px;
-  background: #ffd552;
-}
-
-/* Top row: number + question + icon */
-.faq-item-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.faq-question-block {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* "01." */
-.faq-number {
-  color: #000;
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-/* QUESTION TYPOGRAPHY (your spec) */
-.faq-question {
-  display: flex;
-  width: 825px;
-  height: 38px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-
-  color: #000;
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-/* ANSWER + animation */
-.faq-answer {
-  max-width: 1100px;
-  color: #000;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  transition:
-    max-height 0.25s ease,
-    opacity 0.25s ease,
-    margin-top 0.25s ease;
-}
-
-.faq-answer-hidden {
-  max-height: 0;
-  opacity: 0;
-  margin-top: 0;
-  overflow: hidden;
-}
-
-.faq-answer-visible {
-  max-height: 200px;
-  opacity: 1;
-  margin-top: 16px;
-}
-
-/* Toggle button + SVG icon */
-.faq-toggle {
-  flex-shrink: 0;
-  padding: 0;
-  margin: 0;
-  border: none !important;
-  background: transparent !important;
-  box-shadow: none !important;
-
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.faq-toggle-icon {
-  width: 45px;
-  height: 45px;
-  transform: rotate(90deg);
-  flex-shrink: 0;
 }
 
 :root {
@@ -635,119 +256,6 @@ button.application-button:hover {
   z-index: 5;
 }
 
-/* Client CTA Section */
-.client-cta-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  margin: 0px auto 60px auto;
-  max-width: 920px;
-  padding: 0 20px;
-}
-
-.client-cta-paragraph {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-align: center;
-  max-width: 600px;
-  line-height: 1.6;
-}
-
-.client-cta-buttons {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-.client-cta-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border-radius: 9px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0;
-  margin: 0;
-}
-
-.client-cta-button--pitch {
-  width: 220px;
-  height: 35.25px;
-  color: #000;
-  background-color: #fff;
-  border: 1.25px solid #000;
-}
-
-.client-cta-button--pitch:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.client-cta-button--contact {
-  width: 220px;
-  height: 39px;
-  color: #fff;
-  background-color: #000;
-  border: 1.25px solid #000;
-}
-
-.client-cta-button--contact:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Past Clients Section */
-.past-clients-root {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 60px 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.past-clients-title {
-  color: #000;
-  text-align: left;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  white-space: nowrap;
-  margin: 0 0 32px 0;
-  padding: 0;
-  align-self: flex-start;
-  width: 100%;
-}
-
-.past-clients-grid {
-  display: flex;
-  gap: 48px;
-  align-items: center;
-  width: 100%;
-  justify-content: flex-start;
-}
-
-.past-clients-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
 /* Image area for active card only */
 .project-card-image {
   position: relative;
@@ -794,6 +302,8 @@ button.application-button:hover {
   font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
+}
+
 button.black-circular {
   border-radius: 9999px;
   width: 3rem;
@@ -870,44 +380,3 @@ button.black-circular:hover {
     padding-right: 1.5rem;
   }
 }
-/* ANIMATIONS */
-/* #header-section {
-  opacity: 0;
-  animation: fadeinfromtop 0.2s forwards;
-}
-
-#about-section {
-  opacity: 0;
-  animation: fadeinfromtop 0.2s forwards;
-  animation-delay: 0.1s;
-}
-
-#values-section {
-  opacity: 0;
-  animation: fadeinfromtop 0.2s forwards;
-  animation-delay: 0.2s;
-}
-
-#branches-section {
-  opacity: 0;
-  animation: fadeinfromtop 0.2s forwards;
-  animation-delay: 0.3s;
-}
-
-#work-section {
-  opacity: 0;
-  animation: fadeinfromtop 0.2s forwards;
-  animation-delay: 0.4s;
-}
-
-#why-join-section {
-  opacity: 0;
-  animation: fadeinfromtop 0.2s forwards;
-  animation-delay: 0.5s;
-}
-
-#socials-section {
-  opacity: 0;
-  animation: fadeinfromtop 0.2s forwards;
-  animation-delay: 0.7s;
-} */

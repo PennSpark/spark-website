@@ -2,53 +2,68 @@ import React from "react";
 
 type ResourceItem = {
   id: number;
-  code: string;   // top line (e.g. CIS 4120)
-  name: string;   // second line (e.g. Human-Computer Interaction)
+  code: string;
+  name: string;
   href: string;
 };
 
 interface ResourcesSectionProps {
-  headerText: string;       // "Design Resources" / "Dev Resources"
-  sectionTitle: string;     // e.g. "Penn Classes"
+  headerText: string;
+  sectionTitle: string;
   items: ResourceItem[];
-  headerId?: string;        // defaults to "header-section"
 }
 
 const ResourcesSection: React.FC<ResourcesSectionProps> = ({
   headerText,
   sectionTitle,
   items,
-  headerId = "header-section",
 }) => {
   return (
-    <main className="design-resources-root">
-      <div className="design-resources-container">
-        {/* Page header (left-aligned, same left edge as box) */}
-        <section id={headerId} className="design-resources-header">
+      <div className="flex flex-col w-full">
+        <h3 className='self-start'>
           {headerText}
-        </section>
+        </h3>
 
-        {/* Fixed-size panel with scrollable content (using your existing CSS) */}
-        <section className="design-resources-panel">
-          <h2 className="design-resources-section-title">{sectionTitle}</h2>
+        <section
+          className="
+            flex h-[30em] flex-col overflow-hidden rounded-[24px]
+            border-box bg-[#f5f3f0] p-8 md:px-14 gap-3
+          "
+        >
+          <h2 className='self-start'>
+            {sectionTitle}
+          </h2>
 
-          <div className="design-resources-scroll">
+          <div className="flex-1 min-h-0 space-y-3 overflow-y-auto pr-2">
             {items.map((item) => (
-              <article key={item.id} className="course-card">
-                <div className="course-card-text">
-                  <div className="course-code">{item.code}</div>
-                  <div className="course-name">{item.name}</div>
+              <article
+                key={item.id}
+                className="
+                  flex items-center justify-between gap-2
+                  border-box bg-white
+                  px-5 py-4 box-border
+                  max-sm:flex-col max-sm:items-start
+                "
+              >
+                <div className="flex flex-col justify-start items-start">
+                  <h2>
+                    {item.code}
+                  </h2>
+                  <p>
+                    {item.name}
+                  </p>
                 </div>
 
-                <a href={item.href} className="redirect-button">
+                <button id='black-button' style={{borderRadius: '100px'}}>
+                  <a href={item.href}>
                   Redirect
-                </a>
+                  </a>
+                </button>
               </article>
             ))}
           </div>
         </section>
       </div>
-    </main>
   );
 };
 

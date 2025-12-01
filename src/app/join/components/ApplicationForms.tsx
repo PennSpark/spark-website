@@ -1,100 +1,62 @@
-'use client';
+"use client";
 
 type ApplicationCard = {
   title: string;
   body: string;
   buttonLabel: string;
-  buttonVariant: 'yellow' | 'blue' | 'red';
+  buttonColor: string;
 };
 
 const cards: ApplicationCard[] = [
   {
-    title: 'Visit Us',
-    body: 'Join us to meet the team and learn about what we do!',
-    buttonLabel: 'Interest Form',
-    buttonVariant: 'yellow',
+    title: "Visit Us",
+    body: "Join us to meet the team and learn about what we do!",
+    buttonLabel: "Interest Form",
+    buttonColor: "#FFD552",
   },
   {
-    title: 'Blue Application',
-    body: 'Our educational track - no experience required',
-    buttonLabel: 'Blue Form',
-    buttonVariant: 'blue',
+    title: "Blue Application",
+    body: "Our educational track - no experience required",
+    buttonLabel: "Blue Form",
+    buttonColor: "#246DED",
   },
   {
-    title: 'Red Application',
-    body: 'Our experienced track - jump right into projects',
-    buttonLabel: 'Red Form',
-    buttonVariant: 'red',
+    title: "Red Application",
+    body: "Our experienced track - jump right into projects",
+    buttonLabel: "Red Form",
+    buttonColor: "#F5654E",
   },
 ];
 
 export default function ApplicationBlocks() {
   return (
-    <section
-      style={{
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-      }}
-    >
-      <div
-        style={{
-          width: '1401px', // 3 * 417 + 2 * ~75 gutter
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'stretch',
-        }}
-      >
+    <section className="content-section w-full">
+      <div className="w-full max-w-3xl flex flex-col gap-4 md:flex-row md:gap-2 justify-between mb-10">
         {cards.map((card) => (
           <div
             key={card.title}
-            style={{
-              width: '417px',
-              height: '306px',
-              flexShrink: 0,
-              borderRadius: '60px',
-              border: '1.25px solid #000',
-              background: '#FFF',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              padding: '48px 32px 40px',
-              boxSizing: 'border-box',
-              textAlign: 'center',
-            }}
+            className="
+              border-box
+              flex flex-col items-center justify-between
+              font-sans text-center
+              pb-6 pt-8 px-6
+              flex-1
+            "
           >
-            <h2
-            style={{
-                textAlign: 'center',
-                fontFamily: '"Hanken Grotesk", "Inter", "Karla", sans-serif',
-                fontSize: '2.5rem',
-                fontWeight: 700,
-                transition: '0.2s',
-                margin: 0,
-                marginBottom: '16px',
-                color: '#000',
-                textTransform: 'none'
-            }}
-            >
-                {card.title}
-            </h2>
-            <p
-              style={{
-                margin: '8px 0 24px',
-                fontFamily: "'IBM Plex Sans', sans-serif",
-                fontSize: '22px',
-                fontWeight: 400,
-                color: '#5E5E5E',
-                lineHeight: '1.4',
-              }}
-            >
+            <h3 className="font-hanken text-[2rem] md:text-[2.5rem] font-bold mb-4 text-black">
+              {card.title}
+            </h3>
+
+            <p className="text-[1.1rem] text-[#5E5E5E] mb-6">
               {card.body}
             </p>
 
             <button
               type="button"
-              className={`application-button application-button--${card.buttonVariant}`}
+              className={`bg-[${card.buttonColor}] hover:bg-white transition-colors duration-200`}
+              style={{
+                color: card.buttonColor === "#FFD552" ? "#000" : "#FFF",
+              }}
             >
               {card.buttonLabel}
             </button>

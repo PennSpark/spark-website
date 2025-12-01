@@ -54,11 +54,11 @@ export default function ProjectCarousel() {
               >
                 <div
                   className={[
-                    'relative h-[29rem] flex flex-col border-[1.5px] rounded-[3rem] shadow-xl overflow-hidden',
+                    'relative h-[29rem] flex flex-col border-box shadow-xl overflow-hidden',
                     'transition-[padding,background-color] duration-300 ease-out'
                   ].join(' ')}
                   >
-                    <div className="relative w-full aspect-[2/1] border-b-2 overflow-hidden">
+                    <div className="relative w-full aspect-[2/1] border-b overflow-hidden">
                       <Image
                         src='/project-images/stride/cover.png'
                         alt={`${p.title} header`}

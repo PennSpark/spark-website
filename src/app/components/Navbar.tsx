@@ -11,7 +11,7 @@ export default function Navbar() {
   }
 
   return (
-      <div className="fixed inset-x-0 top-0 z-50 w-[100svw] h-[78px] px-8 md:px-[72px] bg-white flex items-center justify-between">
+      <div className="fixed inset-x-0 top-0 z-50 w-[100svw] h-[78px] px-8 md:px-[72px] text-[0.85rem] bg-white flex items-center justify-between">
         <Link href="/">
             <Image
             src="/logo-black.svg"
@@ -35,7 +35,7 @@ export default function Navbar() {
           <Image src='/icons/dropdown-icon.svg' alt='Menu Icon' width={32} height={32} />
         </button>
 
-        <div className={`absolute w-full top-[98%] ${ sideOpen ? 'right-0 opacity-100' : 'right-[-100%] opacity-0'} transition-all transition-duration-1000 ease-in-out z-50 bg-linear-to-b from-white to-white/80 backdrop-blur-md md:hidden`}>
+        <div className={`absolute w-full top-[98%] text-[0.85rem] ${ sideOpen ? 'right-0 opacity-100' : 'right-[-100%] opacity-0'} transition-all transition-duration-1000 ease-in-out z-50 bg-linear-to-b from-white to-white/80 backdrop-blur-md md:hidden`}>
           <div className="w-full h-full p-8 flex flex-col justify-end">
             <nav className="gap-6 flex flex-col justify-end items-end"
             onClick={toggleSideMenu}
