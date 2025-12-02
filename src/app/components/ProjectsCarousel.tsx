@@ -191,7 +191,7 @@ export default function ProjectsCarousel({
                 border: "1.25px solid #000",
                 background: "#ffffff",
                 overflow: "hidden",
-                cursor: "pointer",
+                cursor: "move",
                 display: "flex",
                 flexDirection: "column",
                 boxShadow: isActive
