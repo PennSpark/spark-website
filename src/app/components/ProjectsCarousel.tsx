@@ -11,23 +11,22 @@ import {
 } from "react";
 import { allProjects, type Project } from "../projects/components/AllProjects";
 
-const CARD_WIDTH = 354.129;
+const BASE_CARD_WIDTH = 354.129;
 const CARD_GAP = 48;
-const CARD_OFFSET = CARD_WIDTH + CARD_GAP;
-const ACTIVE_HEIGHT = 532.092;
-const INACTIVE_HEIGHT = 363.117;
+const ACTIVE_HEIGHT_RATIO = 532.092 / BASE_CARD_WIDTH;
+const INACTIVE_HEIGHT_RATIO = 363.117 / BASE_CARD_WIDTH;
 const VISIBLE_RADIUS = 2;
 const SWIPE_THRESHOLD = 40; // px
 
 export type ProjectsCarouselProps = {
-  semesters?: string[]; //optional filter by semesters
-  tags?: string[]; //optional filter by tabs
+  semesters?: string[];
+  tags?: string[];
 };
 
 function semesterKey(s: string) {
   const [season, yearStr] = s.split(" ");
   const year = Number(yearStr) || 0;
-  const seasonCode = season === "Spring" ? 1 : 2; // Spring=early, Fall=late
+  const seasonCode = season === "Spring" ? 1 : 2;
   return year * 10 + seasonCode;
 }
 
@@ -45,7 +44,6 @@ export default function ProjectsCarousel({
   semesters,
   tags,
 }: ProjectsCarouselProps) {
-  // Filter + sort (newest → oldest)
   const projects: Project[] = useMemo(() => {
     let base = [...allProjects];
 
@@ -54,9 +52,7 @@ export default function ProjectsCarousel({
     }
 
     if (tags && tags.length > 0) {
-      base = base.filter((p) =>
-        tags.some((tag) => p.tags.includes(tag))
-      );
+      base = base.filter((p) => tags.some((tag) => p.tags.includes(tag)));
     }
 
     return base.sort(
@@ -69,13 +65,38 @@ export default function ProjectsCarousel({
   );
   const [dragStartX, setDragStartX] = useState<number | null>(null);
 
-  // Re-center when the filtered project list changes
+  // responsive card width + spacing
+  const [cardWidth, setCardWidth] = useState(BASE_CARD_WIDTH);
+  const [cardOffset, setCardOffset] = useState(BASE_CARD_WIDTH + CARD_GAP);
+
+  useEffect(() => {
+    const updateSize = () => {
+      if (typeof window === "undefined") return;
+      const w = window.innerWidth;
+
+      let width = BASE_CARD_WIDTH;
+      if (w < 640) {
+        width = 260; // phone
+      } else if (w < 1024) {
+        width = 310; // tablet
+      } else {
+        width = BASE_CARD_WIDTH; // desktop
+      }
+
+      setCardWidth(width);
+      setCardOffset(width + CARD_GAP); // keep a similar visual spacing
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
+  // Re-center on project-set change
   useEffect(() => {
     if (projects.length === 0) return;
     const center = Math.floor(projects.length / 2);
-    setActiveIndex((prev) =>
-      prev >= projects.length ? center : prev
-    );
+    setActiveIndex((prev) => (prev >= projects.length ? center : prev));
   }, [projects.length]);
 
   const goNext = () => {
@@ -85,9 +106,7 @@ export default function ProjectsCarousel({
 
   const goPrev = () => {
     if (projects.length === 0) return;
-    setActiveIndex((prev) =>
-      prev - 1 < 0 ? projects.length - 1 : prev - 1
-    );
+    setActiveIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   const handlePointerStart = (clientX: number) => {
@@ -99,35 +118,22 @@ export default function ProjectsCarousel({
     const delta = clientX - dragStartX;
 
     if (Math.abs(delta) > SWIPE_THRESHOLD) {
-      if (delta < 0) {
-        // swiped left → next
-        goNext();
-      } else {
-        // swiped right → previous
-        goPrev();
-      }
+      if (delta < 0) goNext();
+      else goPrev();
     }
-
     setDragStartX(null);
   };
 
-  const onMouseDown = (e: MouseEvent<HTMLDivElement>) => {
+  const onMouseDown = (e: MouseEvent<HTMLDivElement>) =>
     handlePointerStart(e.clientX);
-  };
-
-  const onMouseUp = (e: MouseEvent<HTMLDivElement>) => {
+  const onMouseUp = (e: MouseEvent<HTMLDivElement>) =>
     handlePointerEnd(e.clientX);
-  };
-
-  const onMouseLeave = () => {
-    setDragStartX(null);
-  };
+  const onMouseLeave = () => setDragStartX(null);
 
   const onTouchStart = (e: TouchEvent<HTMLDivElement>) => {
     const x = e.touches[0]?.clientX;
     if (x != null) handlePointerStart(x);
   };
-
   const onTouchEnd = (e: TouchEvent<HTMLDivElement>) => {
     const x = e.changedTouches[0]?.clientX;
     if (x != null) handlePointerEnd(x);
@@ -146,6 +152,9 @@ export default function ProjectsCarousel({
 
   if (projects.length === 0) return null;
 
+  const activeHeight = cardWidth * ACTIVE_HEIGHT_RATIO;
+  const inactiveHeight = cardWidth * INACTIVE_HEIGHT_RATIO;
+
   return (
     <section className="w-full flex justify-center overflow-hidden select-none">
       <div
@@ -159,7 +168,7 @@ export default function ProjectsCarousel({
       >
         <div
           className="relative w-full overflow-x-hidden overflow-y-visible"
-          style={{ height: ACTIVE_HEIGHT + 80 }}
+          style={{ height: activeHeight + 80 }}
           onMouseDown={onMouseDown}
           onMouseUp={onMouseUp}
           onMouseLeave={onMouseLeave}
@@ -170,14 +179,14 @@ export default function ProjectsCarousel({
             ({ project, index, rel, isActive, isVisible }) => {
               if (!isVisible) return null;
 
-              const translateX = rel * CARD_OFFSET;
+              const translateX = rel * cardOffset;
 
               const cardStyle: CSSProperties = {
                 position: "absolute",
                 top: "50%",
                 left: "50%",
-                width: CARD_WIDTH,
-                height: isActive ? ACTIVE_HEIGHT : INACTIVE_HEIGHT,
+                width: cardWidth,
+                height: isActive ? activeHeight : inactiveHeight,
                 borderRadius: 30,
                 border: "1.25px solid #000",
                 background: "#ffffff",
@@ -203,7 +212,7 @@ export default function ProjectsCarousel({
               const imageWrapperStyle: CSSProperties = {
                 position: "relative",
                 width: "100%",
-                height: 220,
+                height: cardWidth * 0.65, // scale image height with width
                 borderBottom: "1px solid #000",
                 overflow: "hidden",
                 transition: "height 0.7s ease",
@@ -211,36 +220,12 @@ export default function ProjectsCarousel({
 
               const contentStyle: CSSProperties = {
                 flex: 1,
-                padding: "24px 32px 28px",
+                padding: "20px 24px 24px",
                 display: "flex",
                 flexDirection: "column",
-                gap: 10,
+                gap: 8,
                 textAlign: "left",
                 alignItems: "flex-start",
-              };
-
-              const titleStyle: CSSProperties = {
-                margin: 0,
-                color: "#000",
-                fontFamily: "'Hanken Grotesk','Inter','Karla',sans-serif",
-                fontSize: "2.0rem",
-                fontWeight: 500,
-              };
-
-              const termStyle: CSSProperties = {
-                margin: 0,
-                color: "#000",
-                fontFamily: "'Hanken Grotesk','Inter','Karla',sans-serif",
-                fontSize: "1.1rem",
-                fontWeight: 400,
-              };
-
-              const descStyle: CSSProperties = {
-                marginTop: 10,
-                color: "#4b4b4b",
-                fontFamily: "'Hanken Grotesk','Inter','Karla',sans-serif",
-                fontSize: "1rem",
-                fontWeight: 500,
               };
 
               return (
@@ -258,16 +243,16 @@ export default function ProjectsCarousel({
                         }
                         alt={project.title}
                         fill
-                        sizes="354px"
+                        sizes={`${cardWidth}px`}
                         style={{ objectFit: "cover" }}
                       />
                     </div>
                   )}
 
                   <div style={contentStyle}>
-                    <h3 style={titleStyle}>{project.title}</h3>
-                    <p style={termStyle}>{project.semester}</p>
-                    <p style={descStyle}>{project.description}</p>
+                    <h2>{project.title}</h2>
+                    <h4>{project.semester}</h4>
+                    <p>{project.description}</p>
                   </div>
                 </article>
               );
