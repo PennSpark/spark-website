@@ -2,7 +2,7 @@
 
 import HeaderBanner from "../components/banners/HeaderBanner";
 
-import ClientProjectCarousel from "./components/ClientProjectsCarousel";
+import ProjectsCarousel from "../components/ProjectsCarousel";
 import PastClients from "../components/PastClients";
 
 export default function Projects() {
@@ -24,7 +24,7 @@ export default function Projects() {
         </section>
         <section id="header-section">Client Projects Stories</section>
         <section className="full-width-content-section">
-            <ClientProjectCarousel />
+            <ProjectsCarousel tags={["Client"]} />
         </section>
 
         <section className="content-section w-full">

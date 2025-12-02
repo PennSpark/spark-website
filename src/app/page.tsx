@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Title from "./components/Title";
-import ProjectCarousel from "./projects/components/ProjectCarousel";
+import ProjectsCarousel from "./components/ProjectsCarousel";
 import PastClients from "./components/PastClients";
 import SubstackGrid from "./components/SubstackGrid";
 
@@ -77,7 +77,7 @@ export default function HomePage() {
             recent <span id="header-spark-text">work</span>
           </h1>
 
-        <ProjectCarousel />
+        <ProjectsCarousel semesters={["Spring 2024"]} />
       </section>
 
       <SubstackGrid />
