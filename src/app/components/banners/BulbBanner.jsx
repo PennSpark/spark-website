@@ -106,7 +106,7 @@ useGLTF.preload("/models/bulb.glb");
 export default function ThreeJSSection() {
     return (
         <div className="absolute inset-0 pointer-events-none flex justify-end pr-8">
-            <div className="w-full h-full select-none">
+            <div className="w-full md:w-[70%] h-full select-none">
                 <Canvas
                     camera={{ position: [0, -1.25, -6.5], fov: 50 }}
                     style={{ background: "transparent" }}
