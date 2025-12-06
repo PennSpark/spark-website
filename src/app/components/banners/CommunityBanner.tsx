@@ -14,7 +14,6 @@ import {
   Runner,
   Body,
   Composite,
-  Query,
 } from "matter-js";
 
 type CommunityBannerProps = {
@@ -330,80 +329,6 @@ export default function CommunityBanner({
     spawnPhotos();
   }, [images, spawnPhotos]);
 
-  useEffect(() => {
-    const render = renderRef.current;
-    const engine = engineRef.current;
-    if (!render || !engine) return;
-
-    const canvas = render.canvas;
-
-    const getPoint = (evt: PointerEvent) => {
-      const rect = canvas.getBoundingClientRect();
-      return {
-        x: evt.clientX - rect.left,
-        y: evt.clientY - rect.top,
-      };
-    };
-
-    const handlePointerDown = (evt: PointerEvent) => {
-      if (evt.button !== 0 && evt.pointerType === "mouse") return;
-
-      const point = getPoint(evt);
-      const world = engine.world;
-      const bodies = Composite.allBodies(world);
-
-      const hit = Query.point(bodies, point)[0];
-      if (!hit) return;
-
-      draggingRef.current = {
-        body: hit,
-        offset: {
-          x: hit.position.x - point.x,
-          y: hit.position.y - point.y,
-        },
-      };
-
-      Body.setVelocity(hit, { x: 0, y: 0 });
-      Body.setAngularVelocity(hit, 0);
-      evt.preventDefault();
-    };
-
-    const handlePointerMove = (evt: PointerEvent) => {
-      const drag = draggingRef.current;
-      if (!drag) return;
-
-      const point = getPoint(evt);
-      const targetPos = {
-        x: point.x + drag.offset.x,
-        y: point.y + drag.offset.y,
-      };
-
-      Body.setPosition(drag.body, targetPos);
-      Body.setVelocity(drag.body, { x: 0, y: 0 });
-      Body.setAngularVelocity(drag.body, 0);
-
-      evt.preventDefault();
-    };
-
-    const endDrag = (evt?: PointerEvent) => {
-      if (draggingRef.current && evt) {
-        evt.preventDefault();
-      }
-      draggingRef.current = null;
-    };
-
-    canvas.addEventListener("pointerdown", handlePointerDown);
-    window.addEventListener("pointermove", handlePointerMove);
-    window.addEventListener("pointerup", endDrag);
-    window.addEventListener("pointercancel", endDrag);
-
-    return () => {
-      canvas.removeEventListener("pointerdown", handlePointerDown);
-      window.removeEventListener("pointermove", handlePointerMove);
-      window.removeEventListener("pointerup", endDrag);
-      window.removeEventListener("pointercancel", endDrag);
-    };
-  }, []);
 
   // phone shake + tap-shake same as before...
 
