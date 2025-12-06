@@ -102,8 +102,17 @@ export default function HomePage() {
           </button>
         </section>
       </section>
-
       <PastClients />
+
+      <section className='content-section w-full'>
+        <p className='bold mb-5'>
+          Thank you for visiting! <br/> We would like to thank current & past contributors to Spark&apos;s website, including:
+        </p>
+        <ul className='w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4 mb-4 text-xs'>
+            <li>Alyssa Nie</li> <li>Acelyn Choi</li> <li>Angie Cao</li> <li>Andrew Jiang</li> <li>Akshay Sharma</li> <li>Andre van de Ven</li> <li>Anna Xia</li> <li>Brandon Yan</li> <li>Brian Lee</li> <li>Bryan Chung</li> <li>Kevin Wei</li> <li>Grace Thanglerdsumpan</li> <li>Cindy Wei</li> <li>Chenxi (Charles) Jin</li> <li>Clyve Gassant</li> <li>Christina Lu</li> <li>Eric Lee</li> <li>Estelle Kim</li> <li>Ethan Wang</li> <li>Ethan Zhao</li> <li>Fiona Herzog</li> <li>Fiona Jiang</li> <li>Grace Jiang</li> <li>Haley Kang</li> <li>Isabelle Gu</li> <li>James Baker</li> <li>Janice Kim</li> <li>Luca Picazo</li> <li>Seth Sukboontip</li> <li>Tina Ni</li>
+        </ul>
+
+      </section>
     </>
   );
 }
