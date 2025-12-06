@@ -47,7 +47,7 @@ export default function PixelBanner({ className, children }: PixelBannerProps) {
 
     setCellColors((prev) => {
       if (prev.length === total) return prev;
-      const next = Array<string>(total).fill("#ffffff");
+      const next = Array<string>(total).fill("#F4F4F4");
       for (let i = 0; i < Math.min(prev.length, total); i++) {
         next[i] = prev[i];
       }
