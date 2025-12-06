@@ -90,7 +90,7 @@ export default function CommunityGrid({ semester }: Props) {
                   {category}
                 </h4>
 
-                <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-14 text-left">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-18 gap-y-14 justify-items-center text-left w-full">
                   {list
                     .slice()
                     .sort((a, b) => a.role.localeCompare(b.role) || a.name.localeCompare(b.name))

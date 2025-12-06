@@ -47,7 +47,7 @@ export default function SubstackGrid() {
   }
 
   return (
-    <section className="content-section w-full">
+    <section className="content-section w-full mb-24 md:mb-28">
       <h2 className='mb-8'>
         Newsletter
       </h2>

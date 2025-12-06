@@ -22,15 +22,17 @@ export default function Projects() {
                 Interested in potentially working together or learning more? We offer a variety of engineering and design help to our clients, ranging from product branding to full-stack web applications. Our projects are generally over an 8-week period, with a 4-week trial period afterwards to fix any bugs and do minor adjustments.
             </p>
         </section>
-        <section id="header-section">Client Projects Stories</section>
-        <section className="full-width-content-section">
+        <section id="header-section">
+            <h1>Client Projects Stories</h1>
+            <p className="mt-4">
+                If you&apos;re interested in working with us, feel free to shoot us an email or fill out this form and we&apos;ll reach out with more details.
+            </p>
+        </section>
+        <section className="full-width-content-section" style={{ marginTop: "-12px" }}>
             <ProjectsCarousel tags={["Client"]} />
         </section>
 
         <section className="content-section w-full">
-            <p>
-                If you&apos;re interested in working with us, feel free to shoot us an email or fill out this form and we&apos;ll reach out with more details.
-            </p>
             <div className="flex flex-row gap-4 mt-6">
                 <button>
                 Pitch Deck

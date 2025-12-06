@@ -156,18 +156,10 @@ export default function ProjectsCarousel({
   const inactiveHeight = cardWidth * INACTIVE_HEIGHT_RATIO;
 
   return (
-    <section className="w-full flex justify-center overflow-hidden select-none">
-      <div
-        className="w-full max-w-[1400px] relative"
-        style={{
-          maskImage:
-            "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
-          WebkitMaskImage:
-            "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
-        }}
-      >
+    <section className="w-full flex justify-center overflow-visible select-none">
+      <div className="w-full max-w-[1400px] relative">
         <div
-          className="relative w-full overflow-x-hidden overflow-y-visible"
+          className="relative w-full overflow-visible"
           style={{ height: activeHeight + 80 }}
           onMouseDown={onMouseDown}
           onMouseUp={onMouseUp}

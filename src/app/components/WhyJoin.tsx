@@ -28,33 +28,31 @@ const features: Feature[] = [
 
 export default function FeatureBlocks() {
   return (
-    <section className='content-section w-full gap-4'>
+    <section className="why-join-section">
       {features.map((feature, index) => {
         const isEven = index % 2 === 1;
 
         return (
           <div
             key={feature.title}
-              className={
-                `border-box overflow-hidden  flex flex-col ` +
-                (isEven ? "md:flex-row-reverse" : "md:flex-row")
-              }>
-            <div className='md:w-[50%] flex relative h-64 md:h-auto md:min-h-[300px]'>
+            className={`why-join-card flex flex-col ${isEven ? "md:flex-row-reverse" : "md:flex-row"}`}
+          >
+            <div className="why-join-divider" aria-hidden="true" />
+
+            <div className="why-join-image relative md:w-1/2">
               <Image
                 src={feature.imageSrc}
                 alt={feature.title}
                 fill
-                className='object-cover'
+                className="object-cover"
               />
             </div>
 
-            <div className='md:w-[50%] flex flex-col text-left p-5 md:p-8'>
-              <h2>
-                {feature.title}
-              </h2>
-              <p>
-                {feature.body}
-              </p>
+            <div className="why-join-text text-left md:w-1/2">
+              <div className="max-w-[520px] w-full mx-auto px-6 md:px-8 flex flex-col gap-3">
+                <h2>{feature.title}</h2>
+                <p>{feature.body}</p>
+              </div>
             </div>
           </div>
         );

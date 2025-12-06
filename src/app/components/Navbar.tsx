@@ -59,7 +59,7 @@ export default function Navbar() {
           </div>
         </div>
         
-        <nav className="items-center gap-8 hidden md:flex">
+        <nav className="items-center gap-12 hidden md:flex">
           <Link href="/about" className="hover:opacity-80">
             About
           </Link>

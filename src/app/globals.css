@@ -46,6 +46,140 @@ main {
   paint-order: stroke fill;
 }
 
+.community-hero {
+  margin-bottom: 10px;
+}
+
+.pill-row {
+  width: 100%;
+  max-width: 920px;
+  margin: 4px auto 40px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  gap: 1.0rem;
+  flex-wrap: wrap;
+}
+
+.what-we-do-section {
+  width: 100%;
+  padding: clamp(72px, 12vw, 130px) 20px clamp(88px, 12vw, 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(56px, 9vw, 96px);
+}
+
+.what-we-do-section #header-section {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 980px;
+}
+
+.what-we-do-header {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.what-we-do-header h1 {
+  margin-bottom: 0;
+}
+
+.what-we-do-header p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.what-we-do-stats {
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(12px, 3vw, 28px);
+  justify-items: center;
+}
+
+.what-we-do-card {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1.05;
+  padding: clamp(22px, 3vw, 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background-color: white;
+}
+
+.what-we-do-stat {
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-size: clamp(72px, 9vw, 90px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.what-we-do-label {
+  margin-bottom: 0;
+}
+
+.what-we-do-cta button {
+  margin: 0;
+  padding: 10px 36px;
+}
+
+.why-join-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.why-join-card {
+  border: 1.2px solid black;
+  border-radius: 24px;
+  overflow: hidden;
+  background: white;
+}
+
+.why-join-image {
+  width: 100%;
+  min-height: 220px;
+}
+
+.why-join-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 30px) clamp(22px, 5vw, 34px);
+}
+
+@media (min-width: 768px) {
+  .why-join-image {
+    width: 50%;
+    min-height: 320px;
+  }
+
+  .why-join-text {
+    width: 50%;
+  }
+}
+
 .content-section {
   max-width: 920px;
   margin-bottom: 60px;
@@ -114,9 +248,9 @@ li {
 
 label {
   font-family: 'Hanken Grotesk', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 400;
-  padding: 0.5rem 0.5rem;
+  padding: 0.65rem 0.9rem;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -156,6 +290,12 @@ button {
 button:hover {
   background-color: black;
   color: white;
+}
+
+.cta-button {
+  white-space: nowrap;
+  min-width: 220px;
+  padding: 12px 32px;
 }
 
 #black-button {
@@ -238,6 +378,15 @@ button.black-circular {
     .projects-carousel-row {
       max-width: 100%;
     }
+
+    .what-we-do-section {
+      padding: 60px 18px 72px;
+      gap: 44px;
+    }
+
+    .what-we-do-stats {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
 
   @media (max-width: 480px) {
@@ -275,10 +424,10 @@ label.pill-toggle {
 label.pill-toggle::before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 12px;
   top: 50%;
-  width: 0.45rem;
-  height: 0.45rem;
+  width: 0.55rem;
+  height: 0.55rem;
   border-radius: 9999px;
   background: var(--pill-color);
   transform: translateY(-50%) scale(1);

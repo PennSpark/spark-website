@@ -52,7 +52,7 @@ export default function Title() {
           <h1>
             we are <span id="header-spark-text">spark</span>
           </h1>
-          <h3 className="max-w-2xl mb-10">
+          <h3 className="max-w-2xl mb-12 md:mb-14">
             We&apos;re a group of students at the University of Pennsylvania that
             bridge <b>tech</b> and <b>design</b> to build both creative projects
             and impactful products for clients and the community.
@@ -64,7 +64,7 @@ export default function Title() {
             onClick={() => {
               setShowingProjects((prev) => !prev);
             }}
-            className="mx-1"
+            className="self-start mt-9 md:mt-20"
           >
             View More
           </button>

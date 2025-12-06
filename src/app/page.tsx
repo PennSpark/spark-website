@@ -10,67 +10,51 @@ import PastClients from "./components/PastClients";
 import SubstackGrid from "./components/SubstackGrid";
 
 export default function HomePage() {
+  const stats = [
+    { number: "58", label: "Active Members", color: "#EB5757" },
+    { number: "42", label: "Projects Complete", color: "#F2C94C" },
+    { number: "9", label: "Live Semesters", color: "#2F80ED" },
+  ];
+
   return (
     <>
       <Title />
-        <section  id="header-section">
+      <section className="what-we-do-section">
+        <div id="header-section" className="what-we-do-header">
           <h1>
             what we <span id="header-spark-text">do</span>
           </h1>
           <p>
-            Established in Spring 2021, Spark is a community of student developers
-            and designers at the University of Pennsylvania that builds both
-            creative and client projects.
+            Established in Spring 2021, Spark is a community of student
+            developers and designers at the University of Pennsylvania that
+            builds both creative and client projects.
           </p>
-        </section>
+        </div>
 
-        <section className="content-section w-full">
-          <div className="w-full max-w-2xl flex flex-row gap-2 justify-between mb-10">
+        <div className="what-we-do-stats">
+          {stats.map((stat) => (
             <div
-              className="w-50 h-50 pb-2 gap-2 border-box
-                flex flex-col items-center justify-center font-sans
-              "
+              key={stat.label}
+              className="border-box what-we-do-card"
             >
-              <span id="header-spark-text" className="text-[72px] md:text-[96px]" style={{color: '#EB5757'}}>
-                58
+              <span
+                id="header-spark-text"
+                className="what-we-do-stat"
+                style={{ color: stat.color }}
+              >
+                {stat.number}
               </span>
-              <h3>
-                Active Members
-              </h3>
+              <h3 className="what-we-do-label">{stat.label}</h3>
             </div>
+          ))}
+        </div>
 
-            <div
-              className="
-                w-50 h-50 pb-2 gap-2 border-box
-                flex flex-col items-center justify-center font-sans
-              "
-            >
-              <span id="header-spark-text" className="text-[72px] md:text-[96px]" style={{color: '#F2C94C'}}>
-                42
-              </span>
-              <h3>
-                Projects Complete
-              </h3>
-            </div>
-
-            <div
-              className="
-                w-50 h-50 pb-2 gap-2 border-box
-                flex flex-col items-center justify-center font-sans
-              "
-            >
-              <span id="header-spark-text" className="text-[72px] md:text-[96px]" style={{color: '#2F80ED'}}>
-                9
-              </span>
-              <h3>
-                Live Semesters
-              </h3>
-            </div>
-          </div>
-          <button>
-            <Link href="/about">About Us &rarr;</Link>
-          </button>
-        </section>
+        <div className="what-we-do-cta">
+          <Link href="/about">
+            <button aria-label="Learn more about Spark">About Us &rarr;</button>
+          </Link>
+        </div>
+      </section>
 
       <section className="content-section w-full">
           <h1>
@@ -94,10 +78,10 @@ export default function HomePage() {
         </p>
 
         <section className="mt-10 mb-10 gap-5 flex">
-          <button id="white-button" className="w-[170px] py-0">
+          <button id="white-button" className="cta-button">
             <Link href="/join">Work with Us</Link>
           </button>
-          <button id="black-button" className="w-[170px] py-0">
+          <button id="black-button" className="cta-button">
             <Link href="/about">Contact Us</Link>
           </button>
         </section>

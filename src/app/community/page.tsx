@@ -23,15 +23,15 @@ export default function Community() {
             </h1>
         </HeaderBanner>
 
-        <section id="header-section">
+        <section id="header-section" className="community-hero">
             <h1><span id='header-spark-text'>spark</span> community
             </h1>
             <p className="description-paragraph">
                 Community is at the center of what we do and how we work. Beyond just collaboration inside the classroom, we also strongly value the social relationships that our members share. Learn more about the people behind Spark!
             </p>
         </section>
-        <section className="content-section">
-        <div className="flex flex-row gap-2 justify-center">
+        <section className="pill-row">
+        <div className="flex flex-row gap-10 justify-center">
         <label
             className={[
             "cursor-pointer pill-toggle",
@@ -40,7 +40,7 @@ export default function Community() {
             ].join(" ")}
             onClick={() => handleSetView("current")}
         >
-            current
+            Current
         </label>
 
         <label
@@ -51,7 +51,7 @@ export default function Community() {
             ].join(" ")}
             onClick={() => handleSetView("former")}
         >
-            former
+            Former
         </label>
 
         <label
@@ -62,7 +62,7 @@ export default function Community() {
             ].join(" ")}
             onClick={() => handleSetView("directory")}
         >
-            directory
+            Directory
         </label>
         </div>
         </section>

@@ -10,7 +10,7 @@ type ApplicationCard = {
 const cards: ApplicationCard[] = [
   {
     title: "Visit Us",
-    body: "Join us to meet the team and learn about what we do!",
+    body: "Join us to meet the team and learn what we do!",
     buttonLabel: "Interest Form",
     buttonColor: "#FFD552",
   },
@@ -31,7 +31,7 @@ const cards: ApplicationCard[] = [
 export default function ApplicationBlocks() {
   return (
     <section className="content-section w-full">
-      <div className="w-full max-w-3xl flex flex-col gap-4 md:flex-row md:gap-2 justify-between mb-10">
+      <div className="w-full max-w-4xl flex flex-col gap-6 md:flex-row md:gap-6 justify-between mb-10">
         {cards.map((card) => (
           <div
             key={card.title}
@@ -55,7 +55,7 @@ export default function ApplicationBlocks() {
               type="button"
               className={`bg-[${card.buttonColor}] hover:bg-white transition-colors duration-200`}
               style={{
-                color: card.buttonColor === "#FFD552" ? "#000" : "#FFF",
+                color: card.buttonColor === "#FFD552" ? "#FFF" : "#FFF",
               }}
             >
               {card.buttonLabel}
