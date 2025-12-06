@@ -1,6 +1,6 @@
 "use client";
 
-import HeaderBanner from "../components/banners/HeaderBanner";
+import PixelBanner from "../components/banners/PixelBanner";
 
 import ProjectsCarousel from "../components/ProjectsCarousel";
 import PastClients from "../components/PastClients";
@@ -8,11 +8,11 @@ import PastClients from "../components/PastClients";
 export default function Projects() {
     return (
         <>
-        <HeaderBanner className="bg-[#F5654E] text-white mb-20 ">
+        <PixelBanner className="mb-20 ">
             <h1>
             Designing and building <br></br> for real impact.
             </h1>
-        </HeaderBanner>
+        </PixelBanner>
 
         <section id="header-section">
             <h1>

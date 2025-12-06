@@ -1,15 +1,15 @@
 import WhyJoin from "../components/WhyJoin";
-import HeaderBanner from "../components/banners/HeaderBanner";
+import DropBanner from "../components/banners/DropBanner";
 import Branches from "./components/Branches";
 
 export default function About() {
   return (
     <>
-      <HeaderBanner className="bg-[#F4F4F4] text-black mb-20">
+      <DropBanner className=" text-black mb-20">
         <h1>
-          The place where Penn’s <br></br> creatives and coders collide
+          Spark is where Penn’s <br></br> creatives and coders collide
         </h1>
-      </HeaderBanner>
+      </DropBanner>
     
       <section id="header-section">
         <h1>

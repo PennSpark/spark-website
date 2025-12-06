@@ -13,7 +13,7 @@ const ROLE_ORDER: CommunityMember["roleCategory"][] = [
 ];
 
 const SEMESTER_ORDER = [
-  "Fall 2025", "Spring 2025",
+  "Spring 2025",
   "Fall 2024", "Spring 2024",
   "Fall 2023", "Spring 2023",
   "Fall 2022", "Spring 2022",
@@ -83,8 +83,8 @@ export default function CommunityGrid({ semester }: Props) {
             </h2>
 
             {sections.map(([category, list]) => (
-              <div key={category} className="mb-10 flex flex-col justify-start items-start">
-                <h4 className="mb-4">
+              <div key={category} className="w-full mb-10 flex flex-col justify-start items-start">
+                <h4 className="mb-4 w-full text-left bg-neutral-100">
                   {category}
                 </h4>
 
@@ -113,8 +113,8 @@ export default function CommunityGrid({ semester }: Props) {
                           </span>
                         </a>
 
-                        <p className="mt-3 bold">{m.name}</p>
-                        <p className="text-xs text-neutral-500">{m.role}</p>
+                        <p className="w-28 sm:w-32 lg:w-36 mt-3 bold">{m.name}</p>
+                        <p className="w-28 sm:w-32 lg:w-36 text-xs text-neutral-500">{m.role}</p>
                       </li>
                     ))}
                 </ul>

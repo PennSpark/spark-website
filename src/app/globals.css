@@ -103,20 +103,12 @@ h3 {
   margin-bottom: 10px;
 }
 
-ul,
-ol {
-  list-style-position: inside;
-}
-
-li {
-  transform: translateX(16px);
-}
 
 label {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  padding: 0.5rem 0.5rem;
+  padding: 0.3rem 0.5rem;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -275,10 +267,10 @@ label.pill-toggle {
 label.pill-toggle::before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 8px;
   top: 50%;
-  width: 0.45rem;
-  height: 0.45rem;
+  width: 0.65rem;
+  height: 0.65rem;
   border-radius: 9999px;
   background: var(--pill-color);
   transform: translateY(-50%) scale(1);
