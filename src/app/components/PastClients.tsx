@@ -35,6 +35,20 @@ export default function PastClients() {
             height={100}
             className="object-contain"
           ></Image>
+          <Image
+            src="/clients/museum.png"
+            alt="Penn Museum Logo"
+            width={250}
+            height={100}
+            className="object-contain"
+          ></Image>
+          <Image
+            src="/clients/sphereus.png"
+            alt="Sphereus Logo"
+            width={250}
+            height={100}
+            className="object-contain"
+          ></Image>
         </div>
       </section>
     );
