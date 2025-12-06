@@ -199,7 +199,6 @@ export default function DropBanner({ className, children }: DropBannerProps) {
 
     const world = engine.world;
 
-    // remove previous walls
     const { ground, left, right, ceiling } = wallsRef.current;
     const oldWalls = [ground, left, right, ceiling].filter(Boolean) as Body[];
     if (oldWalls.length) {
@@ -249,7 +248,6 @@ export default function DropBanner({ className, children }: DropBannerProps) {
   useEffect(() => {
     if (!containerRef.current) return;
     if (typeof window === "undefined") return;
-
     if (engineRef.current) return;
 
     const engine = Engine.create();
@@ -259,6 +257,8 @@ export default function DropBanner({ className, children }: DropBannerProps) {
     const rect = containerRef.current.getBoundingClientRect();
     sizeRef.current = { width: rect.width, height: rect.height };
 
+    const dpr = window.devicePixelRatio || 1;
+
     const render = Render.create({
       element: containerRef.current,
       engine,
@@ -267,12 +267,22 @@ export default function DropBanner({ className, children }: DropBannerProps) {
         height: rect.height,
         wireframes: false,
         background: "transparent",
-        pixelRatio: window.devicePixelRatio || 1,
+        pixelRatio: dpr,
       },
     });
     renderRef.current = render;
 
-    // initial walls
+    // keep world bounds in 1:1 with pixels to avoid stretch
+    render.bounds.min.x = 0;
+    render.bounds.min.y = 0;
+    render.bounds.max.x = rect.width;
+    render.bounds.max.y = rect.height;
+
+    render.canvas.width = rect.width * dpr;
+    render.canvas.height = rect.height * dpr;
+    render.canvas.style.width = `${rect.width}px`;
+    render.canvas.style.height = `${rect.height}px`;
+
     createOrUpdateWalls(rect.width, rect.height);
 
     const runner = Runner.create();
@@ -281,28 +291,30 @@ export default function DropBanner({ className, children }: DropBannerProps) {
     Runner.run(runner, engine);
     Render.run(render);
 
-    Render.lookAt(render, {
-      min: { x: 0, y: 0 },
-      max: { x: rect.width, y: rect.height },
-    });
-
     const handleResize = () => {
       if (!containerRef.current || !renderRef.current) return;
       const r = containerRef.current.getBoundingClientRect();
-      sizeRef.current = { width: r.width, height: r.height };
-
-      const dpr = window.devicePixelRatio || 1;
+      const dprNow = window.devicePixelRatio || 1;
       const render = renderRef.current;
 
-      render.canvas.width = r.width * dpr;
-      render.canvas.height = r.height * dpr;
+      sizeRef.current = { width: r.width, height: r.height };
+
+      // update options + canvas size
       render.options.width = r.width;
       render.options.height = r.height;
 
-      Render.lookAt(render, {
-        min: { x: 0, y: 0 },
-        max: { x: r.width, y: r.height },
-      });
+      render.bounds.min.x = 0;
+      render.bounds.min.y = 0;
+      render.bounds.max.x = r.width;
+      render.bounds.max.y = r.height;
+
+      render.canvas.width = r.width * dprNow;
+      render.canvas.height = r.height * dprNow;
+      render.canvas.style.width = `${r.width}px`;
+      render.canvas.style.height = `${r.height}px`;
+
+      // update pixel ratio so content doesn't stretch / blur
+      Render.setPixelRatio(render, dprNow);
 
       createOrUpdateWalls(r.width, r.height);
     };
@@ -412,7 +424,7 @@ export default function DropBanner({ className, children }: DropBannerProps) {
         ref={containerRef}
         className="pointer-events-none absolute inset-0 z-10"
       />
-      <div className="relative z-20">
+      <div className="relative z-20 pointer-events-none select-none">
         {children}
       </div>
     </section>

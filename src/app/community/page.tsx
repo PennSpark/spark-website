@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
-import Image from "next/image"
-import HeaderBanner from "../components/banners/HeaderBanner"
+import CommunityBanner from '../components/banners/CommunityBanner'
 import CurrentGrid from "./components/CurrentGrid"
 import DirectoryGrid from './components/DirectoryGrid'
 import FormerGrid from './components/FormerGrid'
@@ -15,13 +14,20 @@ export default function Community() {
 
     return (
         <>
-        <HeaderBanner
-            className="bg-[#246DED] text-white"
+        <CommunityBanner
+            images={[
+                "/community-images/community-1.png",
+                "/community-images/community-3.png",
+                "/community-images/community-4.png",
+                "/community-images/community-5.png",
+                "/community-images/community-6.png",
+            ]}
+            className="bg-[#246DED]"
         >
             <h1>
                 Driven by creativity. <br></br> Powered by community.
             </h1>
-        </HeaderBanner>
+        </CommunityBanner>
 
         <section id="header-section">
             <h1><span id='header-spark-text'>spark</span> community
