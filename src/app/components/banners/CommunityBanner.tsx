@@ -418,8 +418,8 @@ export default function CommunityBanner({
     bodies.forEach((b) => {
       if (wallSet.has(b)) return;
       Body.applyForce(b, b.position, {
-        x: (Math.random() - 0.5) * 0.01,
-        y: -0.02 - Math.random() * 0.02,
+        x: (Math.random() - 0.5) * 0.1,
+        y: -0.02 - Math.random() * 1,
       });
     });
   };
