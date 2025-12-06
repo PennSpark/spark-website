@@ -179,10 +179,9 @@ export default function DrawBanner({ className, children }: DrawBannerProps) {
         window.addEventListener("pointerup", up, { passive: true });
         window.addEventListener("pointercancel", up, { passive: true });
 
-        // --- NEW TOUCH HANDLERS (for better touch behavior) ---
         const touchStart = (e: TouchEvent) => {
             const p = getXYFromTouch(canvas, e);
-            if (!p) return; // ignore touches that start outside canvas
+            if (!p) return;
             e.preventDefault();
             clearCanvas();
             rawRef.current = p;
@@ -192,7 +191,7 @@ export default function DrawBanner({ className, children }: DrawBannerProps) {
         };
 
         const touchMove = (e: TouchEvent) => {
-            if (!rawRef.current) return; // only if we've started a stroke
+            if (!rawRef.current) return;
             const p = getXYFromTouch(canvas, e);
             if (!p) return;
             e.preventDefault();
@@ -207,20 +206,20 @@ export default function DrawBanner({ className, children }: DrawBannerProps) {
             pathRef.current = [];
         };
 
-        window.addEventListener("touchstart", touchStart, { passive: false });
-        window.addEventListener("touchmove", touchMove, { passive: false });
-        window.addEventListener("touchend", touchEnd, { passive: true });
-        window.addEventListener("touchcancel", touchEnd, { passive: true });
+        canvas.addEventListener("touchstart", touchStart, { passive: false });
+        canvas.addEventListener("touchmove", touchMove, { passive: false });
+        canvas.addEventListener("touchend", touchEnd, { passive: true });
+        canvas.addEventListener("touchcancel", touchEnd, { passive: true });
 
         return () => {
             window.removeEventListener("pointerdown", down);
             window.removeEventListener("pointermove", move);
             window.removeEventListener("pointerup", up);
             window.removeEventListener("pointercancel", up);
-            window.removeEventListener("touchstart", touchStart);
-            window.removeEventListener("touchmove", touchMove);
-            window.removeEventListener("touchend", touchEnd);
-            window.removeEventListener("touchcancel", touchEnd);
+            canvas.removeEventListener("touchstart", touchStart);
+            canvas.removeEventListener("touchmove", touchMove);
+            canvas.removeEventListener("touchend", touchEnd);
+            canvas.removeEventListener("touchcancel", touchEnd);
             if (rafRef.current) cancelAnimationFrame(rafRef.current);
         };
     }, [getXYFromWindow, getXYFromTouch, schedule, stamp, paint, clearCanvas]);
