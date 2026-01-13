@@ -10,8 +10,8 @@ import InterestForm from "./interest-form";
 
 export default function JoinUs() {
   const shouldDisplayInterestForm = true;
-  const shouldDisplayBlueApp = true; 
-  const shouldDisplayRedApp = true;
+  const shouldDisplayBlueApp = false; 
+  const shouldDisplayRedApp = false;
 
   return (
     <FadeIn>
@@ -26,14 +26,13 @@ export default function JoinUs() {
       <div id="join-content-section" className="content-section">
         {!shouldDisplayRedApp ? (
           <p className="larger-text" style={{ textAlign: "center", marginBottom: "80px" }}>
-            Applications open for Fall 2025! Due Aug 30 @ 5pm EST
+            Applications opening soon for Spring 2026! Due Jan 24 @ 5pm EST
           </p>
         ) : (
           <div>
             <p className="larger-text" style={{ textAlign: "center" }}>
-              DEADLINE EXTENDED IN LIGHT OF ESAC UPDATE: Our Fall 2025 applications are now live! Applications are due on{" "}
-              <strong>September 5th, 2025 at 5:00PM EST</strong>. 
-              If you're not sure which branch to apply to, you can learn about both Blue and Red <a href='https://pennspark.org/about/'>here!</a>
+              Our Spring 2026 applications are now live! Applications are due on{" "}
+              <strong>January 24th, 2026 at 5:00PM EST</strong>. 
             </p>
             <br />
             <br />
