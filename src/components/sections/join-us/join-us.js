@@ -11,7 +11,7 @@ import InterestForm from "./interest-form";
 export default function JoinUs() {
   const shouldDisplayInterestForm = true;
   const shouldDisplayBlueApp = false; 
-  const shouldDisplayRedApp = false;
+  const shouldDisplayRedApp = true;
 
   return (
     <FadeIn>
