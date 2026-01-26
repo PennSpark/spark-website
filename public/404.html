@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      var l = window.location;
+      var repoBase = l.pathname.split("/")[1];
+      l.replace(
+        l.protocol +
+          "//" +
+          l.host +
+          "/" +
+          repoBase +
+          "/?/" +
+          l.pathname
+            .split("/")
+            .slice(2)
+            .join("/") +
+          (l.search ? "&" + l.search.slice(1) : "") +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

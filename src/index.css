@@ -1,0 +1,327 @@
+@import "tailwindcss";
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/fonts/HankenGrotesk.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans.ttf') format('truetype');
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100svh;
+  overflow-x: hidden;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+main {
+  width: screen;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-section {
+  text-align: center;
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 30px 6px 36px 6px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 920px;
+  transition: 0.2s;
+}
+
+#header-spark-text {
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 3px black;
+  paint-order: stroke fill;
+}
+
+#thin-header-spark-text {
+  font-weight: 500;
+  color: white;
+  -webkit-text-stroke: 3px black;
+  paint-order: stroke fill;
+}
+
+.content-section {
+  max-width: 920px;
+  margin-bottom: 70px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.full-width-content-section {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 20px;
+} 
+
+.border-box {
+  border: 1.5px solid black;
+  border-radius: 30px;
+}
+
+.interactive-border-box {
+  border: 1.2px solid black;
+  border-radius: 0px;
+  transition: border-radius 0.3s ease;
+}
+
+.interactive-border-box:hover {
+  border-radius: 30px
+}
+
+h1 {
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #383838;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+
+label {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  line-height: 1;
+  border: 1.25px solid black;
+}
+
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.larger-text {
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  color: black;
+  border: 1.25px solid black;
+  padding: 6px 30px 6px 30px;
+  font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+#black-button {
+  background-color: black;
+  color: white;
+}
+
+#black-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* alternative circular button in projects page */
+button.yellow-circular {
+  border-radius: 9999px;
+  width: 3rem;
+  padding: 0rem 0.5rem;
+  aspect-ratio: 1 / 1;
+}
+
+button.yellow-circular:hover {
+  background-color: #FFD552;
+  color: black;
+}
+
+button.black-circular {
+  border-radius: 9999px;
+  width: 3rem;
+  padding: 0rem 0.5rem;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+  color: white;
+  border: 2.5px solid black;
+}
+
+  button.black-circular:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease;
+  }
+
+  /* MOBILE VIEW */
+  @media (max-width: 640px) {
+    button {
+      font-size: 1.2rem;
+      transition: 0.2s;
+    }
+
+    #header-section {
+      font-size: 2rem;
+      transition: 0.2s;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    .content-section {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .design-resources-panel {
+      padding: 24px 18px;
+    }
+
+    .course-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .redirect-button {
+      align-self: stretch;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .projects-carousel-root {
+      padding: 40px 0;
+    }
+
+    .projects-carousel-row {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #big-header {
+      font-size: 4rem;
+      transition: 0.2s;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      transition: 0.2s;
+    }
+
+  .content-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Special Elements */
+label.pill-toggle {
+  overflow: hidden;
+  color: #000000;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+  padding-left: 1.5rem;
+  --pill-color: #000000;
+}
+
+/* bullet that grows into the background */
+label.pill-toggle::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 9999px;
+  background: var(--pill-color);
+  transform: translateY(-50%) scale(1);
+  z-index: -1; /* behind the text */
+  transition:
+    transform 0.25s ease;
+}
+
+/* hover / active / selected state */
+label.pill-toggle:hover,
+label.pill-toggle.pill-toggle--active,
+label.pill-toggle:active {
+  color: #ffffff;
+  padding: 4px 12px 4px 12px;
+  transition: padding 0.3s ease;
+}
+
+/* bullet expands to fill the pill background */
+label.pill-toggle:hover::before,
+label.pill-toggle.pill-toggle--active::before,
+label.pill-toggle:active::before {
+  transform: translateY(-50%) scale(25);
+}
+
+/* per-label colors */
+label.pill-toggle.pill-toggle--red {
+  --pill-color: #F5654E;
+}
+
+label.pill-toggle.pill-toggle--yellow {
+  --pill-color: #FFD552;
+}
+
+label.pill-toggle.pill-toggle--blue {
+  --pill-color: #246DED;
+}
