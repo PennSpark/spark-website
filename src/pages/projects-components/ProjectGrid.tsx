@@ -1,5 +1,6 @@
-import { allProjects } from "../../data/allProjects";
+import { assetUrl } from "../../utils";
 
+import { allProjects } from "../../data/allProjects";
 
 export default function ProjectGrid() {
   const bySemester = allProjects.reduce<Record<string, typeof allProjects>>(
@@ -27,8 +28,8 @@ export default function ProjectGrid() {
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project) => (
                   <a
-                    key={project.url}
-                    href={project.url}
+                    key={project.pageKey}
+                    href={project.pageKey}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col overflow-hidden"
@@ -36,7 +37,7 @@ export default function ProjectGrid() {
                     <div className="relative w-full interactive-border-box aspect-[1] overflow-hidden">
                       {project.headerImage ? (
                         <img
-                          src={project.headerImage}
+                          src={assetUrl(project.headerImage)}
                           alt={project.title}
                           className="absolute inset-0 w-full h-full object-cover"
                         />

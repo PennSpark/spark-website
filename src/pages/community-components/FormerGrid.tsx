@@ -1,3 +1,5 @@
+import { assetUrl } from "../../utils";
+
 import { allCommunityMembers, type CommunityMember } from "../../data/allCommunity";
 
 const ROLE_ORDER: CommunityMember["roleCategory"][] = [
@@ -102,7 +104,7 @@ export default function CommunityGrid({ semester }: Props) {
                           <span className="relative block w-28 sm:w-32 lg:w-36 aspect-square rounded-[22px] bg-neutral-200 overflow-hidden transition-shadow duration-200 group-hover:shadow-md">
                             {m.imgSrc && (
                               <img
-                                src={"/community-images" + m.imgSrc} 
+                                src={assetUrl("/community-images" + m.imgSrc)} 
                                 alt={m.name}
                                 className="object-cover"
                                 sizes="(min-width:1024px) 9rem, (min-width:640px) 8rem, 7rem"

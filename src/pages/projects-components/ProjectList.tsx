@@ -1,5 +1,7 @@
 'use client';
 
+import { assetUrl } from '../../utils';
+
 import { useState, useMemo, type KeyboardEvent } from 'react';
 import { allProjects } from '../../data/allProjects';
 
@@ -86,7 +88,7 @@ export default function ProjectList() {
 
         return (
           <div
-            key={p.url}
+            key={p.pageKey}
             className={[
               'w-full group cursor-pointer px-7 my-5 border-box',
               'transition-[padding,background-color] duration-300 ease-out',
@@ -110,7 +112,7 @@ export default function ProjectList() {
                 <div className="relative w-full aspect-[1/1] border-box overflow-hidden bg-neutral-200">
                   {isOpen && p.headerImage && (
                     <img
-                      src={p.headerImage}
+                      src={assetUrl(p.headerImage)}
                       alt={`${p.title} header`}
                       className="absolute inset-0 w-full h-full object-cover"
                     />

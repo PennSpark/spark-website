@@ -1,4 +1,7 @@
 'use client'
+
+import { assetUrl } from '../utils'
+
 import { useState } from 'react'
 import CommunityBanner from '../components/banners/CommunityBanner'
 import CurrentGrid from "./community-components/CurrentGrid"
@@ -16,11 +19,11 @@ export default function Community() {
         <>
         <CommunityBanner
             images={[
-                "/community-images/community-1.png",
-                "/community-images/community-3.png",
-                "/community-images/community-4.png",
-                "/community-images/community-5.png",
-                "/community-images/community-6.png",
+                assetUrl("/community-images/community-1.png"),
+                assetUrl("/community-images/community-3.png"),
+                assetUrl("/community-images/community-4.png"),
+                assetUrl("/community-images/community-5.png"),
+                assetUrl("/community-images/community-6.png"),
             ]}
             className="bg-[#246DED]"
         >

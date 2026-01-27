@@ -1,14 +1,13 @@
 "use client";
 
 import { lazy, Suspense } from "react";
+import ResourcesSection from "./join-components/ResourcesSection";
+import { devResources, designResources } from "../data/resources";
 
 const BulbBanner = lazy(() => import("../components/banners/BulbBanner"));
 
 import WhyJoin from "../components/WhyJoin";
 import ApplicationForms from "./join-components/ApplicationForms";
-import DesignResourcesPage from "./join-components/DesignResources";
-import DevResourcesPage from "./join-components/DevResources";
-import CareerResourcesPage from "./join-components/CareerResources";
 import FAQ from "./join-components/FAQ";
 
 
@@ -56,9 +55,16 @@ export default function Join() {
                 A compiled list of resources to learn about development & design.
             </p>
             <div className='w-full flex flex-col gap-8 mt-8'>
-            <DesignResourcesPage />
-            <DevResourcesPage />
-            <CareerResourcesPage />
+            <ResourcesSection
+                headerText="for designers"
+                sectionTitle="Design Resources"
+                items={designResources}
+            />
+            <ResourcesSection
+                headerText="for developers"
+                sectionTitle="Development Resources"
+                items={devResources}
+            />
             </div>
         </section>
         <section className='content-section w-full'>

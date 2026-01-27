@@ -1,4 +1,5 @@
 'use client'
+import { assetUrl } from "../utils"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
@@ -13,7 +14,7 @@ export default function Navbar() {
       <div className="fixed inset-x-0 top-0 z-50 w-[100svw] h-[78px] px-8 md:px-[72px] text-[0.85rem] bg-white flex items-center justify-between">
         <Link to="/">
             <img
-            src="/logo-black.svg"
+            src={assetUrl("/logo-black.svg")}
             alt="Spark Logo"
             className="w-20 h-8"
             width={120}
@@ -31,7 +32,7 @@ export default function Navbar() {
           cursor: 'pointer',
         }}
         >
-          <img src='/icons/dropdown-icon.svg' alt='Menu Icon' width={32} height={32} />
+          <img src={assetUrl('/icons/dropdown-icon.svg')} alt='Menu Icon' width={32} height={32} />
         </button>
 
         <div className={`absolute w-full top-[98%] text-[0.85rem] ${ sideOpen ? 'right-0 opacity-100' : 'right-[-100%] opacity-0'} transition-all transition-duration-1000 ease-in-out z-50 bg-linear-to-b from-white to-white/80 backdrop-blur-md md:hidden`}>

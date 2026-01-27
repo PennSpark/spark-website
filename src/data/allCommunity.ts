@@ -1,3 +1,13 @@
+// community directory database!
+
+/* UPDATE INSTRUCTIONS:
+1. add new headshot image to /public/headshots
+2. add new member to HEADSHOTS object below
+3. add new member to allCommunityMembers array below
+* be sure to specify each new semester in the comments
+*/
+
+
 export type CommunityMember = {
   name: string;
   role: string;

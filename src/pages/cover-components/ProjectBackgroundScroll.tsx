@@ -1,5 +1,7 @@
 "use client";
 
+import { assetUrl } from "../../utils";
+
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { useMemo } from "react";
@@ -34,10 +36,10 @@ function ProjectRow({ reverse = false, offset = 0 }: ProjectRowProps) {
     <div ref={emblaRef} className="overflow-hidden">
       <div className="flex">
         {projects.map((p, i) => (
-          <div key={p.url ?? `${p.title}-${i}`} className="basis-[18rem] mr-8">
+          <div key={p.pageKey ?? `${p.title}-${i}`} className="basis-[18rem] mr-8">
             <div className="relative h-[12rem] w-[18rem] rounded-3xl overflow-hidden border border-white/10 shadow-lg bg-white/5">
               <img
-                src={p.headerImage || "/project-images/placeholder.png"}
+                src={assetUrl(p.headerImage || "/project-images/placeholder.png")}
                 alt={p.title}
                 className="object-cover"
               />

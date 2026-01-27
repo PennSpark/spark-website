@@ -1,23 +1,16 @@
-import React from "react";
+import { type ResourceCategory, type ResourceItem } from "../../data/resources";
 
-type ResourceItem = {
-  id: number;
-  code: string;
-  name: string;
-  href: string;
-};
-
-interface ResourcesSectionProps {
+type ResourcesSectionProps = {
   headerText: string;
   sectionTitle: string;
-  items: ResourceItem[];
-}
+  items: ResourceCategory[];
+};
 
-const ResourcesSection: React.FC<ResourcesSectionProps> = ({
+export default function ResourcesSection ({
   headerText,
   sectionTitle,
   items,
-}) => {
+}: ResourcesSectionProps) {
   return (
       <div className="flex flex-col w-full">
         <h3 className='self-start'>
@@ -35,7 +28,7 @@ const ResourcesSection: React.FC<ResourcesSectionProps> = ({
           </h2>
 
           <div className="flex-1 min-h-0 space-y-3 overflow-y-auto pr-2">
-            {items.map((item) => (
+            {/* {items.map((item) => (
               <article
                 key={item.id}
                 className="
@@ -60,11 +53,37 @@ const ResourcesSection: React.FC<ResourcesSectionProps> = ({
                   </a>
                 </button>
               </article>
-            ))}
+            ))} */}
+            {items.map((category: ResourceCategory) =>
+              category.items.map((item: ResourceItem) => (
+                <article
+                  key={item.name}
+                  className="
+                    flex items-center justify-between gap-2
+                    border-box bg-white
+                    px-5 py-4 box-border
+                    max-sm:flex-col max-sm:items-start
+                  "
+                >
+                  <div className="flex flex-col justify-start items-start text-left">
+                    <h2>
+                      {item.name}
+                    </h2>
+                    <p>
+                      {item.description}
+                    </p>
+                  </div>
+
+                  <button id='black-button' style={{borderRadius: '100px'}}>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    Redirect
+                    </a>
+                  </button>
+                </article>
+              ))
+            )} 
           </div>
         </section>
       </div>
   );
 };
-
-export default ResourcesSection;

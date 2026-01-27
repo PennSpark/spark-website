@@ -17,7 +17,7 @@ export default function SubstackGrid() {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch("/api/substack");
+        const res = await fetch(new URL("api/substack", import.meta.env.BASE_URL));
         const data = await res.json();
         setPosts(data.items || []);
       } catch (e) {

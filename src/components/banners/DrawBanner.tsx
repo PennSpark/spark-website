@@ -1,4 +1,7 @@
 'use client';
+
+import { assetUrl } from "../../utils";
+
 import { useRef, useEffect, useState, useCallback } from "react";
 
 type DrawBannerProps = { className?: string; id?: string; children?: React.ReactNode };
@@ -227,7 +230,7 @@ export default function DrawBanner({ className, children }: DrawBannerProps) {
         <section className={`relative flex flex-col items-start justify-center w-full h-[100svh] px-8 md:px-32 lg:px-42 ${className ?? ""}`}>
             {initialized && (
                 <img
-                    src="/project-images/moving-gradient.svg"
+                    src={assetUrl("/project-images/moving-gradient.svg")}
                     alt="Moving Gradient"
                     width={144}
                     height={42}

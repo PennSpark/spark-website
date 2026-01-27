@@ -1,3 +1,5 @@
+import { assetUrl } from "../utils";
+
 export default function PastClients() {
     return (
       <section className="content-section w-full">
@@ -7,42 +9,42 @@ export default function PastClients() {
         </h3>
         <div className="flex flex-row flex-wrap gap-10 mt-10">
           <img
-            src="/clients/counselab.png"
+            src={assetUrl("/clients/counselab.png")}
             alt="Counselab Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src="/clients/gaiaai.png"
+            src={assetUrl("/clients/gaiaai.png")}
             alt="GaiaAI Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src="/clients/clarifi.png"
+            src={assetUrl("/clients/clarifi.png")}
             alt="Clarifi Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src="/clients/bonfire.png"
+            src={assetUrl("/clients/bonfire.png")}
             alt="Bonfire Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src="/clients/museum.png"
+            src={assetUrl("/clients/museum.png")}
             alt="Penn Museum Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src="/clients/sphereus.png"
+            src={assetUrl("/clients/sphereus.png")}
             alt="Sphereus Logo"
             width={250}
             height={100}

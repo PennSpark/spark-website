@@ -2,13 +2,14 @@
 
 import { Link } from "react-router-dom";
 
-
 import Title from "./cover-components/Title";
 import ProjectsCarousel from "../components/ProjectsCarousel";
 import PastClients from "../components/PastClients";
 import PointerBox from "../components/ui-elements/PointerBox";
 import RevealNumber from "../components/ui-elements/RevealNumber";
 import SubstackGrid from "./cover-components/SubstackGrid";
+
+import { contributors } from "../data/contributors";
 
 export default function Cover() {
   return (
@@ -99,10 +100,10 @@ export default function Cover() {
         </p>
 
         <section className="mt-10 mb-10 gap-5 flex">
-          <button id="white-button" className="w-[170px] py-0">
+          <button id="white-button">
             <Link to="/join">Work with Us</Link>
           </button>
-          <button id="black-button" className="w-[170px] py-0">
+          <button id="black-button">
             <Link to="/about">Contact Us</Link>
           </button>
         </section>
@@ -114,7 +115,11 @@ export default function Cover() {
           Thank you for visiting! <br/> We would like to thank current & past contributors to Spark&apos;s website, including:
         </p>
         <ul className='w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4 mb-4 text-xs'>
-            <li>Alyssa Nie</li> <li>Acelyn Choi</li> <li>Angie Cao</li> <li>Andrew Jiang</li> <li>Akshay Sharma</li> <li>Andre van de Ven</li> <li>Anna Xia</li> <li>Brandon Yan</li> <li>Brian Lee</li> <li>Bryan Chung</li> <li>Kevin Wei</li> <li>Grace Thanglerdsumpan</li> <li>Cindy Wei</li> <li>Chenxi (Charles) Jin</li> <li>Clyve Gassant</li> <li>Christina Lu</li> <li>Eric Lee</li> <li>Estelle Kim</li> <li>Ethan Wang</li> <li>Ethan Zhao</li> <li>Fiona Herzog</li> <li>Fiona Jiang</li> <li>Grace Jiang</li> <li>Haley Kang</li> <li>Isabelle Gu</li> <li>James Baker</li> <li>Janice Kim</li> <li>Luca Picazo</li> <li>Seth Sukboontip</li> <li>Tina Ni</li>
+         {contributors.map((contributor) => (
+          <li key={contributor}>
+            {contributor}
+          </li>
+         ))}
         </ul>
 
       </section>

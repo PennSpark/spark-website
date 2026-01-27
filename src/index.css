@@ -151,7 +151,6 @@ p {
 
 button {
   cursor: pointer;
-  color: black;
   border: 1.25px solid black;
   padding: 6px 30px 6px 30px;
   font-family: "Hanken Grotesk", "Inter", "Karla", sans-serif;
@@ -161,6 +160,9 @@ button {
   transition: all 0.2s ease;
   margin-bottom: 10px;
   margin-top: 10px;
+
+  min-width: max-content;
+  max-width: 100%;
 }
 
 button:hover {
@@ -174,6 +176,11 @@ button:hover {
 }
 
 #black-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#color-button:hover {
   background-color: white;
   color: black;
 }

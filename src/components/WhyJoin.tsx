@@ -1,3 +1,5 @@
+import { assetUrl } from "../utils";
+
 type Feature = {
   title: string;
   body: string;
@@ -24,7 +26,7 @@ const features: Feature[] = [
 
 export default function FeatureBlocks() {
   return (
-    <section className='content-section w-full gap-4'>
+    <section className='content-section w-full gap-4 md:gap-12'>
       {features.map((feature, index) => {
         const isEven = index % 2 === 1;
 
@@ -37,7 +39,7 @@ export default function FeatureBlocks() {
               }>
             <div className='md:w-[50%] flex relative h-64 md:h-auto md:min-h-[300px]'>
               <img
-                src={feature.imageSrc}
+                src={assetUrl(feature.imageSrc)}
                 alt={feature.title}
                 className='object-cover'
               />

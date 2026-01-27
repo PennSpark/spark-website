@@ -4,6 +4,8 @@ import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+import { allProjects } from "./data/allProjects";
+
 const Cover = lazy(() => import("./pages/Cover"));
 const About = lazy(() => import("./pages/About"));
 const Projects = lazy(() => import("./pages/Projects"));
@@ -29,6 +31,21 @@ export default function App() {
             <Route path="/community" element={<Community />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/join" element={<Join />} />
+            {allProjects.map((project) => {
+              const ProjectPage = lazy(
+                () =>
+                  import(
+                    `./pages/projects-pages${project.pageKey}`
+                  )
+              );
+              return (
+                <Route
+                  key={project.pageKey}
+                  path={`/projects${project.pageKey}`}
+                  element={<ProjectPage />}
+                />
+              );
+            })}
           </Routes>
         </Suspense>
 

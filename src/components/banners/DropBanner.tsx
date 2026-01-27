@@ -1,5 +1,7 @@
 "use client";
 
+import { assetUrl } from "../../utils";
+
 import {
   useRef,
   useEffect,
@@ -31,25 +33,25 @@ type ShapeConfig = {
 
 const SHAPES: ShapeConfig[] = [
   // blue
-  { key: "blue-l", texture: "/brand-icons/blue-l.svg", type: "l", width: 115, height: 125 },
-  { key: "blue-pill", texture: "/brand-icons/blue-pill.svg", type: "pill", width: 50, height: 140 },
-  { key: "blue-rect", texture: "/brand-icons/blue-rect.svg", type: "rect", width: 110, height: 70 },
-  { key: "blue-half", texture: "/brand-icons/blue-half.svg", type: "half", width: 50, height: 100 },
-  { key: "blue-round", texture: "/brand-icons/blue-round.svg", type: "round", width: 80, height: 80 },
+  { key: "blue-l", texture: assetUrl("/brand-icons/blue-l.svg"), type: "l", width: 115, height: 125 },
+  { key: "blue-pill", texture: assetUrl("/brand-icons/blue-pill.svg"), type: "pill", width: 50, height: 140 },
+  { key: "blue-rect", texture: assetUrl("/brand-icons/blue-rect.svg"), type: "rect", width: 110, height: 70 },
+  { key: "blue-half", texture: assetUrl("/brand-icons/blue-half.svg"), type: "half", width: 50, height: 100 },
+  { key: "blue-round", texture: assetUrl("/brand-icons/blue-round.svg"), type: "round", width: 80, height: 80 },
 
   // red
-  { key: "red-l", texture: "/brand-icons/red-l.svg", type: "l", width: 115, height: 125 },
-  { key: "red-pill", texture: "/brand-icons/red-pill.svg", type: "pill", width: 50, height: 140 },
-  { key: "red-rect", texture: "/brand-icons/red-rect.svg", type: "rect", width: 110, height: 70 },
-  { key: "red-half", texture: "/brand-icons/red-half.svg", type: "half", width: 50, height: 100 },
-  { key: "red-round", texture: "/brand-icons/red-round.svg", type: "round", width: 80, height: 80 },
+  { key: "red-l", texture: assetUrl("/brand-icons/red-l.svg"), type: "l", width: 115, height: 125 },
+  { key: "red-pill", texture: assetUrl("/brand-icons/red-pill.svg"), type: "pill", width: 50, height: 140 },
+  { key: "red-rect", texture: assetUrl("/brand-icons/red-rect.svg"), type: "rect", width: 110, height: 70 },
+  { key: "red-half", texture: assetUrl("/brand-icons/red-half.svg"), type: "half", width: 50, height: 100 },
+  { key: "red-round", texture: assetUrl("/brand-icons/red-round.svg"), type: "round", width: 80, height: 80 },
 
   // yellow
-  { key: "yellow-l", texture: "/brand-icons/yellow-l.svg", type: "l", width: 115, height: 125 },
-  { key: "yellow-pill", texture: "/brand-icons/yellow-pill.svg", type: "pill", width: 50, height: 140 },
-  { key: "yellow-rect", texture: "/brand-icons/yellow-rect.svg", type: "rect", width: 110, height: 70 },
-  { key: "yellow-half", texture: "/brand-icons/yellow-half.svg", type: "half", width: 50, height: 100 },
-  { key: "yellow-round", texture: "/brand-icons/yellow-round.svg", type: "round", width: 80, height: 80 },
+  { key: "yellow-l", texture: assetUrl("/brand-icons/yellow-l.svg"), type: "l", width: 115, height: 125 },
+  { key: "yellow-pill", texture: assetUrl("/brand-icons/yellow-pill.svg"), type: "pill", width: 50, height: 140 },
+  { key: "yellow-rect", texture: assetUrl("/brand-icons/yellow-rect.svg"), type: "rect", width: 110, height: 70 },
+  { key: "yellow-half", texture: assetUrl("/brand-icons/yellow-half.svg"), type: "half", width: 50, height: 100 },
+  { key: "yellow-round", texture: assetUrl("/brand-icons/yellow-round.svg"), type: "round", width: 80, height: 80 },
 ];
 
 type DropBannerProps = {

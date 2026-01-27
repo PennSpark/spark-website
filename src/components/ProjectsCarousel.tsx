@@ -1,5 +1,7 @@
 "use client";
 
+import { assetUrl } from "../utils";
+
 import {
   useMemo,
   useState,
@@ -8,6 +10,7 @@ import {
   type MouseEvent,
   type TouchEvent,
 } from "react";
+import { Link } from "react-router-dom";
 import { allProjects, type Project } from "../data/allProjects";
 
 const BASE_CARD_WIDTH = 354.129;
@@ -90,13 +93,6 @@ export default function ProjectsCarousel({
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
   }, []);
-
-  // Re-center on project-set change
-  // useEffect(() => {
-  //   if (projects.length === 0) return;
-  //   const center = Math.floor(projects.length / 2);
-  //   setActiveIndex((prev) => (prev >= projects.length ? center : prev));
-  // }, [projects.length]);
 
   const goNext = () => {
     if (projects.length === 0) return;
@@ -211,7 +207,7 @@ export default function ProjectsCarousel({
               const imageWrapperStyle: CSSProperties = {
                 position: "relative",
                 width: "100%",
-                height: cardWidth * 0.65, // scale image height with width
+                height: cardWidth * 0.65,
                 borderBottom: "1px solid #000",
                 overflow: "hidden",
                 transition: "height 0.7s ease",
@@ -228,7 +224,8 @@ export default function ProjectsCarousel({
               };
 
               return (
-                <article
+                <Link
+                  to={"/projects" + project.pageKey}
                   key={`${project.title}-${index}`}
                   style={cardStyle}
                   onClick={() => setActiveIndex(index)}
@@ -236,12 +233,13 @@ export default function ProjectsCarousel({
                   {isActive && (
                     <div style={imageWrapperStyle}>
                       <img
-                        src={
+                        src={ assetUrl(
                           project.headerImage ||
                           "/project-images/placeholder.png"
-                        }
+                      )}
                         alt={project.title}
                         sizes={`${cardWidth}px`}
+                        className='min-w-full min-h-full'
                         style={{ objectFit: "cover" }}
                       />
                     </div>
@@ -252,7 +250,7 @@ export default function ProjectsCarousel({
                     <h4>{project.semester}</h4>
                     <p>{project.description}</p>
                   </div>
-                </article>
+                </Link>
               );
             }
           )}
