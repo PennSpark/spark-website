@@ -1,14 +1,14 @@
 "use client";
 
 import { lazy, Suspense } from "react";
-import ResourcesSection from "./join-components/ResourcesSection";
+import ResourcesSection from "../components/join-components/ResourcesSection";
 import { devResources, designResources } from "../data/resources";
 
 const BulbBanner = lazy(() => import("../components/banners/BulbBanner"));
 
 import WhyJoin from "../components/WhyJoin";
-import ApplicationForms from "./join-components/ApplicationForms";
-import FAQ from "./join-components/FAQ";
+import ApplicationForms from "../components/join-components/ApplicationForms";
+import FAQ from "../components/join-components/FAQ";
 
 
 function BannerFallback() {

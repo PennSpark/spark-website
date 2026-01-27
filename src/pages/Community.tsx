@@ -4,9 +4,9 @@ import { assetUrl } from '../utils'
 
 import { useState } from 'react'
 import CommunityBanner from '../components/banners/CommunityBanner'
-import CurrentGrid from "./community-components/CurrentGrid"
-import DirectoryGrid from './community-components/DirectoryGrid'
-import FormerGrid from './community-components/FormerGrid'
+import CurrentGrid from "../components/community-components/CurrentGrid"
+import DirectoryGrid from '../components/community-components/DirectoryGrid'
+import FormerGrid from '../components/community-components/FormerGrid'
 
 export default function Community() {
     const [view, setView] = useState<'current' | 'former' | 'directory'>('current');

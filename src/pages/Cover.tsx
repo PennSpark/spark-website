@@ -2,12 +2,12 @@
 
 import { Link } from "react-router-dom";
 
-import Title from "./cover-components/Title";
+import Title from "../components/cover-components/Title";
 import ProjectsCarousel from "../components/ProjectsCarousel";
 import PastClients from "../components/PastClients";
 import PointerBox from "../components/ui-elements/PointerBox";
 import RevealNumber from "../components/ui-elements/RevealNumber";
-import SubstackGrid from "./cover-components/SubstackGrid";
+import SubstackGrid from "../components/cover-components/SubstackGrid";
 
 import { contributors } from "../data/contributors";
 

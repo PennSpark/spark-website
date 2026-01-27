@@ -1,6 +1,6 @@
 import WhyJoin from "../components/WhyJoin";
 import DropBanner from "../components/banners/DropBanner";
-import Branches from "./about-components/Branches";
+import Branches from "../components/about-components/Branches";
 
 export default function About() {
   return (

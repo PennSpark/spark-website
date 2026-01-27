@@ -1,8 +1,8 @@
 "use client";
 import DrawBanner from "../components/banners/DrawBanner";
 
-import ProjectList from "./projects-components/ProjectList";
-import ProjectGrid from "./projects-components/ProjectGrid";
+import ProjectList from "../components/projects-components/ProjectList";
+import ProjectGrid from "../components/projects-components/ProjectGrid";
 
 export default function Projects() {
   return (

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { fetchSubstackItems } from "../../lib/substackFeed";
 
 type SubstackPost = {
   title: string;
@@ -15,19 +16,10 @@ export default function SubstackGrid() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function load() {
-      try {
-        const res = await fetch(new URL("api/substack", import.meta.env.BASE_URL));
-        const data = await res.json();
-        setPosts(data.items || []);
-      } catch (e) {
-        console.error("Error loading Substack posts", e);
-      } finally {
-        setLoading(false);
-      }
-    }
-    load();
-  }, []);
+    fetchSubstackItems()
+      .then(setPosts)
+      .finally(() => setLoading(false));
+  }, [setLoading]);
 
   if (loading) {
     return (
