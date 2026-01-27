@@ -1,7 +1,7 @@
 'use client';
 
 import { assetUrl } from '../../utils';
-
+import { Link } from 'react-router-dom';
 import { useState, useMemo, type KeyboardEvent } from 'react';
 import { allProjects } from '../../data/allProjects';
 
@@ -122,17 +122,19 @@ export default function ProjectList() {
 
 
               <div>
-                <div className="flex flex-row justify-between items-start gap-x-2 gap-y-1 mb-1">
-                  <h3 className="text-xl font-semibold">{p.title}</h3>
-                  <div className="flex flex-wrap gap-2">
-                  {p.tags?.length > 0 && (
-                    p.tags.map((tag) => (
-                      <label key={tag}>
-                        {tag}
-                      </label>
-                    )))}
+                <Link
+                  to={"/projects" + p.pageKey}
+                  className="flex flex-row justify-between items-start gap-x-2 gap-y-1 mb-1">
+                    <h3 className="text-xl font-semibold">{p.title}</h3>
+                    <div className="flex flex-wrap gap-2">
+                    {p.tags?.length > 0 && (
+                      p.tags.map((tag) => (
+                        <label key={tag}>
+                          {tag}
+                        </label>
+                      )))}
                   </div>
-                </div>
+                </Link>
 
                 <p
                   className={[

@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import demo from "../../../static/img/sp23/coffeechat.svg";
+import demo from "../../../../public/project-images/sp23/coffeechat.svg";
 
 export const pageKey = "/spring23/coffee-chat";
 

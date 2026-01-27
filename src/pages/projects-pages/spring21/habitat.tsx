@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import habitatImg from "../../../static/img/sp21/habitat-header.png";
+import habitatImg from "../../../../public/project-images/sp21/habitat-header.png";
 
 export const pageKey = "/spring21/habitat";
 

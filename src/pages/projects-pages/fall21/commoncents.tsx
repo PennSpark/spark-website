@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import commoncentsDemo from "../../../static/img/fa21/commoncents-demo.gif";
+import commoncentsDemo from "../../../../public/project-images/fa21/commoncents-demo.gif";
 
 export const pageKey = "/fall21/commoncents";
 

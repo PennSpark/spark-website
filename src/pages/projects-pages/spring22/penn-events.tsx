@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import headerImg from "../../../static/img/sp22/penn-events-header.png";
+import headerImg from "../../../../public/project-images/sp22/penn-events-header.png";
 
 export const pageKey = "/spring22/penn-events";
 

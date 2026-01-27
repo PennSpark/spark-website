@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import penntitionsImg from "../../../static/img/sp21/penntitions-header.png";
+import penntitionsImg from "../../../../public/project-images/sp21/penntitions-header.png";
 
 export const pageKey = "/spring21/penntitions";
 

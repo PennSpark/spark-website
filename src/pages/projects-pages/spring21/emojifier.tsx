@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import emojifierImg from "../../../static/img/sp21/emojifier-header.png";
+import emojifierImg from "../../../../public/project-images/sp21/emojifier-header.png";
 
 export const pageKey = "/spring21/emojifier";
 

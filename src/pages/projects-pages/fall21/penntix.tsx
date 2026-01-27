@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import penntixHeader from "../../../static/img/fa21/penntix-header.png";
+import penntixHeader from "../../../../public/project-images/fa21/penntix-header.png";
 
 export const pageKey = "/fall21/penntix";
 

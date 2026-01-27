@@ -2,10 +2,10 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import study0 from "../../../static/img/sp23/study0.png";
-import study1 from "../../../static/img/sp23/study1.png";
-import study2 from "../../../static/img/sp23/study2.png";
-import study3 from "../../../static/img/sp23/study3.png";
+import study0 from "../../../../public/project-images/sp23/study0.png";
+import study1 from "../../../../public/project-images/sp23/study1.png";
+import study2 from "../../../../public/project-images/sp23/study2.png";
+import study3 from "../../../../public/project-images/sp23/study3.png";
 
 export const pageKey = "/spring23/studious";
 

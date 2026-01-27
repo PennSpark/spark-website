@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import matchamakerHeader from "../../../static/img/sp22/matchamaker-header.png";
+import matchamakerHeader from "../../../../public/project-images/sp22/matchamaker-header.png";
 
 export const pageKey = "/spring22/matchamaker";
 

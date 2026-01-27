@@ -1,5 +1,5 @@
 import { assetUrl } from "../../utils";
-
+import { Link } from "react-router-dom";
 import { allProjects } from "../../data/allProjects";
 
 export default function ProjectGrid() {
@@ -27,9 +27,9 @@ export default function ProjectGrid() {
 
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project) => (
-                  <a
+                  <Link
                     key={project.pageKey}
-                    href={project.pageKey}
+                    to={"/projects" + project.pageKey}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col overflow-hidden"
@@ -58,7 +58,7 @@ export default function ProjectGrid() {
                         {project.description}
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

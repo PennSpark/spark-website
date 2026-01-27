@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import clarifiImg from "../../../static/img/sp21/clarifi-header.png";
+import clarifiImg from "../../../../public/project-images/sp21/clarifi-header.png";
 
 export const pageKey = "/spring21/clarifi";
 

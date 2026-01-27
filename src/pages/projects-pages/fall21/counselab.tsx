@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import counselabHeader from "../../../static/img/fa21/counselab-header.png";
+import counselabHeader from "../../../../public/project-images/fa21/counselab-header.png";
 
 export const pageKey = "/fall21/counselab";
 

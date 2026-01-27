@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import popplexHeader from "../../../static/img/fa21/popplex-header.png";
+import popplexHeader from "../../../../public/project-images/fa21/popplex-header.png";
 
 export const pageKey = "/fall21/popplex";
 
