@@ -38,9 +38,8 @@ export default function ProjectLayout(props: ProjectLayoutProps) {
 
   const heroImg = img ?? project.headerImage;
 
-  const demoUrlLabel = demoUrl ? "Demo" : "";
+  const demoUrlLabel = demoUrl ? "Demo Here!" : "";
   const sourcecodeLabel = sourcecodeUrl ? "Source Code" : "";
-  const sourcecodeDivider = demoUrl && sourcecodeUrl ? " | " : "";
 
   const demoVisualsContent =
     demoVisuals && demoVisuals.length ? (
@@ -54,58 +53,60 @@ export default function ProjectLayout(props: ProjectLayoutProps) {
 
   return (
       <>
-      <section id='header-section' className='relative w-full mt-[78px]'
+      <section className='content-section w-full'></section>
+      <section id='header-section' className='relative w-full flex flex-col md:flex-row gap-10 md: gap-20 justify-center items-center md:items-start md:justify-start'
         style={{backgroundColor: bgColor || "transparent"}}
       >
-        <img src={assetUrl(heroImg)} alt={`${projName} header`} 
-        className='absolute w-full h-full inset-0 -z-2 object-cover object-center'
-        />
+        <div className='w-full md:w-48 h-full flex-shrink-0 flex flex-col md:flex-col-reverse justify-center items-center md:items-start md:justify-start gap-4'>
+          <button className='self-start aspect-square' style={{ borderRadius: '100rem', padding: '15px'}}>
+            <img src={assetUrl("/icons/left-arrow.svg")} alt="Back to projects"/>
+          </button>
+          <img src={assetUrl(heroImg)} alt={`${projName} header`} 
+          className='border-box w-48 h-48 aspect-square object-cover object-center'
+          />
+        </div>
 
-        {/* gradient overlay */}
-        <div className='absolute w-full h-full inset-0 -z-1'
-        style={{
-          background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 1) 100%)'
-        }}
-        ></div>
-
-        <h1 className='header-spark-text mt-20'>{projName}</h1>
+        <div className='w-full flex flex-col gap-5 md:text-left'>
+        <h1>{projName}</h1>
+        <div className='justify-center md:justify-start flex flex-row gap-2'>
+          {
+            project.tags.map((tag) => (
+              <label key={tag}>
+                {tag}
+              </label>
+            ))
+          }
+        </div>
         <h3>{blurb}</h3>
         {people ? (
             <p>{people}</p>
         ) : null}
 
         {(demoUrl || sourcecodeUrl) ? (
-          <p>
-            <strong>
-              {demoUrl ? (
-                <a
-                  href={demoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+          <div className='w-full flex flex-row justify-center md:justify-start gap-2 mt-2'>
+            {demoUrl ? (
+              <button className='project-button'>
+                <a href={demoUrl} target="_blank" rel="noopener noreferrer">
                   {demoUrlLabel}
                 </a>
-              ) : null}
-            </strong>
-
-            {demoUrl && sourcecodeUrl ? sourcecodeDivider : null}
+              </button>
+            ) : null}
 
             {sourcecodeUrl ? (
-              <a
-                href={sourcecodeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {sourcecodeLabel}
-              </a>
+              <button className='project-button'>
+                <a href={sourcecodeUrl} target="_blank" rel="noopener noreferrer">
+                  {sourcecodeLabel}
+                </a>
+              </button>
             ) : null}
-          </p>
+          </div>
         ) : null}
+        </div>
       </section>
 
       {sections.map((s, i) => (
         <section key={`${i}-${s.title}`}
-        className='content-section project-section w-full flex sflex-col'
+        className='content-section project-section w-full flex flex-col'
         >
           <h2 className='mb-4'>{s.title}</h2>
           <div>{s.content}</div>

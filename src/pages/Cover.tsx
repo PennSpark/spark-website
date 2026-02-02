@@ -29,42 +29,42 @@ export default function Cover() {
         <section className="content-section w-full">
 
           <div className="w-full max-w-2xl flex flex-row gap-2 justify-between mb-10">
-            <PointerBox color="#EB5757" className="p-6 rounded-xl">
+            <PointerBox color="#EB5757" className="px-2 py-4 md:px-6 md:py-6rounded-xl">
               {({ clipPath }) => (
-                <div>
+                <div> 
                   <RevealNumber
                     value={58}
                     clipPath={clipPath}
                     baseColor="#EB5757"
-                    className="text-[72px] md:text-[96px]"
+                    className="text-[60px] md:text-[96px]"
                   />
                   <h3 className="mt-2 text-black">Active Members</h3>
                 </div>
               )}
             </PointerBox>
 
-            <PointerBox color="#F2C94C" className="p-6 rounded-xl">
+            <PointerBox color="#F2C94C" className="px-2 py-4 md:px-6 md:py-6rounded-xl">
               {({ clipPath }) => (
                 <div>
                   <RevealNumber
                     value={42}
                     clipPath={clipPath}
                     baseColor="#F2C94C"
-                    className="text-[72px] md:text-[96px]"
+                    className="text-[60px] md:text-[96px]"
                   />
                   <h3 className="mt-2 text-black">Projects Complete</h3>
                 </div>
               )}
             </PointerBox>
 
-            <PointerBox color="#2F80ED" className="p-6 rounded-xl">
+            <PointerBox color="#2F80ED" className="px-2 py-4 md:px-6 md:py-6rounded-xl">
               {({ clipPath }) => (
                 <div>
                   <RevealNumber
                     value={9}
                     clipPath={clipPath}
                     baseColor="#2F80ED"
-                    className="text-[72px] md:text-[96px]"
+                    className="text-[60px] md:text-[96px]"
                   />
                   <h3 className="mt-2 text-black">Live Semesters</h3>
                 </div>

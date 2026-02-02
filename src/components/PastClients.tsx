@@ -7,7 +7,7 @@ export default function PastClients() {
         <h3>
           Our past clients
         </h3>
-        <div className="flex flex-row flex-wrap gap-10 mt-10">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10">
           <img
             src={assetUrl("/clients/counselab.png")}
             alt="Counselab Logo"
