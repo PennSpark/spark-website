@@ -27,7 +27,7 @@ function ProjectRow({ reverse = false, offset = 0 }: ProjectRowProps) {
 
   // offsetting indices so each row starts at different project
   const projects = useMemo(() => {
-    const src = allProjects.slice(0, MAX_RECENT_PROJECTS);
+    const src = allProjects.slice(0, MAX_RECENT_PROJECTS).slice().reverse();
     const len = src.length || 1;
     return src.map((_, i) => src[(i + offset) % len]);
   }, [offset]);
