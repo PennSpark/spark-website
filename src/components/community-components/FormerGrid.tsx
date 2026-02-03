@@ -101,13 +101,12 @@ export default function CommunityGrid({ semester }: Props) {
                           rel={m.linkedinUrl ? "noopener noreferrer" : undefined}
                           className="group focus:outline-none"
                         >
-                          <span className="relative block w-28 sm:w-32 lg:w-36 aspect-square rounded-[22px] bg-neutral-200 overflow-hidden transition-shadow duration-200 group-hover:shadow-md">
+                          <span className="relative flex w-28 sm:w-32 lg:w-36 aspect-square rounded-[22px] overflow-hidden">
                             {m.imgSrc && (
                               <img
-                                src={assetUrl("/community-images" + m.imgSrc)} 
+                                src={assetUrl("/community-images" + m.imgSrc)}
                                 alt={m.name}
-                                className="object-cover"
-                                sizes="(min-width:1024px) 9rem, (min-width:640px) 8rem, 7rem"
+                                className="w-full h-full object-cover block"
                               />
                             )}
                           </span>
