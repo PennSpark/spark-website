@@ -99,7 +99,9 @@ export default function ProjectsCarousel({ semesters, tags }: ProjectsCarouselPr
     gesture.current.lastX = e.clientX;
     gesture.current.moved = false;
 
+  if (e.pointerType !== "mouse") {
     e.currentTarget.setPointerCapture(e.pointerId);
+  }
   };
 
   const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
@@ -126,10 +128,12 @@ export default function ProjectsCarousel({ semesters, tags }: ProjectsCarouselPr
     }
 
     gesture.current.pointerId = -1;
+    gesture.current.moved = false;
   };
 
   const onPointerCancel = () => {
     gesture.current.pointerId = -1;
+    gesture.current.moved = false;
   };
 
   const positionedProjects = useMemo(
@@ -240,7 +244,7 @@ export default function ProjectsCarousel({ semesters, tags }: ProjectsCarouselPr
                       src={assetUrl(project.headerImage || "/project-images/placeholder.webp")}
                       alt={project.title}
                       sizes={`${cardWidth}px`}
-                      className="min-w-full min-h-full select-none pointer-events-none"
+                      className="min-w-full min-h-full"
                       style={{ objectFit: "cover" }}
                       draggable={false}
                     />
