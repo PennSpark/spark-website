@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import mysteryMuseumImg from "../../../../public/project-images/sp21/mystery-museum-header.png";
+import mysteryMuseumImg from "../../../../public/project-images/sp21/mystery-museum-header.webp";
 
 export const pageKey = "/spring21/mystery-at-museum";
 

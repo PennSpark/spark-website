@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import igniteHeader from "../../../../public/project-images/fa21/ignite-header.png";
+import igniteHeader from "../../../../public/project-images/fa21/ignite-header.webp";
 
 export const pageKey = "/fall21/ignite";
 

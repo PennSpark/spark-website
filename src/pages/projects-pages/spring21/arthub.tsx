@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import arthubImg from "../../../../public/project-images/sp21/arthub-header.png";
+import arthubImg from "../../../../public/project-images/sp21/arthub-header.webp";
 
 export const pageKey = "/spring21/arthub";
 

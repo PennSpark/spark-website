@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import RespondCrisisDemoDb from "../../../../public/project-images/fa22/respond-demo.png";
+import RespondCrisisDemoDb from "../../../../public/project-images/fa22/respond-demo.webp";
 
 export const pageKey = "/fall22/respond-crisis";
 

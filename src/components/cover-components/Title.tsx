@@ -13,11 +13,11 @@ export default function Title() {
   return (
     <>
       <div
-        className={`absolute -z-5 w-screen h-screen bg-gradient-to-r from-white to-white/20 
+        className={`absolute z-5 w-screen h-screen bg-gradient-to-r from-white to-white/20 
         transition-opacity duration-700 ease-in-out 
         ${
           showingProjects
-            ? "opacity-0 backdrop-blur-0"
+            ? "opacity-0 backdrop-blur-0 pointer-events-none"
             : "opacity-100 backdrop-blur-[3px]"
         }`}
       ></div>
@@ -38,8 +38,8 @@ export default function Title() {
       )}
 
       <div
-        className={`transition-all duration-400 ease-in-out ${
-          showingProjects ? "opacity-0" : "block"
+        className={`transition-all duration-400 ease-in-out z-10 ${
+          showingProjects ? "opacity-0 pointer-events-none" : "block"
         }`}
       >
         {/* Title Card! */}

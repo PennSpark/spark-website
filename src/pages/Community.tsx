@@ -19,11 +19,11 @@ export default function Community() {
         <>
         <CommunityBanner
             images={[
-                assetUrl("/community-images/community-1.png"),
-                assetUrl("/community-images/community-3.png"),
-                assetUrl("/community-images/community-4.png"),
-                assetUrl("/community-images/community-5.png"),
-                assetUrl("/community-images/community-6.png"),
+                assetUrl("/community-images/community-1.webp"),
+                assetUrl("/community-images/community-3.webp"),
+                assetUrl("/community-images/community-4.webp"),
+                assetUrl("/community-images/community-5.webp"),
+                assetUrl("/community-images/community-6.webp"),
             ]}
             className="bg-[#246DED]"
         >

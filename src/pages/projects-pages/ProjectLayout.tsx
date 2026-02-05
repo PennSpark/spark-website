@@ -1,5 +1,6 @@
 import { assetUrl } from "../../utils";
 import type { ReactNode } from "react";
+import { Link } from "react-router-dom";
 import type { Project } from "../../data/allProjects";
 
 import './project-layout.css'
@@ -32,9 +33,6 @@ export default function ProjectLayout(props: ProjectLayoutProps) {
     demoVisuals,
     sections,
   } = props;
-  const projName = project.title;
-  const blurb = project.description;
-  const people = project.team;
 
   const heroImg = img ?? project.headerImage;
 
@@ -58,16 +56,18 @@ export default function ProjectLayout(props: ProjectLayoutProps) {
         style={{backgroundColor: bgColor || "transparent"}}
       >
         <div className='w-full md:w-48 h-full flex-shrink-0 flex flex-col md:flex-col-reverse justify-center items-center md:items-start md:justify-start gap-4'>
-          <button className='self-start aspect-square' style={{ borderRadius: '100rem', padding: '15px'}}>
-            <img src={assetUrl("/icons/left-arrow.svg")} alt="Back to projects"/>
-          </button>
-          <img src={assetUrl(heroImg)} alt={`${projName} header`} 
+          <Link to={"/projects"} className='self-start '>
+            <button className='aspect-square' style={{ borderRadius: '100rem', padding: '15px'}}>
+              <img src={assetUrl("/icons/left-arrow.svg")} alt="Back to projects"/>
+            </button>
+          </Link>
+          <img src={assetUrl(heroImg)} alt={`${project.title} header`} 
           className='border-box w-48 h-48 aspect-square object-cover object-center'
           />
         </div>
 
         <div className='w-full flex flex-col gap-5 md:text-left'>
-        <h1>{projName}</h1>
+        <h1>{project.title}</h1>
         <div className='justify-center md:justify-start flex flex-row gap-2'>
           {
             project.tags.map((tag) => (
@@ -77,25 +77,24 @@ export default function ProjectLayout(props: ProjectLayoutProps) {
             ))
           }
         </div>
-        <h3>{blurb}</h3>
-        {people ? (
-            <p>{people}</p>
+        <h3>{project.description}</h3>
+        {project.team ? (
+            <p className='-mt-6'>{project.semester} | {project.team}</p>
         ) : null}
 
         {(demoUrl || sourcecodeUrl) ? (
           <div className='w-full flex flex-row justify-center md:justify-start gap-2 mt-2'>
+            {sourcecodeUrl ? (
+              <button id="black-button" className='project-button'>
+                <a href={sourcecodeUrl} target="_blank" rel="noopener noreferrer">
+                  {sourcecodeLabel}
+                </a>
+              </button>
+            ) : null}
             {demoUrl ? (
               <button className='project-button'>
                 <a href={demoUrl} target="_blank" rel="noopener noreferrer">
                   {demoUrlLabel}
-                </a>
-              </button>
-            ) : null}
-
-            {sourcecodeUrl ? (
-              <button className='project-button'>
-                <a href={sourcecodeUrl} target="_blank" rel="noopener noreferrer">
-                  {sourcecodeLabel}
                 </a>
               </button>
             ) : null}

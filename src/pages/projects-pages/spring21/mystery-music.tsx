@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import mysteryMusicImg from "../../../../public/project-images/sp21/mystery-music-header.png";
+import mysteryMusicImg from "../../../../public/project-images/sp21/mystery-music-header.webp";
 
 export const pageKey = "/spring21/mystery-music";
 

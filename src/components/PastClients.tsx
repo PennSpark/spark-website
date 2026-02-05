@@ -9,42 +9,42 @@ export default function PastClients() {
         </h3>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10">
           <img
-            src={assetUrl("/clients/counselab.png")}
+            src={assetUrl("/clients/counselab.webp")}
             alt="Counselab Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src={assetUrl("/clients/gaiaai.png")}
+            src={assetUrl("/clients/gaiaai.webp")}
             alt="GaiaAI Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src={assetUrl("/clients/clarifi.png")}
+            src={assetUrl("/clients/clarifi.webp")}
             alt="Clarifi Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src={assetUrl("/clients/bonfire.png")}
+            src={assetUrl("/clients/bonfire.webp")}
             alt="Bonfire Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src={assetUrl("/clients/museum.png")}
+            src={assetUrl("/clients/museum.webp")}
             alt="Penn Museum Logo"
             width={250}
             height={100}
             className="object-contain"
           ></img>
           <img
-            src={assetUrl("/clients/sphereus.png")}
+            src={assetUrl("/clients/sphereus.webp")}
             alt="Sphereus Logo"
             width={250}
             height={100}

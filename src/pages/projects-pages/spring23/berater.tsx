@@ -2,7 +2,7 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import roadmap from "../../../../public/project-images/sp23/berater-roadmap.png";
+import roadmap from "../../../../public/project-images/sp23/berater-roadmap.webp";
 import demo from "../../../../public/project-images/sp23/berater-demo.jpg";
 
 export const pageKey = "/spring23/berater";

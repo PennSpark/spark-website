@@ -2,6 +2,7 @@
 
 import { assetUrl } from "../../utils";
 
+import { Link } from "react-router-dom";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { useMemo } from "react";
@@ -38,11 +39,14 @@ function ProjectRow({ reverse = false, offset = 0 }: ProjectRowProps) {
         {projects.map((p, i) => (
           <div key={p.pageKey ?? `${p.title}-${i}`} className="basis-[18rem] mr-8">
             <div className="relative h-[12rem] w-[18rem] rounded-3xl overflow-hidden border border-white/10 shadow-lg bg-white/5">
-              <img
-                src={assetUrl(p.headerImage || "/project-images/placeholder.png")}
-                alt={p.title}
-                className="object-cover"
-              />
+              <Link to={"/projects" + p.pageKey}
+              >
+                <img
+                  src={assetUrl(p.headerImage || "/project-images/placeholder.png")}
+                  alt={p.title}
+                  className="object-cover cursor-pointer"
+                />
+              </Link>
             </div>
           </div>
         ))}
@@ -53,7 +57,7 @@ function ProjectRow({ reverse = false, offset = 0 }: ProjectRowProps) {
 
 export default function ProjectBackgroundScroll() {
   return (
-    <section className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <section className="absolute inset-0 z-0 overflow-hidden">
       <div className="space-y-10 rotate-[-6deg] scale-125">
         <ProjectRow offset={0} />
         <ProjectRow offset={8} reverse />

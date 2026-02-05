@@ -2,9 +2,9 @@ import ProjectLayout from "../ProjectLayout";
 import type { ProjectSection } from "../ProjectLayout";
 import { projectByKey } from "../../../data/allProjects";
 
-import review from "../../../../public/project-images/sp23/findmefood-review.png";
-import ranking from "../../../../public/project-images/sp23/findmefood-reviewers.png";
-import post from "../../../../public/project-images/sp23/findmefood-post.png";
+import review from "../../../../public/project-images/sp23/findmefood-review.webp";
+import ranking from "../../../../public/project-images/sp23/findmefood-reviewers.webp";
+import post from "../../../../public/project-images/sp23/findmefood-post.webp";
 
 export const pageKey = "/spring23/find-me-food";
 
