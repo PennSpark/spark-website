@@ -83,7 +83,7 @@ export default function Cover() {
             recent <span id="header-spark-text">work</span>
           </h1>
 
-        <ProjectsCarousel semesters={["Spring 2024"]} />
+        <ProjectsCarousel semesters={["Fall 2024"]} />
       </section>
 
       <SubstackGrid />
