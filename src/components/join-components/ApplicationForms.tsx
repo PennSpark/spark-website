@@ -33,6 +33,9 @@ const cards: ApplicationCard[] = [
 export default function ApplicationBlocks() {
   return (
     <section className="content-section w-full">
+      <h2 className="mb-4">
+        Check back in Fall 2026!
+      </h2>
       <div className="w-full max-w-3xl flex flex-col gap-4 md:flex-row md:gap-2 justify-between mb-10">
         {cards.map((card) => {
           return (

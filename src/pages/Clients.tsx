@@ -37,7 +37,7 @@ export default function Clients() {
                 Pitch Deck
                 </button>
                 <button id="black-button">
-                Contact Us
+                    <a href="mailto:pennspark@gmail.com">Contact Us</a>
                 </button>
             </div>
         </section>
@@ -54,7 +54,7 @@ export default function Clients() {
                     Sponsorship Packet
                 </button>
                 <button id="black-button">
-                    Sponsor Us
+                    <a href="mailto:pennspark@gmail.com">Sponsor Us</a>
                 </button>
             </div>
             <div className="flex flex-row gap-4 mt-6"></div>

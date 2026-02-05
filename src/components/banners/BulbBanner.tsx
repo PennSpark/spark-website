@@ -4,6 +4,19 @@ import { OrbitControls, useGLTF, Environment, Shadow } from "@react-three/drei";
 import * as THREE from "three";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 
+// disable orbit controls on mobile
+function useIsCoarsePointer() {
+  const [coarse, setCoarse] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(pointer: coarse)");
+    const update = () => setCoarse(mq.matches);
+    update();
+    mq.addEventListener?.("change", update);
+    return () => mq.removeEventListener?.("change", update);
+  }, []);
+  return coarse;
+}
+
 function Model() {
   const base = import.meta.env.BASE_URL;
   const { scene } = useGLTF(`${base}models/bulb.glb`) as unknown as { scene: THREE.Group };
@@ -111,20 +124,30 @@ type BulbBannerProps = {
 };
 
 export default function BulbBanner({ children, className = "" }: BulbBannerProps) {
+  const isMobile = useIsCoarsePointer();
+
   return (
     <section className={`relative flex flex-col px-8 md:px-32 lg:px-42 w-full h-[100svh] items-start justify-center ${className}`}>
       {children}
 
       <div className="absolute inset-0 pointer-events-none flex justify-end">
         <div className="w-full md:w-[70%] h-full select-none">
-          <Canvas camera={{ position: [0, -1.25, -6.5], fov: 50 }} style={{ background: "transparent" }}>
+          <Canvas camera={{ position: [0, -1.25, -6.5], fov: 50 }} style={{ background: "transparent", touchAction: "pan-y", }}>
             <Environment preset="city" blur={1.0} environmentIntensity={2.5} />
             <Shadow position={[0, -1.6, 0]} scale={2.75} opacity={0.25} color="black" fog={false} />
             <Model />
             <EffectComposer>
               <Bloom intensity={2.0} luminanceThreshold={0.1} luminanceSmoothing={0.9} mipmapBlur />
             </EffectComposer>
-            <OrbitControls enableDamping autoRotate autoRotateSpeed={1.0} enablePan={false} enableZoom={false} />
+              {!isMobile && (
+                <OrbitControls
+                  enableDamping
+                  autoRotate
+                  autoRotateSpeed={1.0}
+                  enablePan={false}
+                  enableZoom={false}
+                />
+              )}
           </Canvas>
         </div>
       </div>
