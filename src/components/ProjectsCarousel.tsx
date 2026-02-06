@@ -154,7 +154,7 @@ export default function ProjectsCarousel({ semesters, tags }: ProjectsCarouselPr
   const inactiveHeight = cardWidth * INACTIVE_HEIGHT_RATIO;
 
   return (
-    <section className="w-full flex flex-col justify-center overflow-hidden select-none">
+    <section className="w-full flex flex-col justify-center items-center overflow-hidden select-none">
       <div
         className="w-full max-w-[1400px] relative"
         style={{
