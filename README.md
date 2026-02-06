@@ -1,10 +1,8 @@
-# Penn Spark Website
+# Spark Website :-)
 
 ## About
 
-The Penn Spark website is a React + TypeScript application built with Vite, showcasing Spark's projects, community members, and initiatives. The site features interactive components, project portfolios organized by semester, and a community directory.
-
-## Getting Started
+Built with React/Typescript/Tailwind/Vite. The website showcases Spark's latest projects, community members, and initiatives, serving as a digital hub for our club! Featuring interactive components and banners, project portfolios, and a community directory.
 
 ### Prerequisites
 
@@ -15,7 +13,7 @@ The Penn Spark website is a React + TypeScript application built with Vite, show
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/PennSpark/pennspark.github.io.git
 cd spark-website
 ```
 
@@ -24,7 +22,7 @@ cd spark-website
 npm install
 ```
 
-3. Start the development server:
+3. Start the development server for local testing:
 ```bash
 npm run dev
 ```
@@ -37,10 +35,10 @@ The site will be available at `http://localhost:5173`
 
 - **`src/components/`** - Reusable React components
   - `banners/` - Hero banners used across pages
-  - `ui-elements/` - Small UI components (buttons, boxes, etc.)
+  - `ui-elements/` - Small custom UI components (buttons, boxes, etc.)
   - `about-components/`, `community-components/`, `cover-components/`, `join-components/`, `projects-components/` - Page-specific components
 
-- **`src/pages/`** - Page components and layouts
+- **`src/pages/`** - Base layouts for each page (router is in App.tsx)
   - `projects-pages/` - Individual project pages organized by semester (fall21, spring22, etc.)
 
 - **`src/data/`** - Static data files
@@ -49,7 +47,7 @@ The site will be available at `http://localhost:5173`
   - `resources.ts` - Join page resources
   - `contributors.ts` - Contributor information
 
-- **`public/`** - Static assets
+- **`public/`** - Static assets (try to keep images in .webp format for efficiency!)
   - `project-images/` - Images organized by semester
   - `cover-images/`, `community-images/`, `icons/`, etc.
 
@@ -64,8 +62,7 @@ The site will be available at `http://localhost:5173`
 ### Code Style
 
 - TypeScript is used for type safety
-- Components use functional components with hooks
-- CSS modules or inline styles for styling (see existing components)
+- CSS classes for reusable styling, inline Tailwind for one-time styles (see existing components)
 - Follow the naming conventions and patterns established in existing code
 
 ## Updating Content
@@ -96,15 +93,7 @@ To update the 'recent projects' carousel in the cover page, edit the semester na
 
 ### Updating the Substack Feed
 
-The Substack feed is fetched and cached:
-
-1. Run the fetch script to update the feed:
-```bash
-node scripts/fetchSubstackFeed.mjs
-```
-
-2. This generates/updates [src/lib/substackFeed.ts](src/lib/substackFeed.ts) with the latest articles
-3. The feed is displayed on the Cover page via `SubstackGrid.tsx`
+To help manage unreliable api connection, the Substack feed is fetched automatically upon build/deploy and stored as a static file in [public/substack.xml] + updated dyamically on runtime via [src/lib/substackFeed.ts]. No real need to update this, but if any bugs arise, those files are the places to look.
 
 ## Deploying the Site
 
@@ -115,9 +104,11 @@ npm run deploy
 
 This command:
 1. Builds the site for production
-2. Deploys to the configured hosting (typically GitHub Pages or Vercel)
+2. Deploys to Github Pages
 
 Ensure all changes are committed before deploying.
+
+**Important**: After deploymnt, visit the online Github repository's settings; at the bottom of the Pages tab, check the remote repository URL. It should be pennspark.org, but the configuration often resets when the website is redeployed... please check and update so the domain works correctly.
 
 ## Build Configuration
 
@@ -129,11 +120,3 @@ Configuration files:
 - [tsconfig.json](tsconfig.json) - TypeScript configuration
 - [vite.config.ts](vite.config.ts) - Vite configuration
 - [eslint.config.js](eslint.config.js) - ESLint configuration
-
-## Misc Developer Information
-
-- The site is fully responsive and mobile-friendly
-- Images should be optimized before adding to the project
-- Use semantic HTML and accessible components
-- Test locally with `npm run dev` before deploying
-- Check console for TypeScript and ESLint warnings during development
