@@ -37,9 +37,6 @@ export default function Join() {
             <h1>
                 join <span id="header-spark-text">spark</span>
             </h1>
-            <p className="description-paragraph">
-                DEADLINE EXTENDED IN LIGHT OF ESAC UPDATE: Our Fall 2025 applications are now live! Applications are due on September 5th, 2025 at 5:00PM EST. If you&apos;re not sure which branch to apply to, you can learn about both Blue and Red here!
-            </p>
         </section>
         <section className="content-section w-full">
             <h3>Application Forms</h3>

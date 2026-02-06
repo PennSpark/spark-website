@@ -1,6 +1,6 @@
 import { assetUrl } from "../../utils";
 import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import type { Project } from "../../data/allProjects";
 
 import './project-layout.css'
@@ -34,6 +34,19 @@ export default function ProjectLayout(props: ProjectLayoutProps) {
     sections,
   } = props;
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // navigate back to user's previous location
+  const handleBack = () => {
+    if (window.history.length > 1 && location.key !== "default") {
+      navigate(-1);
+      return;
+    }
+    // backup default to projects page
+    navigate("/projects");
+  };
+
   const heroImg = img ?? project.headerImage;
 
   const demoUrlLabel = demoUrl ? "Demo Here!" : "";
@@ -56,11 +69,13 @@ export default function ProjectLayout(props: ProjectLayoutProps) {
         style={{backgroundColor: bgColor || "transparent"}}
       >
         <div className='w-full md:w-48 h-full flex-shrink-0 flex flex-col md:flex-col-reverse justify-center items-center md:items-start md:justify-start gap-4'>
-          <Link to={"/projects"} className='self-start '>
-            <button className='aspect-square' style={{ borderRadius: '100rem', padding: '15px'}}>
-              <img src={assetUrl("/icons/left-arrow.svg")} alt="Back to projects"/>
-            </button>
-          </Link>
+          <button 
+            onClick={handleBack}
+            className='aspect-square self-start' 
+            style={{ borderRadius: '100rem', padding: '15px'}}>
+            <img src={assetUrl("/icons/left-arrow.svg")} alt="Back to projects"/>
+          </button>
+
           <img src={assetUrl(heroImg)} alt={`${project.title} header`} 
           className='border-box w-48 h-48 aspect-square object-cover object-center'
           />

@@ -30,7 +30,6 @@ export default function ProjectGrid() {
                   <Link
                     key={project.pageKey}
                     to={"/projects" + project.pageKey}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col overflow-hidden"
                   >

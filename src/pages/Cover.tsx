@@ -29,7 +29,7 @@ export default function Cover() {
         <section className="content-section w-full">
 
           <div className="w-full max-w-2xl flex flex-row gap-2 justify-between mb-10">
-            <PointerBox color="#EB5757" className="px-2 py-4 md:px-6 md:py-6rounded-xl">
+            <PointerBox color="#EB5757" className="px-1 py-4 md:px-6 md:py-6 rounded-xl">
               {({ clipPath }) => (
                 <div> 
                   <RevealNumber
@@ -43,7 +43,7 @@ export default function Cover() {
               )}
             </PointerBox>
 
-            <PointerBox color="#F2C94C" className="px-2 py-4 md:px-6 md:py-6rounded-xl">
+            <PointerBox color="#F2C94C" className="px-2 py-4 md:px-6 md:py-6 rounded-xl">
               {({ clipPath }) => (
                 <div>
                   <RevealNumber
@@ -57,7 +57,7 @@ export default function Cover() {
               )}
             </PointerBox>
 
-            <PointerBox color="#2F80ED" className="px-2 py-4 md:px-6 md:py-6rounded-xl">
+            <PointerBox color="#2F80ED" className="px-2 py-4 md:px-6 md:py-6 rounded-xl">
               {({ clipPath }) => (
                 <div>
                   <RevealNumber
