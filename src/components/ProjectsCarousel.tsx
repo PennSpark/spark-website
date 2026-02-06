@@ -166,7 +166,7 @@ export default function ProjectsCarousel({ semesters, tags }: ProjectsCarouselPr
       >
 
         <div
-          className="relative w-full overflow-x-hidden overflow-y-visible select-none"
+          className="relative w-full overflow-x-hidden select-none"
           style={{
             height: activeHeight + 80,
             touchAction: "pan-y",
@@ -180,6 +180,8 @@ export default function ProjectsCarousel({ semesters, tags }: ProjectsCarouselPr
             if (!isVisible) return null;
 
             const translateX = rel * cardOffset;
+            const depth = VISIBLE_RADIUS - Math.min(Math.abs(rel), VISIBLE_RADIUS);
+            const z = (isActive ? 1000 : 100) + depth * 10 + (rel < 0 ? 1 : 0);
 
             const cardStyle: CSSProperties = {
               position: "absolute",
@@ -198,8 +200,7 @@ export default function ProjectsCarousel({ semesters, tags }: ProjectsCarouselPr
                 ? "0 12px 32px rgba(0, 0, 0, 0.15)"
                 : "0 4px 12px rgba(0, 0, 0, 0.08)",
               transform: `translate(-50%, -50%) translateX(${translateX}px)`,
-              opacity: Math.abs(rel) > VISIBLE_RADIUS - 0.5 ? 0 : isActive ? 1 : 0.7,
-              zIndex: isActive ? 10 : 5,
+              zIndex: z,
               transition:
                 "transform 0.6s cubic-bezier(0.4,0,0.2,1), height 0.6s cubic-bezier(0.4,0,0.2,1), box-shadow 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease",
               userSelect: "none",
